@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - forward.bde</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\ARCHIV~1\Aldec\ACTIVE~1.2\\Flows\Res\default.bmp">
+<FONT FACE="Verdana" SIZE=2>
+
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - forward.bde</H2>
+Created on Fri Jan 06 11:59:54 2023
+
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>Checking&nbsp;file&nbsp;'Z:\forwardUltimate\forward\forwardUnit\src\forward.bde'.</SPAN><BR>
+<SPAN class=Info1>File&nbsp;loaded&nbsp;in&nbsp;0&nbsp;seconds.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','Z:\\forwardUltimate\\forward\\forwardUnit\\src\\forward.bde','','-errorid=30080');">Net&nbsp;'BUS30080(31:0)'&nbsp;is&nbsp;without&nbsp;load.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','Z:\\forwardUltimate\\forward\\forwardUnit\\src\\forward.bde','','-errorid=30080,29596');">Different&nbsp;index&nbsp;ranges&nbsp;'BUS30080(63:0),&nbsp;U26.b(31:0)'&nbsp;in&nbsp;a&nbsp;bus&nbsp;node.</SPAN><BR>
+<SPAN class=Info1>File&nbsp;checked&nbsp;in&nbsp;0&nbsp;seconds.</SPAN><BR>
+<SPAN class=Warn1>forward.bde&nbsp;-&nbsp;0&nbsp;error(s),&nbsp;2&nbsp;warning(s)</SPAN><BR>
+</FONT>
+       
+        
+</BODY>
+</HTML>

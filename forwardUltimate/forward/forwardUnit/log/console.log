@@ -1,0 +1,1366 @@
+acom $DSN/src/pc.vhd $DSN/src/alu.vhd $DSN/src/control.vhd $DSN/src/add4.vhd $DSN/src/entension12.vhd $DSN/src/extension.vhd $DSN/src/extension2.vhd $DSN/src/extensionjal.vhd $DSN/src/memoriadatos.vhd $DSN/src/memoriadeinstrucciones.vhd $DSN/src/regfile.vhd $DSN/src/sumador.vhd $DSN/src/forward.bde $DSN/src/if_id.vhd $DSN/src/muxescogedor.vhd $DSN/src/muxentradaalu.vhd $DSN/src/registro2.vhd $DSN/src/registro3.vhd $DSN/src/registro4.vhd $DSN/src/forwardunit.vhd $DSN/src/zero.vhd $DSN/src/branch_control.vhd $DSN/src/burbuja_instruccion.vhd $DSN/src/alusumador.vhd $DSN/src/hazard.vhd
+# Compile...
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Entity `pc' has been skipped - no difference detected.
+# Compile Architecture "pc" of Entity "pc"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\alu.vhd
+# Compile Entity "alu"
+# Entity `alu' has been skipped - no difference detected.
+# Compile Architecture "alu" of Entity "alu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\control.vhd
+# Compile Entity "control"
+# Entity `control' has been skipped - no difference detected.
+# Compile Architecture "control" of Entity "control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\add4.vhd
+# Compile Entity "add4"
+# Entity `add4' has been skipped - no difference detected.
+# Compile Architecture "add4" of Entity "add4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\entension12.vhd
+# Compile Entity "entension12"
+# Entity `entension12' has been skipped - no difference detected.
+# Compile Architecture "entension12" of Entity "entension12"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension.vhd
+# Compile Entity "extension"
+# Entity `extension' has been skipped - no difference detected.
+# Compile Architecture "extension" of Entity "extension"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension2.vhd
+# Compile Entity "extension2"
+# Entity `extension2' has been skipped - no difference detected.
+# Compile Architecture "extension2" of Entity "extension2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extensionjal.vhd
+# Compile Entity "extensionjal"
+# Entity `extensionjal' has been skipped - no difference detected.
+# Compile Architecture "extensionjal" of Entity "extensionjal"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriaDatos.vhd
+# Compile Entity "memoriaDatos"
+# Entity `memoriaDatos' has been skipped - no difference detected.
+# Compile Architecture "memoriaDatos" of Entity "memoriaDatos"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriadeinstrucciones.vhd
+# Compile Entity "memoriadeinstrucciones"
+# Entity `memoriadeinstrucciones' has been skipped - no difference detected.
+# Compile Architecture "memoriadeinstrucciones" of Entity "memoriadeinstrucciones"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\regfile.vhd
+# Compile Entity "regfile"
+# Entity `regfile' has been skipped - no difference detected.
+# Compile Architecture "regfile" of Entity "regfile"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\sumador.vhd
+# Compile Entity "sumador"
+# Entity `sumador' has been skipped - no difference detected.
+# Compile Architecture "sumador" of Entity "sumador"
+# File: .\forward.vhd
+# Compile Entity "forward"
+# Entity `forward' has been skipped - no difference detected.
+# Compile Architecture "forward" of Entity "forward"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\IF_ID.vhd
+# Compile Entity "IF_ID"
+# Entity `IF_ID' has been skipped - no difference detected.
+# Compile Architecture "IF_ID" of Entity "IF_ID"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEscogedor.vhd
+# Compile Entity "muxEscogedor"
+# Entity `muxEscogedor' has been skipped - no difference detected.
+# Compile Architecture "muxEscogedor" of Entity "muxEscogedor"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEntradaAlu.vhd
+# Compile Entity "muxEntradaAlu"
+# Entity `muxEntradaAlu' has been skipped - no difference detected.
+# Compile Architecture "muxEntradaAlu" of Entity "muxEntradaAlu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro2.vhd
+# Compile Entity "registro2"
+# Entity `registro2' has been skipped - no difference detected.
+# Compile Architecture "registro2" of Entity "registro2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro3.vhd
+# Compile Entity "registro3"
+# Entity `registro3' has been skipped - no difference detected.
+# Compile Architecture "registro3" of Entity "registro3"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro4.vhd
+# Compile Entity "registro4"
+# Entity `registro4' has been skipped - no difference detected.
+# Compile Architecture "registro4" of Entity "registro4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\forwardunit.vhd
+# Compile Entity "forwardunit"
+# Entity `forwardunit' has been skipped - no difference detected.
+# Compile Architecture "forwardunit" of Entity "forwardunit"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\zero.vhd
+# Compile Entity "zero"
+# Entity `zero' has been skipped - no difference detected.
+# Compile Architecture "zero" of Entity "zero"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\branch_control.vhd
+# Compile Entity "branch_control"
+# Entity `branch_control' has been skipped - no difference detected.
+# Compile Architecture "branch_control" of Entity "branch_control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\burbuja_instruccion.vhd
+# Compile Entity "burbuja_instruccion"
+# Entity `burbuja_instruccion' has been skipped - no difference detected.
+# Compile Architecture "burbuja_instruccion" of Entity "burbuja_instruccion"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\aluSumador.vhd
+# Compile Entity "aluSumador"
+# Entity `aluSumador' has been skipped - no difference detected.
+# Compile Architecture "aluSumador" of Entity "aluSumador"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\hazard.vhd
+# Compile Entity "hazard"
+# Entity `hazard' has been skipped - no difference detected.
+# Compile Architecture "hazard" of Entity "hazard"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom $DSN/src/PC.vhd
+# Compile...
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Entity `pc' has been skipped - no difference detected.
+# Compile Architecture "pc" of Entity "pc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -advdataflow  -retry 3  forward forward
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2543 kB (elbread=1071 elab2=1269 kernel=203 sdf=0)
+# 11:22, viernes, 06 de enero de 2023
+# Simulation has been initialized
+# Selected Top-Level: forward (forward)
+run @50ns
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U2.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U29.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U9.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U29.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U30.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 2,  Instance: /U30.
+# KERNEL: stopped at time: 50 ns
+run @50
+# 50ps is less than current simulation time.
+endsim
+# Simulation has been stopped
+asim -advdataflow  -retry 3  forward forward
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2543 kB (elbread=1071 elab2=1269 kernel=203 sdf=0)
+# 11:23, viernes, 06 de enero de 2023
+# Simulation has been initialized
+# Selected Top-Level: forward (forward)
+run @100ns
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U2.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U29.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U9.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U29.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U30.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 2,  Instance: /U30.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 1,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 2,  Instance: /U29.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 75 ns,  Iteration: 3,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 100 ns,  Iteration: 0,  Instance: /U5.
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 125 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 125 ns,  Iteration: 1,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 150 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 175 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 175 ns,  Iteration: 1,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 200 ns,  Iteration: 0,  Instance: /U5.
+# KERNEL: stopped at time: 200 ns
+acom $DSN/src/branch_control.vhd
+# Compile...
+# File: Z:\forwardUltimate\forward\forwardUnit\src\branch_control.vhd
+# Compile Entity "branch_control"
+# Entity `branch_control' has been skipped - no difference detected.
+# Compile Architecture "branch_control" of Entity "branch_control"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+endsim
+# Simulation has been stopped
+asim -advdataflow  -retry 3  forward forward
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2543 kB (elbread=1071 elab2=1269 kernel=203 sdf=0)
+# 11:26, viernes, 06 de enero de 2023
+# Simulation has been initialized
+# Selected Top-Level: forward (forward)
+run @50ns
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U2.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U29.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U9.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U29.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U30.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 2,  Instance: /U30.
+# KERNEL: stopped at time: 50 ns
+acom $DSN/src/mux32.vhd
+# Compile...
+# File: Z:\forwardUltimate\forward\forwardUnit\src\mux32.vhd
+# Compile Entity "mux32"
+# Compile Architecture "mux32" of Entity "mux32"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+# Updating instances of symbol 'mux32' from library 'forwardUnit' (U26)
+acom $DSN/src/pc.vhd $DSN/src/alu.vhd $DSN/src/control.vhd $DSN/src/add4.vhd $DSN/src/entension12.vhd $DSN/src/extension.vhd $DSN/src/extension2.vhd $DSN/src/extensionjal.vhd $DSN/src/memoriadatos.vhd $DSN/src/memoriadeinstrucciones.vhd $DSN/src/regfile.vhd $DSN/src/sumador.vhd $DSN/src/forward.bde $DSN/src/if_id.vhd $DSN/src/muxescogedor.vhd $DSN/src/muxentradaalu.vhd $DSN/src/registro2.vhd $DSN/src/registro3.vhd $DSN/src/registro4.vhd $DSN/src/forwardunit.vhd $DSN/src/zero.vhd $DSN/src/branch_control.vhd $DSN/src/burbuja_instruccion.vhd $DSN/src/alusumador.vhd $DSN/src/hazard.vhd $DSN/src/mux32.vhd
+# Compile...
+# DRC: Checking file 'Z:\forwardUltimate\forward\forwardUnit\src\forward.bde'.
+# DRC: Warning: forward.bde - 0 error(s), 5 warning(s)
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating Z:\forwardUltimate\forward\forwardUnit\compile\forward.vhd from Z:\forwardUltimate\forward\forwardUnit\src\forward.bde ...
+# Generation successful
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Entity `pc' has been skipped - no difference detected.
+# Compile Architecture "pc" of Entity "pc"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\alu.vhd
+# Compile Entity "alu"
+# Entity `alu' has been skipped - no difference detected.
+# Compile Architecture "alu" of Entity "alu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\control.vhd
+# Compile Entity "control"
+# Entity `control' has been skipped - no difference detected.
+# Compile Architecture "control" of Entity "control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\add4.vhd
+# Compile Entity "add4"
+# Entity `add4' has been skipped - no difference detected.
+# Compile Architecture "add4" of Entity "add4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\entension12.vhd
+# Compile Entity "entension12"
+# Entity `entension12' has been skipped - no difference detected.
+# Compile Architecture "entension12" of Entity "entension12"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension.vhd
+# Compile Entity "extension"
+# Entity `extension' has been skipped - no difference detected.
+# Compile Architecture "extension" of Entity "extension"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension2.vhd
+# Compile Entity "extension2"
+# Entity `extension2' has been skipped - no difference detected.
+# Compile Architecture "extension2" of Entity "extension2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extensionjal.vhd
+# Compile Entity "extensionjal"
+# Entity `extensionjal' has been skipped - no difference detected.
+# Compile Architecture "extensionjal" of Entity "extensionjal"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriaDatos.vhd
+# Compile Entity "memoriaDatos"
+# Entity `memoriaDatos' has been skipped - no difference detected.
+# Compile Architecture "memoriaDatos" of Entity "memoriaDatos"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriadeinstrucciones.vhd
+# Compile Entity "memoriadeinstrucciones"
+# Entity `memoriadeinstrucciones' has been skipped - no difference detected.
+# Compile Architecture "memoriadeinstrucciones" of Entity "memoriadeinstrucciones"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\regfile.vhd
+# Compile Entity "regfile"
+# Entity `regfile' has been skipped - no difference detected.
+# Compile Architecture "regfile" of Entity "regfile"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\sumador.vhd
+# Compile Entity "sumador"
+# Entity `sumador' has been skipped - no difference detected.
+# Compile Architecture "sumador" of Entity "sumador"
+# File: .\forward.vhd
+# Compile Entity "forward"
+# Entity `forward' has been skipped - no difference detected.
+# Compile Architecture "forward" of Entity "forward"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\IF_ID.vhd
+# Compile Entity "IF_ID"
+# Entity `IF_ID' has been skipped - no difference detected.
+# Compile Architecture "IF_ID" of Entity "IF_ID"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEscogedor.vhd
+# Compile Entity "muxEscogedor"
+# Entity `muxEscogedor' has been skipped - no difference detected.
+# Compile Architecture "muxEscogedor" of Entity "muxEscogedor"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEntradaAlu.vhd
+# Compile Entity "muxEntradaAlu"
+# Entity `muxEntradaAlu' has been skipped - no difference detected.
+# Compile Architecture "muxEntradaAlu" of Entity "muxEntradaAlu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro2.vhd
+# Compile Entity "registro2"
+# Entity `registro2' has been skipped - no difference detected.
+# Compile Architecture "registro2" of Entity "registro2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro3.vhd
+# Compile Entity "registro3"
+# Entity `registro3' has been skipped - no difference detected.
+# Compile Architecture "registro3" of Entity "registro3"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro4.vhd
+# Compile Entity "registro4"
+# Entity `registro4' has been skipped - no difference detected.
+# Compile Architecture "registro4" of Entity "registro4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\forwardunit.vhd
+# Compile Entity "forwardunit"
+# Entity `forwardunit' has been skipped - no difference detected.
+# Compile Architecture "forwardunit" of Entity "forwardunit"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\zero.vhd
+# Compile Entity "zero"
+# Entity `zero' has been skipped - no difference detected.
+# Compile Architecture "zero" of Entity "zero"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\branch_control.vhd
+# Compile Entity "branch_control"
+# Entity `branch_control' has been skipped - no difference detected.
+# Compile Architecture "branch_control" of Entity "branch_control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\burbuja_instruccion.vhd
+# Compile Entity "burbuja_instruccion"
+# Entity `burbuja_instruccion' has been skipped - no difference detected.
+# Compile Architecture "burbuja_instruccion" of Entity "burbuja_instruccion"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\aluSumador.vhd
+# Compile Entity "aluSumador"
+# Entity `aluSumador' has been skipped - no difference detected.
+# Compile Architecture "aluSumador" of Entity "aluSumador"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\hazard.vhd
+# Compile Entity "hazard"
+# Entity `hazard' has been skipped - no difference detected.
+# Compile Architecture "hazard" of Entity "hazard"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\mux32.vhd
+# Compile Entity "mux32"
+# Entity `mux32' has been skipped - no difference detected.
+# Compile Architecture "mux32" of Entity "mux32"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+endsim
+# Simulation has been stopped
+asim -advdataflow  -retry 3  forward forward
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2562 kB (elbread=1071 elab2=1285 kernel=206 sdf=0)
+# 11:30, viernes, 06 de enero de 2023
+# Simulation has been initialized
+# Selected Top-Level: forward (forward)
+run @50ns
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U2.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U29.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U9.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U29.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U30.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 2,  Instance: /U30.
+# KERNEL: stopped at time: 50 ns
+acom $DSN/src/pc.vhd $DSN/src/alu.vhd $DSN/src/control.vhd $DSN/src/add4.vhd $DSN/src/entension12.vhd $DSN/src/extension.vhd $DSN/src/extension2.vhd $DSN/src/extensionjal.vhd $DSN/src/memoriadatos.vhd $DSN/src/memoriadeinstrucciones.vhd $DSN/src/regfile.vhd $DSN/src/sumador.vhd $DSN/src/forward.bde $DSN/src/if_id.vhd $DSN/src/muxescogedor.vhd $DSN/src/muxentradaalu.vhd $DSN/src/registro2.vhd $DSN/src/registro3.vhd $DSN/src/registro4.vhd $DSN/src/forwardunit.vhd $DSN/src/zero.vhd $DSN/src/branch_control.vhd $DSN/src/burbuja_instruccion.vhd $DSN/src/alusumador.vhd $DSN/src/hazard.vhd $DSN/src/mux32.vhd
+# Compile...
+# DRC: Checking file 'Z:\forwardUltimate\forward\forwardUnit\src\forward.bde'.
+# DRC: Warning: forward.bde - 0 error(s), 3 warning(s)
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating Z:\forwardUltimate\forward\forwardUnit\compile\forward.vhd from Z:\forwardUltimate\forward\forwardUnit\src\forward.bde ...
+# Generation successful
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Entity `pc' has been skipped - no difference detected.
+# Compile Architecture "pc" of Entity "pc"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\alu.vhd
+# Compile Entity "alu"
+# Entity `alu' has been skipped - no difference detected.
+# Compile Architecture "alu" of Entity "alu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\control.vhd
+# Compile Entity "control"
+# Entity `control' has been skipped - no difference detected.
+# Compile Architecture "control" of Entity "control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\add4.vhd
+# Compile Entity "add4"
+# Entity `add4' has been skipped - no difference detected.
+# Compile Architecture "add4" of Entity "add4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\entension12.vhd
+# Compile Entity "entension12"
+# Entity `entension12' has been skipped - no difference detected.
+# Compile Architecture "entension12" of Entity "entension12"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension.vhd
+# Compile Entity "extension"
+# Entity `extension' has been skipped - no difference detected.
+# Compile Architecture "extension" of Entity "extension"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension2.vhd
+# Compile Entity "extension2"
+# Entity `extension2' has been skipped - no difference detected.
+# Compile Architecture "extension2" of Entity "extension2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extensionjal.vhd
+# Compile Entity "extensionjal"
+# Entity `extensionjal' has been skipped - no difference detected.
+# Compile Architecture "extensionjal" of Entity "extensionjal"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriaDatos.vhd
+# Compile Entity "memoriaDatos"
+# Entity `memoriaDatos' has been skipped - no difference detected.
+# Compile Architecture "memoriaDatos" of Entity "memoriaDatos"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriadeinstrucciones.vhd
+# Compile Entity "memoriadeinstrucciones"
+# Entity `memoriadeinstrucciones' has been skipped - no difference detected.
+# Compile Architecture "memoriadeinstrucciones" of Entity "memoriadeinstrucciones"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\regfile.vhd
+# Compile Entity "regfile"
+# Entity `regfile' has been skipped - no difference detected.
+# Compile Architecture "regfile" of Entity "regfile"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\sumador.vhd
+# Compile Entity "sumador"
+# Entity `sumador' has been skipped - no difference detected.
+# Compile Architecture "sumador" of Entity "sumador"
+# File: .\forward.vhd
+# Compile Entity "forward"
+# Entity `forward' has been skipped - no difference detected.
+# Compile Architecture "forward" of Entity "forward"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\IF_ID.vhd
+# Compile Entity "IF_ID"
+# Entity `IF_ID' has been skipped - no difference detected.
+# Compile Architecture "IF_ID" of Entity "IF_ID"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEscogedor.vhd
+# Compile Entity "muxEscogedor"
+# Entity `muxEscogedor' has been skipped - no difference detected.
+# Compile Architecture "muxEscogedor" of Entity "muxEscogedor"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEntradaAlu.vhd
+# Compile Entity "muxEntradaAlu"
+# Entity `muxEntradaAlu' has been skipped - no difference detected.
+# Compile Architecture "muxEntradaAlu" of Entity "muxEntradaAlu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro2.vhd
+# Compile Entity "registro2"
+# Entity `registro2' has been skipped - no difference detected.
+# Compile Architecture "registro2" of Entity "registro2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro3.vhd
+# Compile Entity "registro3"
+# Entity `registro3' has been skipped - no difference detected.
+# Compile Architecture "registro3" of Entity "registro3"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro4.vhd
+# Compile Entity "registro4"
+# Entity `registro4' has been skipped - no difference detected.
+# Compile Architecture "registro4" of Entity "registro4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\forwardunit.vhd
+# Compile Entity "forwardunit"
+# Entity `forwardunit' has been skipped - no difference detected.
+# Compile Architecture "forwardunit" of Entity "forwardunit"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\zero.vhd
+# Compile Entity "zero"
+# Entity `zero' has been skipped - no difference detected.
+# Compile Architecture "zero" of Entity "zero"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\branch_control.vhd
+# Compile Entity "branch_control"
+# Entity `branch_control' has been skipped - no difference detected.
+# Compile Architecture "branch_control" of Entity "branch_control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\burbuja_instruccion.vhd
+# Compile Entity "burbuja_instruccion"
+# Entity `burbuja_instruccion' has been skipped - no difference detected.
+# Compile Architecture "burbuja_instruccion" of Entity "burbuja_instruccion"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\aluSumador.vhd
+# Compile Entity "aluSumador"
+# Entity `aluSumador' has been skipped - no difference detected.
+# Compile Architecture "aluSumador" of Entity "aluSumador"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\hazard.vhd
+# Compile Entity "hazard"
+# Entity `hazard' has been skipped - no difference detected.
+# Compile Architecture "hazard" of Entity "hazard"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\mux32.vhd
+# Compile Entity "mux32"
+# Entity `mux32' has been skipped - no difference detected.
+# Compile Architecture "mux32" of Entity "mux32"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+endsim
+# Simulation has been stopped
+asim -advdataflow  -retry 3  forward forward
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2562 kB (elbread=1071 elab2=1285 kernel=206 sdf=0)
+# 11:31, viernes, 06 de enero de 2023
+# Simulation has been initialized
+# Selected Top-Level: forward (forward)
+run @50ns
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U2.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U29.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U9.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U29.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U30.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 2,  Instance: /U30.
+# KERNEL: stopped at time: 50 ns
+acom $DSN/src/pc.vhd $DSN/src/alu.vhd $DSN/src/control.vhd $DSN/src/add4.vhd $DSN/src/entension12.vhd $DSN/src/extension.vhd $DSN/src/extension2.vhd $DSN/src/extensionjal.vhd $DSN/src/memoriadatos.vhd $DSN/src/memoriadeinstrucciones.vhd $DSN/src/regfile.vhd $DSN/src/sumador.vhd $DSN/src/forward.bde $DSN/src/if_id.vhd $DSN/src/muxescogedor.vhd $DSN/src/muxentradaalu.vhd $DSN/src/registro2.vhd $DSN/src/registro3.vhd $DSN/src/registro4.vhd $DSN/src/forwardunit.vhd $DSN/src/zero.vhd $DSN/src/branch_control.vhd $DSN/src/burbuja_instruccion.vhd $DSN/src/alusumador.vhd $DSN/src/hazard.vhd $DSN/src/mux32.vhd
+# Compile...
+# DRC: Checking file 'Z:\forwardUltimate\forward\forwardUnit\src\forward.bde'.
+# DRC: Warning: forward.bde - 0 error(s), 3 warning(s)
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating Z:\forwardUltimate\forward\forwardUnit\compile\forward.vhd from Z:\forwardUltimate\forward\forwardUnit\src\forward.bde ...
+# Generation successful
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Entity `pc' has been skipped - no difference detected.
+# Compile Architecture "pc" of Entity "pc"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\alu.vhd
+# Compile Entity "alu"
+# Entity `alu' has been skipped - no difference detected.
+# Compile Architecture "alu" of Entity "alu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\control.vhd
+# Compile Entity "control"
+# Entity `control' has been skipped - no difference detected.
+# Compile Architecture "control" of Entity "control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\add4.vhd
+# Compile Entity "add4"
+# Entity `add4' has been skipped - no difference detected.
+# Compile Architecture "add4" of Entity "add4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\entension12.vhd
+# Compile Entity "entension12"
+# Entity `entension12' has been skipped - no difference detected.
+# Compile Architecture "entension12" of Entity "entension12"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension.vhd
+# Compile Entity "extension"
+# Entity `extension' has been skipped - no difference detected.
+# Compile Architecture "extension" of Entity "extension"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension2.vhd
+# Compile Entity "extension2"
+# Entity `extension2' has been skipped - no difference detected.
+# Compile Architecture "extension2" of Entity "extension2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extensionjal.vhd
+# Compile Entity "extensionjal"
+# Entity `extensionjal' has been skipped - no difference detected.
+# Compile Architecture "extensionjal" of Entity "extensionjal"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriaDatos.vhd
+# Compile Entity "memoriaDatos"
+# Entity `memoriaDatos' has been skipped - no difference detected.
+# Compile Architecture "memoriaDatos" of Entity "memoriaDatos"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriadeinstrucciones.vhd
+# Compile Entity "memoriadeinstrucciones"
+# Entity `memoriadeinstrucciones' has been skipped - no difference detected.
+# Compile Architecture "memoriadeinstrucciones" of Entity "memoriadeinstrucciones"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\regfile.vhd
+# Compile Entity "regfile"
+# Entity `regfile' has been skipped - no difference detected.
+# Compile Architecture "regfile" of Entity "regfile"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\sumador.vhd
+# Compile Entity "sumador"
+# Entity `sumador' has been skipped - no difference detected.
+# Compile Architecture "sumador" of Entity "sumador"
+# File: .\forward.vhd
+# Compile Entity "forward"
+# Entity `forward' has been skipped - no difference detected.
+# Compile Architecture "forward" of Entity "forward"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\IF_ID.vhd
+# Compile Entity "IF_ID"
+# Entity `IF_ID' has been skipped - no difference detected.
+# Compile Architecture "IF_ID" of Entity "IF_ID"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEscogedor.vhd
+# Compile Entity "muxEscogedor"
+# Entity `muxEscogedor' has been skipped - no difference detected.
+# Compile Architecture "muxEscogedor" of Entity "muxEscogedor"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEntradaAlu.vhd
+# Compile Entity "muxEntradaAlu"
+# Entity `muxEntradaAlu' has been skipped - no difference detected.
+# Compile Architecture "muxEntradaAlu" of Entity "muxEntradaAlu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro2.vhd
+# Compile Entity "registro2"
+# Entity `registro2' has been skipped - no difference detected.
+# Compile Architecture "registro2" of Entity "registro2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro3.vhd
+# Compile Entity "registro3"
+# Entity `registro3' has been skipped - no difference detected.
+# Compile Architecture "registro3" of Entity "registro3"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro4.vhd
+# Compile Entity "registro4"
+# Entity `registro4' has been skipped - no difference detected.
+# Compile Architecture "registro4" of Entity "registro4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\forwardunit.vhd
+# Compile Entity "forwardunit"
+# Entity `forwardunit' has been skipped - no difference detected.
+# Compile Architecture "forwardunit" of Entity "forwardunit"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\zero.vhd
+# Compile Entity "zero"
+# Entity `zero' has been skipped - no difference detected.
+# Compile Architecture "zero" of Entity "zero"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\branch_control.vhd
+# Compile Entity "branch_control"
+# Entity `branch_control' has been skipped - no difference detected.
+# Compile Architecture "branch_control" of Entity "branch_control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\burbuja_instruccion.vhd
+# Compile Entity "burbuja_instruccion"
+# Entity `burbuja_instruccion' has been skipped - no difference detected.
+# Compile Architecture "burbuja_instruccion" of Entity "burbuja_instruccion"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\aluSumador.vhd
+# Compile Entity "aluSumador"
+# Entity `aluSumador' has been skipped - no difference detected.
+# Compile Architecture "aluSumador" of Entity "aluSumador"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\hazard.vhd
+# Compile Entity "hazard"
+# Entity `hazard' has been skipped - no difference detected.
+# Compile Architecture "hazard" of Entity "hazard"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\mux32.vhd
+# Compile Entity "mux32"
+# Entity `mux32' has been skipped - no difference detected.
+# Compile Architecture "mux32" of Entity "mux32"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+endsim
+# Simulation has been stopped
+asim -advdataflow  -retry 3  forward forward
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2562 kB (elbread=1071 elab2=1285 kernel=206 sdf=0)
+# 11:32, viernes, 06 de enero de 2023
+# Simulation has been initialized
+# Selected Top-Level: forward (forward)
+run @50ns
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U12.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U2.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U20.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U29.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U3.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U30.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# : Time: 0 ps,  Iteration: 0,  Instance: /U5.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U8.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 0,  Instance: /U9.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U29.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 1,  Instance: /U30.
+# : WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# : Time: 0 ps,  Iteration: 2,  Instance: /U30.
+# KERNEL: stopped at time: 50 ns
+run @100ns
+# KERNEL: stopped at time: 100 ns
+endsim
+# Simulation has been stopped
+acom $DSN/src/PC.vhd
+# Compile...
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Compile Architecture "pc" of Entity "pc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+# Updating instances of symbol 'pc' from library 'forwardUnit' (U1)
+# Updating instances of symbol 'mux32' from library 'forwardUnit' (U26)
+# Updating instances of symbol 'hazard' from library 'forwardUnit' (U32)
+acom $DSN/src/pc.vhd $DSN/src/alu.vhd $DSN/src/control.vhd $DSN/src/add4.vhd $DSN/src/entension12.vhd $DSN/src/extension.vhd $DSN/src/extension2.vhd $DSN/src/extensionjal.vhd $DSN/src/memoriadatos.vhd $DSN/src/memoriadeinstrucciones.vhd $DSN/src/regfile.vhd $DSN/src/sumador.vhd $DSN/src/forward.bde $DSN/src/if_id.vhd $DSN/src/muxescogedor.vhd $DSN/src/muxentradaalu.vhd $DSN/src/registro2.vhd $DSN/src/registro3.vhd $DSN/src/registro4.vhd $DSN/src/forwardunit.vhd $DSN/src/zero.vhd $DSN/src/branch_control.vhd $DSN/src/burbuja_instruccion.vhd $DSN/src/alusumador.vhd $DSN/src/hazard.vhd $DSN/src/mux32.vhd
+# Compile...
+# DRC: Checking file 'Z:\forwardUltimate\forward\forwardUnit\src\forward.bde'.
+# DRC: Warning: forward.bde - 0 error(s), 4 warning(s)
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating Z:\forwardUltimate\forward\forwardUnit\compile\forward.vhd from Z:\forwardUltimate\forward\forwardUnit\src\forward.bde ...
+# Generation successful
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Entity `pc' has been skipped - no difference detected.
+# Compile Architecture "pc" of Entity "pc"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\alu.vhd
+# Compile Entity "alu"
+# Entity `alu' has been skipped - no difference detected.
+# Compile Architecture "alu" of Entity "alu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\control.vhd
+# Compile Entity "control"
+# Entity `control' has been skipped - no difference detected.
+# Compile Architecture "control" of Entity "control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\add4.vhd
+# Compile Entity "add4"
+# Entity `add4' has been skipped - no difference detected.
+# Compile Architecture "add4" of Entity "add4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\entension12.vhd
+# Compile Entity "entension12"
+# Entity `entension12' has been skipped - no difference detected.
+# Compile Architecture "entension12" of Entity "entension12"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension.vhd
+# Compile Entity "extension"
+# Entity `extension' has been skipped - no difference detected.
+# Compile Architecture "extension" of Entity "extension"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension2.vhd
+# Compile Entity "extension2"
+# Entity `extension2' has been skipped - no difference detected.
+# Compile Architecture "extension2" of Entity "extension2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extensionjal.vhd
+# Compile Entity "extensionjal"
+# Entity `extensionjal' has been skipped - no difference detected.
+# Compile Architecture "extensionjal" of Entity "extensionjal"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriaDatos.vhd
+# Compile Entity "memoriaDatos"
+# Entity `memoriaDatos' has been skipped - no difference detected.
+# Compile Architecture "memoriaDatos" of Entity "memoriaDatos"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriadeinstrucciones.vhd
+# Compile Entity "memoriadeinstrucciones"
+# Entity `memoriadeinstrucciones' has been skipped - no difference detected.
+# Compile Architecture "memoriadeinstrucciones" of Entity "memoriadeinstrucciones"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\regfile.vhd
+# Compile Entity "regfile"
+# Entity `regfile' has been skipped - no difference detected.
+# Compile Architecture "regfile" of Entity "regfile"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\sumador.vhd
+# Compile Entity "sumador"
+# Entity `sumador' has been skipped - no difference detected.
+# Compile Architecture "sumador" of Entity "sumador"
+# File: .\forward.vhd
+# Compile Entity "forward"
+# Entity `forward' has been skipped - no difference detected.
+# Compile Architecture "forward" of Entity "forward"
+# Error: COMP96_0117: forward.bde(forward.vhd) : (301, 12): Array type for "z" is not constrained.
+# Error: COMP96_0100: forward.bde(forward.vhd) : (373, 8): Actual parameter type in port map does not match the port formal type "salidard".
+# Error: COMP96_0100: forward.bde(forward.vhd) : (430, 8): Actual parameter type in port map does not match the port formal type "entradard".
+# File: Z:\forwardUltimate\forward\forwardUnit\src\IF_ID.vhd
+# Compile Entity "IF_ID"
+# Entity `IF_ID' has been skipped - no difference detected.
+# Compile Architecture "IF_ID" of Entity "IF_ID"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEscogedor.vhd
+# Compile Entity "muxEscogedor"
+# Entity `muxEscogedor' has been skipped - no difference detected.
+# Compile Architecture "muxEscogedor" of Entity "muxEscogedor"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEntradaAlu.vhd
+# Compile Entity "muxEntradaAlu"
+# Entity `muxEntradaAlu' has been skipped - no difference detected.
+# Compile Architecture "muxEntradaAlu" of Entity "muxEntradaAlu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro2.vhd
+# Compile Entity "registro2"
+# Entity `registro2' has been skipped - no difference detected.
+# Compile Architecture "registro2" of Entity "registro2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro3.vhd
+# Compile Entity "registro3"
+# Entity `registro3' has been skipped - no difference detected.
+# Compile Architecture "registro3" of Entity "registro3"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro4.vhd
+# Compile Entity "registro4"
+# Entity `registro4' has been skipped - no difference detected.
+# Compile Architecture "registro4" of Entity "registro4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\forwardunit.vhd
+# Compile Entity "forwardunit"
+# Entity `forwardunit' has been skipped - no difference detected.
+# Compile Architecture "forwardunit" of Entity "forwardunit"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\zero.vhd
+# Compile Entity "zero"
+# Entity `zero' has been skipped - no difference detected.
+# Compile Architecture "zero" of Entity "zero"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\branch_control.vhd
+# Compile Entity "branch_control"
+# Entity `branch_control' has been skipped - no difference detected.
+# Compile Architecture "branch_control" of Entity "branch_control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\burbuja_instruccion.vhd
+# Compile Entity "burbuja_instruccion"
+# Entity `burbuja_instruccion' has been skipped - no difference detected.
+# Compile Architecture "burbuja_instruccion" of Entity "burbuja_instruccion"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\aluSumador.vhd
+# Compile Entity "aluSumador"
+# Entity `aluSumador' has been skipped - no difference detected.
+# Compile Architecture "aluSumador" of Entity "aluSumador"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\hazard.vhd
+# Compile Entity "hazard"
+# Entity `hazard' has been skipped - no difference detected.
+# Compile Architecture "hazard" of Entity "hazard"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\mux32.vhd
+# Compile Entity "mux32"
+# Entity `mux32' has been skipped - no difference detected.
+# Compile Architecture "mux32" of Entity "mux32"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom $DSN/src/pc.vhd $DSN/src/alu.vhd $DSN/src/control.vhd $DSN/src/add4.vhd $DSN/src/entension12.vhd $DSN/src/extension.vhd $DSN/src/extension2.vhd $DSN/src/extensionjal.vhd $DSN/src/memoriadatos.vhd $DSN/src/memoriadeinstrucciones.vhd $DSN/src/regfile.vhd $DSN/src/sumador.vhd $DSN/src/forward.bde $DSN/src/if_id.vhd $DSN/src/muxescogedor.vhd $DSN/src/muxentradaalu.vhd $DSN/src/registro2.vhd $DSN/src/registro3.vhd $DSN/src/registro4.vhd $DSN/src/forwardunit.vhd $DSN/src/zero.vhd $DSN/src/branch_control.vhd $DSN/src/burbuja_instruccion.vhd $DSN/src/alusumador.vhd $DSN/src/hazard.vhd $DSN/src/mux32.vhd
+# Compile...
+# DRC: Checking file 'Z:\forwardUltimate\forward\forwardUnit\src\forward.bde'.
+# DRC: Warning: forward.bde - 0 error(s), 2 warning(s)
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating Z:\forwardUltimate\forward\forwardUnit\compile\forward.vhd from Z:\forwardUltimate\forward\forwardUnit\src\forward.bde ...
+# Generation successful
+# File: Z:\forwardUltimate\forward\forwardUnit\src\PC.vhd
+# Compile Entity "pc"
+# Entity `pc' has been skipped - no difference detected.
+# Compile Architecture "pc" of Entity "pc"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\alu.vhd
+# Compile Entity "alu"
+# Entity `alu' has been skipped - no difference detected.
+# Compile Architecture "alu" of Entity "alu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\control.vhd
+# Compile Entity "control"
+# Entity `control' has been skipped - no difference detected.
+# Compile Architecture "control" of Entity "control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\add4.vhd
+# Compile Entity "add4"
+# Entity `add4' has been skipped - no difference detected.
+# Compile Architecture "add4" of Entity "add4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\entension12.vhd
+# Compile Entity "entension12"
+# Entity `entension12' has been skipped - no difference detected.
+# Compile Architecture "entension12" of Entity "entension12"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension.vhd
+# Compile Entity "extension"
+# Entity `extension' has been skipped - no difference detected.
+# Compile Architecture "extension" of Entity "extension"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extension2.vhd
+# Compile Entity "extension2"
+# Entity `extension2' has been skipped - no difference detected.
+# Compile Architecture "extension2" of Entity "extension2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\extensionjal.vhd
+# Compile Entity "extensionjal"
+# Entity `extensionjal' has been skipped - no difference detected.
+# Compile Architecture "extensionjal" of Entity "extensionjal"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriaDatos.vhd
+# Compile Entity "memoriaDatos"
+# Entity `memoriaDatos' has been skipped - no difference detected.
+# Compile Architecture "memoriaDatos" of Entity "memoriaDatos"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\memoriadeinstrucciones.vhd
+# Compile Entity "memoriadeinstrucciones"
+# Entity `memoriadeinstrucciones' has been skipped - no difference detected.
+# Compile Architecture "memoriadeinstrucciones" of Entity "memoriadeinstrucciones"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\regfile.vhd
+# Compile Entity "regfile"
+# Entity `regfile' has been skipped - no difference detected.
+# Compile Architecture "regfile" of Entity "regfile"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\sumador.vhd
+# Compile Entity "sumador"
+# Entity `sumador' has been skipped - no difference detected.
+# Compile Architecture "sumador" of Entity "sumador"
+# File: .\forward.vhd
+# Compile Entity "forward"
+# Entity `forward' has been skipped - no difference detected.
+# Compile Architecture "forward" of Entity "forward"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\IF_ID.vhd
+# Compile Entity "IF_ID"
+# Entity `IF_ID' has been skipped - no difference detected.
+# Compile Architecture "IF_ID" of Entity "IF_ID"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEscogedor.vhd
+# Compile Entity "muxEscogedor"
+# Entity `muxEscogedor' has been skipped - no difference detected.
+# Compile Architecture "muxEscogedor" of Entity "muxEscogedor"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\muxEntradaAlu.vhd
+# Compile Entity "muxEntradaAlu"
+# Entity `muxEntradaAlu' has been skipped - no difference detected.
+# Compile Architecture "muxEntradaAlu" of Entity "muxEntradaAlu"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro2.vhd
+# Compile Entity "registro2"
+# Entity `registro2' has been skipped - no difference detected.
+# Compile Architecture "registro2" of Entity "registro2"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro3.vhd
+# Compile Entity "registro3"
+# Entity `registro3' has been skipped - no difference detected.
+# Compile Architecture "registro3" of Entity "registro3"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\registro4.vhd
+# Compile Entity "registro4"
+# Entity `registro4' has been skipped - no difference detected.
+# Compile Architecture "registro4" of Entity "registro4"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\forwardunit.vhd
+# Compile Entity "forwardunit"
+# Entity `forwardunit' has been skipped - no difference detected.
+# Compile Architecture "forwardunit" of Entity "forwardunit"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\zero.vhd
+# Compile Entity "zero"
+# Entity `zero' has been skipped - no difference detected.
+# Compile Architecture "zero" of Entity "zero"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\branch_control.vhd
+# Compile Entity "branch_control"
+# Entity `branch_control' has been skipped - no difference detected.
+# Compile Architecture "branch_control" of Entity "branch_control"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\burbuja_instruccion.vhd
+# Compile Entity "burbuja_instruccion"
+# Entity `burbuja_instruccion' has been skipped - no difference detected.
+# Compile Architecture "burbuja_instruccion" of Entity "burbuja_instruccion"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\aluSumador.vhd
+# Compile Entity "aluSumador"
+# Entity `aluSumador' has been skipped - no difference detected.
+# Compile Architecture "aluSumador" of Entity "aluSumador"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\hazard.vhd
+# Compile Entity "hazard"
+# Entity `hazard' has been skipped - no difference detected.
+# Compile Architecture "hazard" of Entity "hazard"
+# File: Z:\forwardUltimate\forward\forwardUnit\src\mux32.vhd
+# Compile Entity "mux32"
+# Entity `mux32' has been skipped - no difference detected.
+# Compile Architecture "mux32" of Entity "mux32"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]

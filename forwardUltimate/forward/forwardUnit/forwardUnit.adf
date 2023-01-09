@@ -1,0 +1,94 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=forwardUnit
+
+[Library]
+forwardUnit=.\forwardUnit.lib
+
+[$LibMap$]
+forwardUnit=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=forward|forward|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/pc.vhd=-1
+/alu.vhd=-1
+/control.vhd=-1
+/add4.vhd=-1
+/entension12.vhd=-1
+/extension.vhd=-1
+/extension2.vhd=-1
+/extensionjal.vhd=-1
+/memoriaDatos.vhd=-1
+/memoriadeinstrucciones.vhd=-1
+/regfile.vhd=-1
+/sumador.vhd=-1
+/forward.bde=-1
+/IF_ID.vhd=-1
+/muxEscogedor.vhd=-1
+/muxEntradaAlu.vhd=-1
+/registro2.vhd=-1
+/registro3.vhd=-1
+/registro4.vhd=-1
+/forwardunit.vhd=-1
+/Waveform Editor 1.awf=-1
+/zero.vhd=-1
+/branch_control.vhd=-1
+/burbuja_instruccion.vhd=-1
+/aluSumador.vhd=-1
+/hazard.vhd=-1
+/mux32.vhd=-1
+
+[Files.Data]
+.\src\pc.vhd=VHDL Source Code
+.\src\alu.vhd=VHDL Source Code
+.\src\control.vhd=VHDL Source Code
+.\src\add4.vhd=VHDL Source Code
+.\src\entension12.vhd=VHDL Source Code
+.\src\extension.vhd=VHDL Source Code
+.\src\extension2.vhd=VHDL Source Code
+.\src\extensionjal.vhd=VHDL Source Code
+.\src\memoriaDatos.vhd=VHDL Source Code
+.\src\memoriadeinstrucciones.vhd=VHDL Source Code
+.\src\regfile.vhd=VHDL Source Code
+.\src\sumador.vhd=VHDL Source Code
+.\src\forward.bde=Block Diagram
+.\src\IF_ID.vhd=VHDL Source Code
+.\src\muxEscogedor.vhd=VHDL Source Code
+.\src\muxEntradaAlu.vhd=VHDL Source Code
+.\src\registro2.vhd=VHDL Source Code
+.\src\registro3.vhd=VHDL Source Code
+.\src\registro4.vhd=VHDL Source Code
+.\src\forwardunit.vhd=VHDL Source Code
+.\src\Waveform Editor 1.awf=Waveform File
+.\src\zero.vhd=VHDL Source Code
+.\src\branch_control.vhd=VHDL Source Code
+.\src\burbuja_instruccion.vhd=VHDL Source Code
+.\src\aluSumador.vhd=VHDL Source Code
+.\src\hazard.vhd=VHDL Source Code
+.\src\mux32.vhd=VHDL Source Code
+.\compile\forward.vhd=VHDL Source Code
+
+[file_out:/forward.bde]
+/\compile\forward.vhd=-1

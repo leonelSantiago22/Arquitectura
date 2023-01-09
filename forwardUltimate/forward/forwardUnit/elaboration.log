@@ -1,0 +1,39 @@
+elbread.dll ver. 1.0.5.325 Fri Jan 06 11:32:13 2023
+
+
+--------------------------------------------------------------
+Entity                  | Architecture           | Library  
+--------------------------------------------------------------
+forward                 | forward                | forwardUnit
+pc                      | pc                     | forwardunit
+registro2               | registro2              | forwardunit
+muxentradaalu           | muxentradaalu          | forwardunit
+control                 | control                | forwardunit
+registro3               | registro3              | forwardunit
+memoriadatos            | memoriadatos           | forwardunit
+registro4               | registro4              | forwardunit
+forwardunit             | forwardunit            | forwardunit
+add4                    | add4                   | forwardunit
+zero                    | zero                   | forwardunit
+branch_control          | branch_control         | forwardunit
+mux32                   | mux32                  | forwardunit
+burbuja_instruccion     | burbuja_instruccion    | forwardunit
+extension2              | extension2             | forwardunit
+alusumador              | alusumador             | forwardunit
+memoriadeinstrucciones  | memoriadeinstrucciones | forwardunit
+muxescogedor            | muxescogedor           | forwardunit
+hazard                  | hazard                 | forwardunit
+if_id                   | if_id                  | forwardunit
+regfile                 | regfile                | forwardunit
+extension               | extension              | forwardunit
+alu                     | alu                    | forwardunit
+--------------------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------
