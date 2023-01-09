@@ -30,10 +30,12 @@ begin
 				control<='0';
 		 	end if;		 
 		--jal
-		elsif (opcode = "1101111")then 
+		elsif (opcode = "1101111")then 	
+			control<='1';
 			controlSalida <="10";
 		--jalr 
-		elsif(opcode = "1100111") then 	
+		elsif(opcode = "1100111") then 	 
+			control<='1';
 			controlSalida<="01";
 		else 		  
 			control<='0';

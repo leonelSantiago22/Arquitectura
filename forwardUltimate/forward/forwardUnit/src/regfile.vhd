@@ -37,22 +37,19 @@ begin
 	process(clk,w,rd)
 	begin
 		if falling_edge(clk) and w = '1' then 
-			
-			if rs1 = rd then
-				r1 <= date;
-				r2 <= registros(conv_integer(rs2));
-			end if;
-			
-			if rs2 = rd then   
-				r2 <= date;
-				r1 <= registros(conv_integer(rs1));
-			end if;
-			
 			registros(conv_integer(rd)) <= date; 
-		end if;
-		
+		end if;	
 		r1 <= registros(conv_integer(rs1));
-		r2 <= registros(conv_integer(rs2));
+		if w = '1' and rs1 = rd then 
+				r1 <= date;
+			else 
+				r1 <= registros(conv_integer(rs1));
+		end if;
+		if w = '1' and rs2 = rd then 
+				r2 <= date;
+			else 
+				r2 <= registros(conv_integer(rs1));
+		end if;
 	end process;
 	 -- enter your statements here --
 

@@ -52,8 +52,7 @@ entity registro2 is
 		 salidamas4 : out STD_LOGIC_VECTOR(63 downto 0);
 		 salidamemtoreg: out STD_LOGIC;
 		 jalentrada: in STD_LOGIC;
-		 jalsalida: out STD_LOGIC;
-		 hazard: in STD_LOGIC
+		 jalsalida: out STD_LOGIC
 	     );
 end registro2;
 
@@ -61,8 +60,8 @@ end registro2;
 
 architecture registro2 of registro2 is
 begin
-	process(clk,reset,entradard,entradar1,entradar2,entradamas4,wb,read,write,entradaaluOP,entradamux, hazard)
-	begin 
+	process(clk,reset,entradard,entradar1,entradar2,entradamas4,wb,read,write,entradaaluOP,entradamux)
+	begin 			  
 		if reset = '1' then
 			 wbsalida<='0';
 			 writesalida<='0';
@@ -76,7 +75,6 @@ begin
 			 salidamemtoreg <= '0';
 			 jalsalida <='0';		   	
 		elsif rising_edge(clk) then	
-			if(hazard = '0') then 
 				 	 wbsalida<=wb;
 					 writesalida<=write;
 					 readsalida<=read;
@@ -88,14 +86,6 @@ begin
 					 salidamas4<=entradamas4;  
 					 salidamemtoreg <= entradamemtoreg;	
 					 jalsalida <= jalentrada;
-			else 
-				 wbsalida<='0';
-				 writesalida<='0';
-				 readsalida<='0';
-				 salidaaluOP<='0';
-				 salidamemtoreg <= '0';
-				 jalsalida <='0';	  
-			end if;
 			
 		end if;
 	end process;

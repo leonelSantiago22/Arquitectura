@@ -2,7 +2,7 @@ SCHM0102
 
 HEADER
 {
- FREEID 31577
+ FREEID 31916
  VARIABLES
  {
   #ARCHITECTURE="forward"
@@ -42,7 +42,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (280,163,460,198)
+     RECT (345,168,460,192)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -51,7 +51,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-220,63,11,98)
+     RECT (-220,68,-72,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 4
@@ -151,7 +151,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-180,43,19,78)
+     RECT (-180,48,-52,72)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -159,7 +159,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (242,143,400,178)
+     RECT (299,148,400,172)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -167,7 +167,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-180,203,19,238)
+     RECT (-180,208,-52,232)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -175,7 +175,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (143,-100,178,37)
+     RECT (148,-100,172,-14)
      ALIGN 1
      MARGINS (1,1)
      PARENT 10
@@ -278,15 +278,15 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1672966039"
+    #MODIFIED="1673018957"
    }
   }
   PAGE "" 
   {
    PAGEHEADER
    {
-    RECT (0,0,200,120)
-    FREEID 11
+    RECT (0,-60,200,120)
+    FREEID 12
    }
    
    BODY
@@ -294,7 +294,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (25,25,119,60)
+     RECT (-120,-52,-58,-28)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -302,7 +302,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (60,23,180,58)
+     RECT (221,-32,300,-8)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -310,14 +310,14 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (20,63,115,98)
+     RECT (-80,88,-17,112)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
     }
     GROUP  10, 2, 0
     {
-     RECT (20,0,179,120)
+     RECT (20,-60,173,116)
      VARIABLES
      {
       #NAME="ALU"
@@ -327,13 +327,13 @@ HEADER
      LINE  24, 0, 0
      {
       OUTLINE 0,2, (0,0,0)
-      POINTS ( (79,59), (0,44), (0,0), (158,29), (158,89), (0,119), (0,74), (79,59) )
+      POINTS ( (72,85), (0,63), (0,0), (152,40), (152,130), (0,175), (0,108), (72,85) )
       FILL (0,(206,150,255),0)
      }
     }
     PIN  2, 0, 0
     {
-     COORD (0,40)
+     COORD (0,-20)
      VARIABLES
      {
       #DIRECTION="IN"
@@ -341,6 +341,7 @@ HEADER
       #LENGTH="20"
       #NAME="a(63:0)"
       #NUMBER="0"
+      #SIDE="left"
      }
      LINE  2, 0, 0
      {
@@ -349,7 +350,7 @@ HEADER
     }
     PIN  4, 0, 0
     {
-     COORD (200,40)
+     COORD (200,20)
      VARIABLES
      {
       #DIRECTION="OUT"
@@ -357,6 +358,7 @@ HEADER
       #LENGTH="20"
       #NAME="res(63:0)"
       #NUMBER="0"
+      #SIDE="right"
      }
      LINE  2, 0, 0
      {
@@ -409,7 +411,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-120,-97,42,-62)
+     RECT (-120,-92,-14,-68)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -417,7 +419,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (223,63,320,98)
+     RECT (261,68,320,92)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -425,7 +427,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (200,-77,260,-42)
+     RECT (200,-72,239,-48)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -447,7 +449,7 @@ HEADER
     TEXT  17, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-280,43,-39,78)
+     RECT (-280,48,-130,72)
      ALIGN 4
      MARGINS (1,1)
      PARENT 16
@@ -533,7 +535,7 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1672962942"
+    #MODIFIED="1673296632"
    }
   }
   PAGE "" 
@@ -549,7 +551,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-18,-37,140,-2)
+     RECT (39,-32,140,-8)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -618,7 +620,7 @@ HEADER
       #DIRECTION="OUT"
       #DOWNTO="1"
       #LENGTH="20"
-      #NAME="salida(63:0)"
+      #NAME="salida(31:0)"
       #NUMBER="0"
       #SIDE="right"
      }
@@ -641,15 +643,15 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1672963429"
+    #MODIFIED="1673299459"
    }
   }
   PAGE "" 
   {
    PAGEHEADER
    {
-    RECT (0,0,300,520)
-    FREEID 51
+    RECT (0,0,300,560)
+    FREEID 55
    }
    
    BODY
@@ -657,7 +659,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (278,123,360,158)
+     RECT (306,128,360,152)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -665,7 +667,7 @@ HEADER
     TEXT  25, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-140,63,22,98)
+     RECT (-140,68,-34,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 24
@@ -673,7 +675,7 @@ HEADER
     TEXT  27, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-120,163,17,198)
+     RECT (-120,168,-32,192)
      ALIGN 4
      MARGINS (1,1)
      PARENT 26
@@ -681,7 +683,7 @@ HEADER
     TEXT  29, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-120,223,17,258)
+     RECT (-120,228,-32,252)
      ALIGN 4
      MARGINS (1,1)
      PARENT 28
@@ -689,7 +691,7 @@ HEADER
     TEXT  31, 0, 0
     {
      TEXT "$#NAME"
-     RECT (278,3,320,38)
+     RECT (294,8,320,32)
      ALIGN 6
      MARGINS (1,1)
      PARENT 30
@@ -697,7 +699,7 @@ HEADER
     TEXT  33, 0, 0
     {
      TEXT "$#NAME"
-     RECT (278,83,340,118)
+     RECT (300,88,340,112)
      ALIGN 6
      MARGINS (1,1)
      PARENT 32
@@ -705,7 +707,7 @@ HEADER
     TEXT  35, 0, 0
     {
      TEXT "$#NAME"
-     RECT (271,43,340,78)
+     RECT (299,48,340,72)
      ALIGN 6
      MARGINS (1,1)
      PARENT 34
@@ -713,7 +715,7 @@ HEADER
     TEXT  37, 0, 0
     {
      TEXT "$#NAME"
-     RECT (278,323,380,358)
+     RECT (313,328,380,352)
      ALIGN 6
      MARGINS (1,1)
      PARENT 36
@@ -721,7 +723,7 @@ HEADER
     TEXT  39, 0, 0
     {
      TEXT "$#NAME"
-     RECT (360,183,500,218)
+     RECT (411,188,500,212)
      ALIGN 6
      MARGINS (1,1)
      PARENT 38
@@ -730,7 +732,7 @@ HEADER
     TEXT  41, 0, 0
     {
      TEXT "$#NAME"
-     RECT (286,263,320,298)
+     RECT (300,268,320,292)
      ALIGN 6
      MARGINS (1,1)
      PARENT 40
@@ -742,7 +744,7 @@ HEADER
       #OUTLINE_FILLING="1"
      }
      OUTLINE 0,4, (0,0,0)
-     AREA (20,0,280,480)
+     AREA (20,20,280,482)
      FILL (0,(255,254,0),0)
     }
     TEXT  46, 0, 0
@@ -756,7 +758,7 @@ HEADER
     TEXT  48, 0, 0
     {
      TEXT "$#NAME"
-     RECT (223,385,275,420)
+     RECT (241,390,275,414)
      ALIGN 6
      MARGINS (1,1)
      PARENT 47
@@ -764,10 +766,27 @@ HEADER
     TEXT  50, 0, 0
     {
      TEXT "$#NAME"
-     RECT (223,425,275,460)
+     RECT (240,430,275,454)
      ALIGN 6
      MARGINS (1,1)
      PARENT 49
+    }
+    TEXT  52, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (146,25,170,51)
+     ALIGN 1
+     MARGINS (1,1)
+     PARENT 51
+     ORIENTATION 5
+    }
+    TEXT  54, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (249,470,275,494)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 53
     }
     PIN  4, 0, 0
     {
@@ -961,6 +980,37 @@ HEADER
       POINTS ( (0,0), (-20,0) )
      }
     }
+    PIN  51, 0, 0
+    {
+     COORD (160,0)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #NAME="we"
+      #NUMBER="0"
+      #SIDE="top"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (0,20) )
+     }
+    }
+    PIN  53, 0, 0
+    {
+     COORD (300,480)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #LENGTH="20"
+      #NAME="jalr"
+      #NUMBER="0"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (-20,0) )
+     }
+    }
    }
   }
  }
@@ -1001,7 +1051,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-160,63,20,98)
+     RECT (-160,68,-45,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -1009,7 +1059,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (362,63,520,98)
+     RECT (419,68,520,92)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -1085,7 +1135,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-100,-17,80,18)
+     RECT (-100,-12,15,12)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -1093,7 +1143,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (262,-17,420,18)
+     RECT (319,-12,420,12)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -1188,7 +1238,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (383,422,540,457)
+     RECT (442,427,540,451)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -1197,7 +1247,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-260,142,8,177)
+     RECT (-260,147,-93,171)
      ALIGN 4
      MARGINS (1,1)
      PARENT 10
@@ -1205,7 +1255,7 @@ HEADER
     TEXT  15, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-280,302,11,337)
+     RECT (-280,307,-98,331)
      ALIGN 4
      MARGINS (1,1)
      PARENT 14
@@ -1213,7 +1263,7 @@ HEADER
     TEXT  17, 0, 0
     {
      TEXT "$#NAME"
-     RECT (949,322,1140,357)
+     RECT (1019,327,1140,351)
      ALIGN 6
      MARGINS (1,1)
      PARENT 16
@@ -1222,7 +1272,7 @@ HEADER
     TEXT  19, 0, 0
     {
      TEXT "$#NAME"
-     RECT (933,182,1160,217)
+     RECT (1015,187,1160,211)
      ALIGN 6
      MARGINS (1,1)
      PARENT 18
@@ -1231,7 +1281,7 @@ HEADER
     TEXT  21, 0, 0
     {
      TEXT "$#NAME"
-     RECT (933,42,1160,77)
+     RECT (1015,47,1160,71)
      ALIGN 6
      MARGINS (1,1)
      PARENT 20
@@ -1375,7 +1425,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (390,43,480,78)
+     RECT (421,48,480,72)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -1384,7 +1434,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (183,263,260,298)
+     RECT (212,268,260,292)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -1393,7 +1443,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-160,63,2,98)
+     RECT (-160,68,-54,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -1401,7 +1451,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-100,-17,-10,18)
+     RECT (-100,-12,-42,12)
      ALIGN 4
      MARGINS (1,1)
      PARENT 8
@@ -1409,7 +1459,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-120,123,-16,158)
+     RECT (-120,128,-52,152)
      ALIGN 4
      MARGINS (1,1)
      PARENT 10
@@ -1417,7 +1467,7 @@ HEADER
     TEXT  13, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-100,183,4,218)
+     RECT (-100,188,-32,212)
      ALIGN 4
      MARGINS (1,1)
      PARENT 12
@@ -1565,7 +1615,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-200,1063,29,1098)
+     RECT (-200,1068,-58,1092)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -1573,7 +1623,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-2,1623,40,1658)
+     RECT (15,1628,40,1652)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -1582,7 +1632,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-160,83,24,118)
+     RECT (-160,88,-40,112)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -1590,7 +1640,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (198,23,360,58)
+     RECT (254,28,360,52)
      ALIGN 6
      MARGINS (1,1)
      PARENT 8
@@ -1598,7 +1648,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (210,1443,300,1478)
+     RECT (242,1448,300,1472)
      ALIGN 6
      MARGINS (1,1)
      PARENT 10
@@ -1606,7 +1656,7 @@ HEADER
     TEXT  13, 0, 0
     {
      TEXT "$#NAME"
-     RECT (171,1623,240,1658)
+     RECT (195,1628,240,1652)
      ALIGN 6
      MARGINS (1,1)
      PARENT 12
@@ -1615,7 +1665,7 @@ HEADER
     TEXT  15, 0, 0
     {
      TEXT "$#NAME"
-     RECT (216,383,320,418)
+     RECT (252,388,320,412)
      ALIGN 6
      MARGINS (1,1)
      PARENT 14
@@ -1623,7 +1673,7 @@ HEADER
     TEXT  17, 0, 0
     {
      TEXT "$#NAME"
-     RECT (216,443,320,478)
+     RECT (252,448,320,472)
      ALIGN 6
      MARGINS (1,1)
      PARENT 16
@@ -1631,7 +1681,7 @@ HEADER
     TEXT  19, 0, 0
     {
      TEXT "$#NAME"
-     RECT (216,203,480,238)
+     RECT (311,208,480,232)
      ALIGN 6
      MARGINS (1,1)
      PARENT 18
@@ -1639,7 +1689,7 @@ HEADER
     TEXT  21, 0, 0
     {
      TEXT "$#NAME"
-     RECT (203,63,340,98)
+     RECT (252,68,340,92)
      ALIGN 6
      MARGINS (1,1)
      PARENT 20
@@ -1647,7 +1697,7 @@ HEADER
     TEXT  23, 0, 0
     {
      TEXT "$#NAME"
-     RECT (211,663,420,698)
+     RECT (287,668,420,692)
      ALIGN 6
      MARGINS (1,1)
      PARENT 22
@@ -1655,7 +1705,7 @@ HEADER
     TEXT  25, 0, 0
     {
      TEXT "$#NAME"
-     RECT (203,103,340,138)
+     RECT (252,108,340,132)
      ALIGN 6
      MARGINS (1,1)
      PARENT 24
@@ -1675,7 +1725,7 @@ HEADER
     TEXT  35, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-80,383,31,418)
+     RECT (-80,388,-7,412)
      ALIGN 4
      MARGINS (1,1)
      PARENT 34
@@ -1683,7 +1733,7 @@ HEADER
     TEXT  37, 0, 0
     {
      TEXT "$#NAME"
-     RECT (209,1523,400,1558)
+     RECT (278,1528,400,1552)
      ALIGN 6
      MARGINS (1,1)
      PARENT 36
@@ -1691,7 +1741,7 @@ HEADER
     TEXT  39, 0, 0
     {
      TEXT "$#NAME"
-     RECT (140,-37,181,-2)
+     RECT (140,-32,166,-8)
      ALIGN 4
      MARGINS (1,1)
      PARENT 38
@@ -1986,7 +2036,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (158,583,200,618)
+     RECT (175,588,200,612)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -1995,7 +2045,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (462,123,620,158)
+     RECT (519,128,620,152)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -2003,7 +2053,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-220,103,4,138)
+     RECT (-220,108,-78,132)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -2011,7 +2061,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-260,283,14,318)
+     RECT (-260,288,-84,312)
      ALIGN 4
      MARGINS (1,1)
      PARENT 8
@@ -2019,7 +2069,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (180,-37,301,-2)
+     RECT (180,-32,254,-8)
      ALIGN 4
      MARGINS (1,1)
      PARENT 10
@@ -2027,7 +2077,7 @@ HEADER
     TEXT  13, 0, 0
     {
      TEXT "$#NAME"
-     RECT (0,-37,95,-2)
+     RECT (0,-32,58,-8)
      ALIGN 4
      MARGINS (1,1)
      PARENT 12
@@ -2325,7 +2375,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-160,43,44,78)
+     RECT (-160,48,-31,72)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -2333,7 +2383,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (352,43,620,78)
+     RECT (454,48,620,72)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -2529,7 +2579,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-80,203,14,238)
+     RECT (-80,208,-18,232)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -2537,7 +2587,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (182,143,340,178)
+     RECT (239,148,340,172)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -2545,7 +2595,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-80,83,15,118)
+     RECT (-80,88,-17,112)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -2553,7 +2603,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (120,-17,217,18)
+     RECT (120,-12,179,12)
      ALIGN 4
      MARGINS (1,1)
      PARENT 8
@@ -2677,7 +2727,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-80,143,14,178)
+     RECT (-80,148,-18,172)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -2685,7 +2735,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (142,83,300,118)
+     RECT (199,88,300,112)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -2693,7 +2743,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-80,43,15,78)
+     RECT (-80,48,-17,72)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -2701,7 +2751,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (100,-17,197,18)
+     RECT (100,-12,159,12)
      ALIGN 4
      MARGINS (1,1)
      PARENT 8
@@ -2825,7 +2875,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-100,63,-3,98)
+     RECT (-100,68,-35,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -2833,7 +2883,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (180,83,400,118)
+     RECT (259,88,400,112)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -2841,7 +2891,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-120,143,-23,178)
+     RECT (-120,148,-55,172)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -2849,7 +2899,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-100,223,-2,258)
+     RECT (-100,228,-34,252)
      ALIGN 4
      MARGINS (1,1)
      PARENT 8
@@ -2857,7 +2907,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (97,323,220,358)
+     RECT (144,328,220,352)
      ALIGN 6
      MARGINS (1,1)
      PARENT 10
@@ -2992,7 +3042,7 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1673016005"
+    #MODIFIED="1673299663"
    }
   }
   PAGE "" 
@@ -3018,7 +3068,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (143,158,178,200)
+     RECT (148,175,172,200)
      ALIGN 9
      MARGINS (1,1)
      PARENT 2
@@ -3027,7 +3077,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (182,23,340,58)
+     RECT (239,28,340,52)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -3035,7 +3085,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-160,23,20,58)
+     RECT (-160,28,-45,52)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -3043,7 +3093,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (3,151,38,220)
+     RECT (8,175,32,220)
      ALIGN 9
      MARGINS (1,1)
      PARENT 8
@@ -3060,18 +3110,10 @@ HEADER
     TEXT  16, 0, 0
     {
      TEXT "$#NAME"
-     RECT (160,-17,201,18)
+     RECT (160,-12,186,12)
      ALIGN 4
      MARGINS (1,1)
      PARENT 15
-    }
-    TEXT  18, 0, 0
-    {
-     TEXT "$#NAME"
-     RECT (-140,86,11,121)
-     ALIGN 4
-     MARGINS (1,1)
-     PARENT 17
     }
     PIN  2, 0, 0
     {
@@ -3155,23 +3197,6 @@ HEADER
       POINTS ( (0,0), (0,20) )
      }
     }
-    PIN  17, 0, 0
-    {
-     COORD (0,80)
-     VARIABLES
-     {
-      #DIRECTION="IN"
-      #DOWNTO="1"
-      #LENGTH="20"
-      #NAME="static(63:0)"
-      #NUMBER="0"
-      #SIDE="left"
-     }
-     LINE  2, 0, 0
-     {
-      POINTS ( (0,0), (20,0) )
-     }
-    }
    }
   }
  }
@@ -3212,7 +3237,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (258,303,300,338)
+     RECT (275,308,300,332)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -3221,7 +3246,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (255,43,360,78)
+     RECT (291,48,360,72)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -3229,7 +3254,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-36,363,100,398)
+     RECT (11,368,100,392)
      ALIGN 6
      MARGINS (1,1)
      PARENT 6
@@ -3238,7 +3263,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (255,203,360,238)
+     RECT (291,208,360,232)
      ALIGN 6
      MARGINS (1,1)
      PARENT 8
@@ -3246,7 +3271,7 @@ HEADER
     TEXT  13, 0, 0
     {
      TEXT "$#NAME"
-     RECT (140,-37,165,-2)
+     RECT (140,-32,155,-8)
      ALIGN 4
      MARGINS (1,1)
      PARENT 12
@@ -3254,7 +3279,7 @@ HEADER
     TEXT  15, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-100,-17,4,18)
+     RECT (-100,-12,-32,12)
      ALIGN 4
      MARGINS (1,1)
      PARENT 14
@@ -3262,7 +3287,7 @@ HEADER
     TEXT  17, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-80,63,24,98)
+     RECT (-80,68,-12,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 16
@@ -3270,7 +3295,7 @@ HEADER
     TEXT  19, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-80,203,10,238)
+     RECT (-80,208,-22,232)
      ALIGN 4
      MARGINS (1,1)
      PARENT 18
@@ -3515,7 +3540,7 @@ HEADER
 "library IEEE;\n"+
 "use ieee.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1673017035"
+    #MODIFIED="1673299543"
    }
   }
   PAGE "" 
@@ -3541,7 +3566,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-22,1763,20,1798)
+     RECT (-5,1768,20,1792)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -3550,7 +3575,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (178,103,320,138)
+     RECT (231,108,320,132)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -3558,7 +3583,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-160,143,24,178)
+     RECT (-160,148,-43,172)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -3566,7 +3591,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (178,143,340,178)
+     RECT (237,148,340,172)
      ALIGN 6
      MARGINS (1,1)
      PARENT 8
@@ -3574,7 +3599,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-240,303,13,338)
+     RECT (-240,308,-78,332)
      ALIGN 4
      MARGINS (1,1)
      PARENT 10
@@ -3582,7 +3607,7 @@ HEADER
     TEXT  13, 0, 0
     {
      TEXT "$#NAME"
-     RECT (189,263,420,298)
+     RECT (272,268,420,292)
      ALIGN 6
      MARGINS (1,1)
      PARENT 12
@@ -3590,7 +3615,7 @@ HEADER
     TEXT  15, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-220,783,19,818)
+     RECT (-220,788,-70,812)
      ALIGN 4
      MARGINS (1,1)
      PARENT 14
@@ -3598,7 +3623,7 @@ HEADER
     TEXT  17, 0, 0
     {
      TEXT "$#NAME"
-     RECT (183,403,400,438)
+     RECT (264,408,400,432)
      ALIGN 6
      MARGINS (1,1)
      PARENT 16
@@ -3606,7 +3631,7 @@ HEADER
     TEXT  19, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-180,463,27,498)
+     RECT (-180,468,-48,492)
      ALIGN 4
      MARGINS (1,1)
      PARENT 18
@@ -3614,7 +3639,7 @@ HEADER
     TEXT  21, 0, 0
     {
      TEXT "$#NAME"
-     RECT (175,323,360,358)
+     RECT (242,328,360,352)
      ALIGN 6
      MARGINS (1,1)
      PARENT 20
@@ -3622,7 +3647,7 @@ HEADER
     TEXT  23, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-180,903,27,938)
+     RECT (-180,908,-48,932)
      ALIGN 4
      MARGINS (1,1)
      PARENT 22
@@ -3630,7 +3655,7 @@ HEADER
     TEXT  25, 0, 0
     {
      TEXT "$#NAME"
-     RECT (175,903,360,938)
+     RECT (242,908,360,932)
      ALIGN 6
      MARGINS (1,1)
      PARENT 24
@@ -3638,7 +3663,7 @@ HEADER
     TEXT  27, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-180,1543,12,1578)
+     RECT (-180,1548,-59,1572)
      ALIGN 4
      MARGINS (1,1)
      PARENT 26
@@ -3646,7 +3671,7 @@ HEADER
     TEXT  29, 0, 0
     {
      TEXT "$#NAME"
-     RECT (190,1543,360,1578)
+     RECT (253,1548,360,1572)
      ALIGN 6
      MARGINS (1,1)
      PARENT 28
@@ -3654,7 +3679,7 @@ HEADER
     TEXT  31, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-60,103,2,138)
+     RECT (-60,108,-20,132)
      ALIGN 4
      MARGINS (1,1)
      PARENT 30
@@ -3662,7 +3687,7 @@ HEADER
     TEXT  33, 0, 0
     {
      TEXT "$#NAME"
-     RECT (178,23,300,58)
+     RECT (225,28,300,52)
      ALIGN 6
      MARGINS (1,1)
      PARENT 32
@@ -3670,7 +3695,7 @@ HEADER
     TEXT  35, 0, 0
     {
      TEXT "$#NAME"
-     RECT (171,1763,240,1798)
+     RECT (195,1768,240,1792)
      ALIGN 6
      MARGINS (1,1)
      PARENT 34
@@ -3679,7 +3704,7 @@ HEADER
     TEXT  37, 0, 0
     {
      TEXT "$#NAME"
-     RECT (171,63,320,98)
+     RECT (230,68,320,92)
      ALIGN 6
      MARGINS (1,1)
      PARENT 36
@@ -3687,7 +3712,7 @@ HEADER
     TEXT  39, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-40,23,2,58)
+     RECT (-40,28,-14,52)
      ALIGN 4
      MARGINS (1,1)
      PARENT 38
@@ -3695,7 +3720,7 @@ HEADER
     TEXT  41, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-60,63,9,98)
+     RECT (-60,68,-19,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 40
@@ -3703,7 +3728,7 @@ HEADER
     TEXT  43, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-280,183,-38,218)
+     RECT (-280,188,-128,212)
      ALIGN 4
      MARGINS (1,1)
      PARENT 42
@@ -3711,7 +3736,7 @@ HEADER
     TEXT  45, 0, 0
     {
      TEXT "$#NAME"
-     RECT (240,183,460,218)
+     RECT (322,188,460,212)
      ALIGN 6
      MARGINS (1,1)
      PARENT 44
@@ -3719,7 +3744,7 @@ HEADER
     TEXT  47, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-140,223,-4,258)
+     RECT (-140,228,-57,252)
      ALIGN 4
      MARGINS (1,1)
      PARENT 46
@@ -3727,7 +3752,7 @@ HEADER
     TEXT  49, 0, 0
     {
      TEXT "$#NAME"
-     RECT (186,223,300,258)
+     RECT (231,228,300,252)
      ALIGN 6
      MARGINS (1,1)
      PARENT 48
@@ -3741,14 +3766,6 @@ HEADER
      OUTLINE 0,3, (0,0,0)
      AREA (91,19,171,1766)
      FILL (0,(218,176,255),0)
-    }
-    TEXT  56, 0, 0
-    {
-     TEXT "$#NAME"
-     RECT (160,-77,253,-42)
-     ALIGN 4
-     MARGINS (1,1)
-     PARENT 55
     }
     PIN  2, 0, 0
     {
@@ -4144,22 +4161,6 @@ HEADER
       POINTS ( (0,0), (-20,0) )
      }
     }
-    PIN  55, 0, 0
-    {
-     COORD (100,-40)
-     VARIABLES
-     {
-      #DIRECTION="IN"
-      #LENGTH="20"
-      #NAME="hazard"
-      #NUMBER="0"
-      #SIDE="top"
-     }
-     LINE  2, 0, 0
-     {
-      POINTS ( (0,0), (0,20) )
-     }
-    }
    }
   }
  }
@@ -4200,7 +4201,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-2,1703,40,1738)
+     RECT (15,1708,40,1732)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -4209,7 +4210,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (198,63,340,98)
+     RECT (251,68,340,92)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -4217,7 +4218,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-240,523,-19,558)
+     RECT (-240,528,-101,552)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -4225,7 +4226,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (181,463,380,498)
+     RECT (255,468,380,492)
      ALIGN 6
      MARGINS (1,1)
      PARENT 8
@@ -4233,7 +4234,7 @@ HEADER
     TEXT  19, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-180,1543,12,1578)
+     RECT (-180,1548,-59,1572)
      ALIGN 4
      MARGINS (1,1)
      PARENT 18
@@ -4241,7 +4242,7 @@ HEADER
     TEXT  21, 0, 0
     {
      TEXT "$#NAME"
-     RECT (190,1543,360,1578)
+     RECT (253,1548,360,1572)
      ALIGN 6
      MARGINS (1,1)
      PARENT 20
@@ -4249,7 +4250,7 @@ HEADER
     TEXT  23, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-60,103,2,138)
+     RECT (-60,108,-20,132)
      ALIGN 4
      MARGINS (1,1)
      PARENT 22
@@ -4257,7 +4258,7 @@ HEADER
     TEXT  25, 0, 0
     {
      TEXT "$#NAME"
-     RECT (178,23,300,58)
+     RECT (225,28,300,52)
      ALIGN 6
      MARGINS (1,1)
      PARENT 24
@@ -4265,7 +4266,7 @@ HEADER
     TEXT  27, 0, 0
     {
      TEXT "$#NAME"
-     RECT (191,1703,260,1738)
+     RECT (215,1708,260,1732)
      ALIGN 6
      MARGINS (1,1)
      PARENT 26
@@ -4274,7 +4275,7 @@ HEADER
     TEXT  29, 0, 0
     {
      TEXT "$#NAME"
-     RECT (191,103,340,138)
+     RECT (250,108,340,132)
      ALIGN 6
      MARGINS (1,1)
      PARENT 28
@@ -4282,7 +4283,7 @@ HEADER
     TEXT  31, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-140,23,4,58)
+     RECT (-140,28,-51,52)
      ALIGN 4
      MARGINS (1,1)
      PARENT 30
@@ -4290,7 +4291,7 @@ HEADER
     TEXT  33, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-60,63,9,98)
+     RECT (-60,68,-19,92)
      ALIGN 4
      MARGINS (1,1)
      PARENT 32
@@ -4298,7 +4299,7 @@ HEADER
     TEXT  35, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-200,883,7,918)
+     RECT (-200,888,-68,912)
      ALIGN 4
      MARGINS (1,1)
      PARENT 34
@@ -4306,7 +4307,7 @@ HEADER
     TEXT  37, 0, 0
     {
      TEXT "$#NAME"
-     RECT (195,823,380,858)
+     RECT (262,828,380,852)
      ALIGN 6
      MARGINS (1,1)
      PARENT 36
@@ -4314,7 +4315,7 @@ HEADER
     TEXT  39, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-300,183,-58,218)
+     RECT (-300,188,-148,212)
      ALIGN 4
      MARGINS (1,1)
      PARENT 38
@@ -4322,7 +4323,7 @@ HEADER
     TEXT  41, 0, 0
     {
      TEXT "$#NAME"
-     RECT (240,163,460,198)
+     RECT (322,168,460,192)
      ALIGN 6
      MARGINS (1,1)
      PARENT 40
@@ -4639,7 +4640,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-2,1843,40,1878)
+     RECT (15,1848,40,1872)
      ALIGN 6
      MARGINS (1,1)
      PARENT 2
@@ -4648,7 +4649,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (203,863,420,898)
+     RECT (282,868,420,892)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -4656,7 +4657,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-220,243,19,278)
+     RECT (-220,248,-68,272)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -4664,7 +4665,7 @@ HEADER
     TEXT  9, 0, 0
     {
      TEXT "$#NAME"
-     RECT (190,1583,360,1618)
+     RECT (253,1588,360,1612)
      ALIGN 6
      MARGINS (1,1)
      PARENT 8
@@ -4672,7 +4673,7 @@ HEADER
     TEXT  11, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-180,1583,12,1618)
+     RECT (-180,1588,-59,1612)
      ALIGN 4
      MARGINS (1,1)
      PARENT 10
@@ -4680,7 +4681,7 @@ HEADER
     TEXT  13, 0, 0
     {
      TEXT "$#NAME"
-     RECT (198,83,320,118)
+     RECT (245,88,320,112)
      ALIGN 6
      MARGINS (1,1)
      PARENT 12
@@ -4688,7 +4689,7 @@ HEADER
     TEXT  15, 0, 0
     {
      TEXT "$#NAME"
-     RECT (151,1843,220,1878)
+     RECT (175,1848,220,1872)
      ALIGN 6
      MARGINS (1,1)
      PARENT 14
@@ -4697,7 +4698,7 @@ HEADER
     TEXT  17, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-140,43,4,78)
+     RECT (-140,48,-51,72)
      ALIGN 4
      MARGINS (1,1)
      PARENT 16
@@ -4874,7 +4875,7 @@ HEADER
     TEXT  3, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-60,-17,34,18)
+     RECT (-60,-12,2,12)
      ALIGN 4
      MARGINS (1,1)
      PARENT 2
@@ -4882,7 +4883,7 @@ HEADER
     TEXT  5, 0, 0
     {
      TEXT "$#NAME"
-     RECT (120,-17,180,18)
+     RECT (141,-12,180,12)
      ALIGN 6
      MARGINS (1,1)
      PARENT 4
@@ -4890,7 +4891,7 @@ HEADER
     TEXT  7, 0, 0
     {
      TEXT "$#NAME"
-     RECT (-40,103,55,138)
+     RECT (-40,108,23,132)
      ALIGN 4
      MARGINS (1,1)
      PARENT 6
@@ -4991,8 +4992,8 @@ PAGE ""
     #REFERENCE="U1"
     #SYMBOL="pc"
    }
-   COORD (640,3020)
-   VERTEXES ( (2,26234), (4,26229), (6,30302), (8,26232), (17,30326), (15,31147) )
+   COORD (660,3060)
+   VERTEXES ( (6,31827), (8,31829), (2,31824), (15,31830), (4,31825) )
    PINPROP 15,"#PIN_STATE","0"
   }
   INSTANCE  10, 0, 0
@@ -5006,7 +5007,7 @@ PAGE ""
    }
    COORD (760,3220)
    ORIENTATION 6
-   VERTEXES ( (2,26235) )
+   VERTEXES ( (2,31823) )
   }
   TEXT  11, 0, 0
   {
@@ -5031,7 +5032,7 @@ PAGE ""
    }
    COORD (700,3240)
    ORIENTATION 6
-   VERTEXES ( (2,26233) )
+   VERTEXES ( (2,31828) )
   }
   TEXT  27, 0, 0
   {
@@ -5082,8 +5083,8 @@ PAGE ""
     #SYMBOL="IF_ID"
    }
    COORD (2240,2540)
-   VERTEXES ( (2,31115), (4,30479), (6,31199), (8,30585), (10,30411), (12,30477), (14,30403), (16,30405), (18,30407), (20,30426), (22,30488), (24,30423), (34,31038), (36,30552), (38,31149) )
-   PINPROP 6,"#PIN_STATE","0"
+   VERTEXES ( (2,31115), (4,30479), (6,31199), (8,30585), (10,30411), (12,30477), (14,30403), (16,30405), (18,30407), (20,30426), (22,30488), (24,30423), (34,31038), (38,31149), (36,31626) )
+   PINPROP 36,"#PIN_STATE","0"
   }
   INSTANCE  496, 0, 0
   {
@@ -5161,7 +5162,7 @@ PAGE ""
     #SYMBOL="registro2"
    }
    COORD (4600,2440)
-   VERTEXES ( (2,30481), (4,30447), (6,30419), (8,30455), (10,30408), (12,30461), (14,31390), (16,30453), (18,30555), (20,30451), (22,30445), (24,30449), (26,30412), (28,30501), (30,30417), (32,30470), (34,30483), (36,30577), (38,30413), (40,30415), (42,30544), (44,30545), (46,30421), (48,30459), (55,31350) )
+   VERTEXES ( (2,30481), (4,30447), (6,30419), (8,30455), (10,30408), (12,30461), (14,31390), (16,30453), (18,30555), (20,30451), (22,30445), (24,30449), (26,30412), (28,30501), (30,30417), (32,30470), (34,30483), (36,30577), (38,30413), (40,30415), (42,30544), (44,30545), (46,31716), (48,30459) )
    PINPROP 14,"#PIN_STATE","0"
   }
   INSTANCE  810, 0, 0
@@ -5190,8 +5191,8 @@ PAGE ""
     #SYMBOL="control"
    }
    COORD (2800,1920)
-   VERTEXES ( (24,30428), (26,30425), (28,30424), (30,30414), (34,30416), (32,30418), (4,30420), (38,30543), (40,30537), (47,30527), (49,30525), (36,31393) )
-   PINPROP 36,"#PIN_STATE","0"
+   VERTEXES ( (4,30420), (24,30428), (26,30425), (28,30424), (30,30414), (32,30418), (34,30416), (36,31393), (38,30543), (40,30537), (47,30527), (49,30525), (53,31715), (51,31723) )
+   PINPROP 51,"#PIN_STATE","0"
   }
   NET BUS  999, 0, 0
   NET BUS  1007, 0, 0
@@ -5307,7 +5308,7 @@ PAGE ""
   TEXT  4949, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3192,3085,3369,3120)
+   RECT (3209,3091,3352,3120)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30643
@@ -5315,7 +5316,7 @@ PAGE ""
   TEXT  4957, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3252,3485,3429,3520)
+   RECT (3269,3491,3412,3520)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30653
@@ -5323,7 +5324,7 @@ PAGE ""
   TEXT  4977, 0, 0
   {
    TEXT "$#NAME"
-   RECT (8427,2685,8604,2720)
+   RECT (8444,2691,8587,2720)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30825
@@ -5338,7 +5339,7 @@ PAGE ""
   TEXT  4982, 0, 0
   {
    TEXT "$#NAME"
-   RECT (6272,3005,6449,3040)
+   RECT (6289,3011,6431,3040)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30686
@@ -5346,7 +5347,7 @@ PAGE ""
   TEXT  5292, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3192,3005,3369,3040)
+   RECT (3209,3011,3351,3040)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30642
@@ -5354,7 +5355,7 @@ PAGE ""
   TEXT  5300, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3252,3405,3429,3440)
+   RECT (3269,3411,3411,3440)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30652
@@ -5449,7 +5450,7 @@ PAGE ""
   TEXT  12166, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2560,3025,2681,3060)
+   RECT (2571,3031,2670,3060)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30597
@@ -5464,7 +5465,7 @@ PAGE ""
   TEXT  12847, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2560,2965,2681,3000)
+   RECT (2571,2971,2670,3000)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30596
@@ -5472,7 +5473,7 @@ PAGE ""
   TEXT  12856, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2760,5085,2881,5120)
+   RECT (2771,5091,2870,5120)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26560
@@ -5480,7 +5481,7 @@ PAGE ""
   TEXT  12968, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2780,5605,2901,5640)
+   RECT (2791,5611,2890,5640)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26563
@@ -5495,7 +5496,7 @@ PAGE ""
   TEXT  16894, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3499,3184,3642,3219)
+   RECT (3512,3190,3629,3219)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30641
@@ -5510,7 +5511,7 @@ PAGE ""
   TEXT  16903, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3149,5465,3292,5500)
+   RECT (3162,5471,3279,5500)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26569
@@ -5518,7 +5519,7 @@ PAGE ""
   TEXT  16955, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3529,3605,3672,3640)
+   RECT (3542,3611,3659,3640)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30650
@@ -5585,7 +5586,7 @@ PAGE ""
   TEXT  22277, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2769,5225,2912,5260)
+   RECT (2782,5231,2899,5260)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26559
@@ -5593,7 +5594,7 @@ PAGE ""
   TEXT  22285, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2769,5745,2912,5780)
+   RECT (2782,5751,2899,5780)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26564
@@ -5608,7 +5609,7 @@ PAGE ""
   TEXT  23032, 0, 0
   {
    TEXT "$#NAME"
-   RECT (7644,2545,7757,2580)
+   RECT (7655,2551,7746,2580)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30690
@@ -5616,7 +5617,7 @@ PAGE ""
   TEXT  23053, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3863,5105,3976,5140)
+   RECT (3874,5111,3965,5140)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26562
@@ -5624,7 +5625,7 @@ PAGE ""
   TEXT  23061, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3864,5625,3977,5660)
+   RECT (3875,5631,3966,5660)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26566
@@ -5639,7 +5640,7 @@ PAGE ""
   TEXT  23081, 0, 0
   {
    TEXT "$#NAME"
-   RECT (5884,2425,5974,2460)
+   RECT (5892,2431,5966,2460)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30695
@@ -5647,7 +5648,7 @@ PAGE ""
   TEXT  23093, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3874,5265,3964,5300)
+   RECT (3882,5271,3956,5300)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26561
@@ -5655,7 +5656,7 @@ PAGE ""
   TEXT  23101, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3875,5785,3965,5820)
+   RECT (3883,5791,3957,5820)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26565
@@ -5664,7 +5665,7 @@ PAGE ""
   TEXT  23966, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3156,4884,3299,4919)
+   RECT (3169,4890,3286,4919)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26572
@@ -5749,7 +5750,7 @@ PAGE ""
   TEXT  24874, 0, 0
   {
    TEXT "$#NAME"
-   RECT (5599,4044,5742,4079)
+   RECT (5612,4050,5729,4079)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30751
@@ -5764,7 +5765,7 @@ PAGE ""
   TEXT  24883, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2757,5365,2923,5400)
+   RECT (2773,5371,2907,5400)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26629
@@ -5772,7 +5773,7 @@ PAGE ""
   TEXT  24891, 0, 0
   {
    TEXT "$#NAME"
-   RECT (2737,5885,2903,5920)
+   RECT (2753,5891,2887,5920)
    ALIGN 9
    MARGINS (1,1)
    PARENT 26630
@@ -5780,7 +5781,7 @@ PAGE ""
   TEXT  24904, 0, 0
   {
    TEXT "$#NAME"
-   RECT (7457,4045,7623,4080)
+   RECT (7473,4051,7607,4080)
    ALIGN 9
    MARGINS (1,1)
    PARENT 30756
@@ -5911,8 +5912,8 @@ PAGE ""
     #SYMBOL="branch_control"
    }
    COORD (1300,2100)
-   VERTEXES ( (16,28832), (4,31195), (6,31462), (2,31514) )
-   PINPROP 2,"#PIN_STATE","0"
+   VERTEXES ( (4,31195), (6,31462), (2,31514), (16,31745) )
+   PINPROP 16,"#PIN_STATE","0"
   }
   NET BUS  25288, 0, 0
   NET WIRE  25300, 0, 0
@@ -5975,7 +5976,7 @@ PAGE ""
     #SYMBOL="alusumador"
    }
    COORD (4220,4080)
-   VERTEXES ( (2,30563), (6,30554), (4,30566) )
+   VERTEXES ( (2,31583), (6,30554), (4,31741) )
    PINPROP 4,"#PIN_STATE","0"
   }
   INSTANCE  25575, 0, 0
@@ -5988,8 +5989,8 @@ PAGE ""
     #SYMBOL="alusumador"
    }
    COORD (4220,3840)
-   VERTEXES ( (2,30553), (6,30569), (4,30564) )
-   PINPROP 6,"#PIN_STATE","0"
+   VERTEXES ( (2,31627), (6,30569), (4,31743) )
+   PINPROP 4,"#PIN_STATE","0"
   }
   NET BUS  25580, 0, 0
   NET BUS  25651, 0, 0
@@ -6003,10 +6004,10 @@ PAGE ""
     #REFERENCE="U31"
     #SYMBOL="muxEscogedor"
    }
-   COORD (820,2760)
+   COORD (820,2800)
    ORIENTATION 5
-   VERTEXES ( (10,28831), (4,30303), (8,30565), (6,30567), (2,31169) )
-   PINPROP 2,"#PIN_STATE","0"
+   VERTEXES ( (10,31746), (8,31744), (6,31742), (2,31738), (4,31826) )
+   PINPROP 4,"#PIN_STATE","0"
   }
   NET BUS  25770, 0, 0
   NET BUS  25771, 0, 0
@@ -6029,7 +6030,7 @@ PAGE ""
   TEXT  26068, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3000,1785,3121,1820)
+   RECT (3011,1791,3110,1820)
    ALIGN 9
    MARGINS (1,1)
    PARENT 31311
@@ -6037,16 +6038,12 @@ PAGE ""
   TEXT  26072, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3000,1845,3121,1880)
+   RECT (3011,1851,3110,1880)
    ALIGN 9
    MARGINS (1,1)
    PARENT 31348
   }
   NET WIRE  26112, 0, 0
-  VTX  26229, 0, 0
-  {
-   COORD (840,3100)
-  }
   VTX  26230, 0, 0
   {
    COORD (1020,3100)
@@ -6054,22 +6051,6 @@ PAGE ""
   VTX  26231, 0, 0
   {
    COORD (1080,3100)
-  }
-  VTX  26232, 0, 0
-  {
-   COORD (700,3180)
-  }
-  VTX  26233, 0, 0
-  {
-   COORD (700,3240)
-  }
-  VTX  26234, 0, 0
-  {
-   COORD (760,3180)
-  }
-  VTX  26235, 0, 0
-  {
-   COORD (760,3220)
   }
   VTX  26280, 0, 0
   {
@@ -6169,19 +6150,8 @@ PAGE ""
   }
   BUS  26490, 0, 0
   {
-   NET 30325
+   NET 31820
    VTX 26231, 26230
-  }
-  WIRE  26491, 0, 0
-  {
-   NET 7806
-   VTX 26232, 26233
-  }
-  WIRE  26492, 0, 0
-  {
-   NET 7540
-   VTX 26234, 26235
-   OUTLINE 0,1, (223,138,87)
   }
   BUS  26559, 0, 0
   {
@@ -6313,38 +6283,6 @@ PAGE ""
     #NAMED="1"
    }
   }
-  VTX  28831, 0, 0
-  {
-   COORD (480,2840)
-  }
-  VTX  28832, 0, 0
-  {
-   COORD (1240,2180)
-  }
-  VTX  28833, 0, 0
-  {
-   COORD (440,2840)
-  }
-  BUS  28834, 0, 0
-  {
-   NET 25807
-   VTX 28831, 28833
-  }
-  VTX  28835, 0, 0
-  {
-   COORD (440,2180)
-  }
-  BUS  28836, 0, 0
-  {
-   NET 25807
-   VTX 28833, 28835
-  }
-  BUS  28837, 0, 0
-  {
-   NET 25807
-   VTX 28835, 28832
-  }
-  NET WIRE  28945, 0, 0
   INSTANCE  29596, 0, 0
   {
    VARIABLES
@@ -6360,73 +6298,9 @@ PAGE ""
   }
   NET BUS  30080, 0, 0
   NET BUS  30094, 0, 0
-  VTX  30302, 0, 0
-  {
-   COORD (640,3080)
-  }
-  VTX  30303, 0, 0
-  {
-   COORD (700,2960)
-  }
-  VTX  30304, 0, 0
-  {
-   COORD (480,3080)
-  }
-  BUS  30305, 0, 0
-  {
-   NET 25771
-   VTX 30302, 30304
-  }
-  VTX  30306, 0, 0
-  {
-   COORD (480,2980)
-  }
-  BUS  30307, 0, 0
-  {
-   NET 25771
-   VTX 30304, 30306
-  }
-  VTX  30308, 0, 0
-  {
-   COORD (700,2980)
-  }
-  BUS  30309, 0, 0
-  {
-   NET 25771
-   VTX 30306, 30308
-  }
-  BUS  30310, 0, 0
-  {
-   NET 25771
-   VTX 30308, 30303
-  }
-  VTX  30311, 0, 0
-  {
-   COORD (860,3100)
-  }
-  BUS  30313, 0, 0
-  {
-   NET 30325
-   VTX 26229, 30311
-  }
-  BUS  30314, 0, 0
-  {
-   NET 30325
-   VTX 30311, 26230
-  }
-  NET BUS  30325, 0, 0
-  VTX  30326, 0, 0
-  {
-   COORD (640,3100)
-  }
   VTX  30327, 0, 0
   {
    COORD (860,3340)
-  }
-  BUS  30328, 0, 0
-  {
-   NET 30325
-   VTX 30311, 30327
   }
   VTX  30329, 0, 0
   {
@@ -6434,22 +6308,8 @@ PAGE ""
   }
   BUS  30330, 0, 0
   {
-   NET 30325
+   NET 31821
    VTX 30327, 30329
-  }
-  VTX  30331, 0, 0
-  {
-   COORD (480,3100)
-  }
-  BUS  30332, 0, 0
-  {
-   NET 30325
-   VTX 30329, 30331
-  }
-  BUS  30333, 0, 0
-  {
-   NET 30325
-   VTX 30331, 30326
   }
   VTX  30403, 0, 0
   {
@@ -6522,10 +6382,6 @@ PAGE ""
   VTX  30420, 0, 0
   {
    COORD (3100,2080)
-  }
-  VTX  30421, 0, 0
-  {
-   COORD (4600,2700)
   }
   VTX  30422, 0, 0
   {
@@ -7035,14 +6891,6 @@ PAGE ""
   {
    COORD (3560,3920)
   }
-  VTX  30552, 0, 0
-  {
-   COORD (2460,4060)
-  }
-  VTX  30553, 0, 0
-  {
-   COORD (4220,3880)
-  }
   VTX  30554, 0, 0
   {
    COORD (4220,4160)
@@ -7054,26 +6902,6 @@ PAGE ""
   VTX  30556, 0, 0
   {
    COORD (4040,2940)
-  }
-  VTX  30563, 0, 0
-  {
-   COORD (4220,4120)
-  }
-  VTX  30564, 0, 0
-  {
-   COORD (4420,3880)
-  }
-  VTX  30565, 0, 0
-  {
-   COORD (560,2740)
-  }
-  VTX  30566, 0, 0
-  {
-   COORD (4420,4120)
-  }
-  VTX  30567, 0, 0
-  {
-   COORD (640,2740)
   }
   VTX  30568, 0, 0
   {
@@ -7253,32 +7081,6 @@ PAGE ""
   {
    NET 1082
    VTX 30620, 30420
-   OUTLINE 0,2, (0,0,0)
-  }
-  VTX  30623, 0, 0
-  {
-   COORD (4280,2700)
-  }
-  WIRE  30624, 0, 0
-  {
-   NET 25326
-   VTX 30421, 30623
-   OUTLINE 0,2, (0,0,0)
-  }
-  VTX  30625, 0, 0
-  {
-   COORD (4280,2220)
-  }
-  WIRE  30626, 0, 0
-  {
-   NET 25326
-   VTX 30623, 30625
-   OUTLINE 0,2, (0,0,0)
-  }
-  WIRE  30627, 0, 0
-  {
-   NET 25326
-   VTX 30625, 30422
    OUTLINE 0,2, (0,0,0)
   }
   VTX  30628, 0, 0
@@ -8324,29 +8126,6 @@ PAGE ""
    NET 25486
    VTX 30843, 30551
   }
-  VTX  30846, 0, 0
-  {
-   COORD (4020,4060)
-  }
-  BUS  30847, 0, 0
-  {
-   NET 25651
-   VTX 30552, 30846
-  }
-  VTX  30848, 0, 0
-  {
-   COORD (4020,3880)
-  }
-  BUS  30849, 0, 0
-  {
-   NET 25651
-   VTX 30846, 30848
-  }
-  BUS  30850, 0, 0
-  {
-   NET 25651
-   VTX 30848, 30553
-  }
   VTX  30851, 0, 0
   {
    COORD (3560,4160)
@@ -8370,120 +8149,6 @@ PAGE ""
   {
    NET 25721
    VTX 30520, 30556
-  }
-  VTX  30872, 0, 0
-  {
-   COORD (4040,4120)
-  }
-  BUS  30873, 0, 0
-  {
-   NET 25721
-   VTX 30563, 30872
-  }
-  BUS  30874, 0, 0
-  {
-   NET 25721
-   VTX 30872, 30556
-  }
-  VTX  30875, 0, 0
-  {
-   COORD (4440,3880)
-  }
-  BUS  30876, 0, 0
-  {
-   NET 25877
-   VTX 30564, 30875
-  }
-  VTX  30877, 0, 0
-  {
-   COORD (4440,4480)
-  }
-  BUS  30878, 0, 0
-  {
-   NET 25877
-   VTX 30875, 30877
-  }
-  VTX  30879, 0, 0
-  {
-   COORD (420,4480)
-  }
-  BUS  30880, 0, 0
-  {
-   NET 25877
-   VTX 30877, 30879
-  }
-  VTX  30881, 0, 0
-  {
-   COORD (420,2720)
-  }
-  BUS  30882, 0, 0
-  {
-   NET 25877
-   VTX 30879, 30881
-  }
-  VTX  30883, 0, 0
-  {
-   COORD (560,2720)
-  }
-  BUS  30884, 0, 0
-  {
-   NET 25877
-   VTX 30881, 30883
-  }
-  BUS  30885, 0, 0
-  {
-   NET 25877
-   VTX 30883, 30565
-  }
-  VTX  30886, 0, 0
-  {
-   COORD (4460,4120)
-  }
-  BUS  30887, 0, 0
-  {
-   NET 25896
-   VTX 30566, 30886
-  }
-  VTX  30888, 0, 0
-  {
-   COORD (4460,4500)
-  }
-  BUS  30889, 0, 0
-  {
-   NET 25896
-   VTX 30886, 30888
-  }
-  VTX  30890, 0, 0
-  {
-   COORD (380,4500)
-  }
-  BUS  30891, 0, 0
-  {
-   NET 25896
-   VTX 30888, 30890
-  }
-  VTX  30892, 0, 0
-  {
-   COORD (380,2700)
-  }
-  BUS  30893, 0, 0
-  {
-   NET 25896
-   VTX 30890, 30892
-  }
-  VTX  30894, 0, 0
-  {
-   COORD (640,2700)
-  }
-  BUS  30895, 0, 0
-  {
-   NET 25896
-   VTX 30892, 30894
-  }
-  BUS  30896, 0, 0
-  {
-   NET 25896
-   VTX 30894, 30567
   }
   BUS  30897, 0, 0
   {
@@ -8533,12 +8198,12 @@ PAGE ""
   }
   BUS  31040, 0, 0
   {
-   NET 30325
+   NET 31820
    VTX 26230, 31037
   }
   BUS  31041, 0, 0
   {
-   NET 30325
+   NET 31820
    VTX 31038, 31037
   }
   VTX  31047, 0, 0
@@ -8616,10 +8281,6 @@ PAGE ""
    NET 25416
    VTX 31114, 31115
   }
-  VTX  31147, 0, 0
-  {
-   COORD (780,3000)
-  }
   VTX  31148, 0, 0
   {
    COORD (2360,2300)
@@ -8628,91 +8289,14 @@ PAGE ""
   {
    COORD (2360,2540)
   }
-  VTX  31150, 0, 0
-  {
-   COORD (780,2980)
-  }
-  WIRE  31151, 0, 0
-  {
-   NET 28945
-   VTX 31147, 31150
-  }
-  VTX  31152, 0, 0
-  {
-   COORD (980,2980)
-  }
-  WIRE  31153, 0, 0
-  {
-   NET 28945
-   VTX 31150, 31152
-  }
-  VTX  31154, 0, 0
-  {
-   COORD (980,2300)
-  }
-  WIRE  31155, 0, 0
-  {
-   NET 28945
-   VTX 31152, 31154
-  }
-  WIRE  31156, 0, 0
-  {
-   NET 28945
-   VTX 31154, 31148
-  }
   WIRE  31157, 0, 0
   {
-   NET 28945
+   NET 31733
    VTX 31149, 31148
-  }
-  VTX  31169, 0, 0
-  {
-   COORD (720,2740)
   }
   VTX  31170, 0, 0
   {
    COORD (1580,2680)
-  }
-  VTX  31172, 0, 0
-  {
-   COORD (1580,2880)
-  }
-  BUS  31173, 0, 0
-  {
-   NET 25770
-   VTX 31170, 31172
-  }
-  VTX  31174, 0, 0
-  {
-   COORD (840,2880)
-  }
-  BUS  31175, 0, 0
-  {
-   NET 25770
-   VTX 31172, 31174
-  }
-  VTX  31176, 0, 0
-  {
-   COORD (840,2720)
-  }
-  BUS  31177, 0, 0
-  {
-   NET 25770
-   VTX 31174, 31176
-  }
-  VTX  31178, 0, 0
-  {
-   COORD (720,2720)
-  }
-  BUS  31179, 0, 0
-  {
-   NET 25770
-   VTX 31176, 31178
-  }
-  BUS  31180, 0, 0
-  {
-   NET 25770
-   VTX 31178, 31169
   }
   VTX  31183, 0, 0
   {
@@ -8733,12 +8317,12 @@ PAGE ""
   }
   BUS  31192, 0, 0
   {
-   NET 30325
+   NET 31820
    VTX 31037, 31191
   }
   BUS  31193, 0, 0
   {
-   NET 30325
+   NET 31820
    VTX 31191, 31190
   }
   VTX  31194, 0, 0
@@ -8810,55 +8394,19 @@ PAGE ""
   {
    COORD (3400,1900)
   }
-  VTX  31350, 0, 0
-  {
-   COORD (4700,2400)
-  }
   VTX  31352, 0, 0
   {
    COORD (2360,1900)
   }
   WIRE  31353, 0, 0
   {
-   NET 28945
+   NET 31733
    VTX 31148, 31352
   }
   WIRE  31354, 0, 0
   {
-   NET 28945
+   NET 31733
    VTX 31352, 31349
-  }
-  VTX  31355, 0, 0
-  {
-   COORD (4700,1980)
-  }
-  WIRE  31356, 0, 0
-  {
-   NET 28945
-   VTX 31350, 31355
-  }
-  VTX  31357, 0, 0
-  {
-   COORD (4540,1980)
-  }
-  WIRE  31358, 0, 0
-  {
-   NET 28945
-   VTX 31355, 31357
-  }
-  VTX  31359, 0, 0
-  {
-   COORD (4540,1900)
-  }
-  WIRE  31360, 0, 0
-  {
-   NET 28945
-   VTX 31357, 31359
-  }
-  WIRE  31361, 0, 0
-  {
-   NET 28945
-   VTX 31359, 31349
   }
   VTX  31371, 0, 0
   {
@@ -8870,7 +8418,7 @@ PAGE ""
   }
   WIRE  31373, 0, 0
   {
-   NET 28945
+   NET 31733
    VTX 31349, 31371
   }
   VTX  31374, 0, 0
@@ -9083,7 +8631,7 @@ PAGE ""
   TEXT  31431, 0, 0
   {
    TEXT "$#NAME"
-   RECT (3026,1645,3169,1680)
+   RECT (3039,1651,3156,1680)
    ALIGN 9
    MARGINS (1,1)
    PARENT 31444
@@ -9226,6 +8774,513 @@ PAGE ""
    NET 25288
    VTX 30427, 31517
   }
+  VTX  31583, 0, 0
+  {
+   COORD (4220,4060)
+  }
+  VTX  31623, 0, 0
+  {
+   COORD (4040,4060)
+  }
+  BUS  31624, 0, 0
+  {
+   NET 25721
+   VTX 30556, 31623
+  }
+  BUS  31625, 0, 0
+  {
+   NET 25721
+   VTX 31623, 31583
+  }
+  VTX  31626, 0, 0
+  {
+   COORD (2460,4060)
+  }
+  VTX  31627, 0, 0
+  {
+   COORD (4220,3820)
+  }
+  VTX  31628, 0, 0
+  {
+   COORD (4020,4060)
+  }
+  BUS  31629, 0, 0
+  {
+   NET 25651
+   VTX 31626, 31628
+  }
+  VTX  31630, 0, 0
+  {
+   COORD (4020,3820)
+  }
+  BUS  31631, 0, 0
+  {
+   NET 25651
+   VTX 31628, 31630
+  }
+  BUS  31632, 0, 0
+  {
+   NET 25651
+   VTX 31630, 31627
+  }
+  VTX  31715, 0, 0
+  {
+   COORD (3100,2400)
+  }
+  VTX  31716, 0, 0
+  {
+   COORD (4600,2700)
+  }
+  NET WIRE  31717, 0, 0
+  VTX  31718, 0, 0
+  {
+   COORD (4340,2400)
+  }
+  WIRE  31719, 0, 0
+  {
+   NET 31717
+   VTX 31715, 31718
+  }
+  VTX  31720, 0, 0
+  {
+   COORD (4340,2700)
+  }
+  WIRE  31721, 0, 0
+  {
+   NET 31717
+   VTX 31718, 31720
+  }
+  WIRE  31722, 0, 0
+  {
+   NET 31717
+   VTX 31720, 31716
+  }
+  VTX  31723, 0, 0
+  {
+   COORD (2960,1920)
+  }
+  VTX  31724, 0, 0
+  {
+   COORD (2960,1880)
+  }
+  WIRE  31725, 0, 0
+  {
+   NET 31733
+   VTX 31723, 31724
+  }
+  VTX  31726, 0, 0
+  {
+   COORD (3220,1880)
+  }
+  WIRE  31727, 0, 0
+  {
+   NET 31733
+   VTX 31724, 31726
+  }
+  VTX  31728, 0, 0
+  {
+   COORD (3220,1920)
+  }
+  WIRE  31729, 0, 0
+  {
+   NET 31733
+   VTX 31726, 31728
+  }
+  VTX  31730, 0, 0
+  {
+   COORD (3400,1920)
+  }
+  WIRE  31731, 0, 0
+  {
+   NET 31733
+   VTX 31728, 31730
+  }
+  WIRE  31732, 0, 0
+  {
+   NET 31733
+   VTX 31730, 31349
+  }
+  NET WIRE  31733, 0, 0
+  VTX  31738, 0, 0
+  {
+   COORD (720,2780)
+  }
+  VTX  31741, 0, 0
+  {
+   COORD (4420,4100)
+  }
+  VTX  31742, 0, 0
+  {
+   COORD (640,2780)
+  }
+  VTX  31743, 0, 0
+  {
+   COORD (4420,3860)
+  }
+  VTX  31744, 0, 0
+  {
+   COORD (560,2780)
+  }
+  VTX  31745, 0, 0
+  {
+   COORD (1240,2180)
+  }
+  VTX  31746, 0, 0
+  {
+   COORD (480,2880)
+  }
+  VTX  31747, 0, 0
+  {
+   COORD (1580,2880)
+  }
+  BUS  31748, 0, 0
+  {
+   NET 25770
+   VTX 31170, 31747
+  }
+  VTX  31749, 0, 0
+  {
+   COORD (840,2880)
+  }
+  BUS  31750, 0, 0
+  {
+   NET 25770
+   VTX 31747, 31749
+  }
+  VTX  31751, 0, 0
+  {
+   COORD (840,2720)
+  }
+  BUS  31752, 0, 0
+  {
+   NET 25770
+   VTX 31749, 31751
+  }
+  VTX  31753, 0, 0
+  {
+   COORD (720,2720)
+  }
+  BUS  31754, 0, 0
+  {
+   NET 25770
+   VTX 31751, 31753
+  }
+  BUS  31755, 0, 0
+  {
+   NET 25770
+   VTX 31753, 31738
+  }
+  VTX  31761, 0, 0
+  {
+   COORD (4460,4100)
+  }
+  BUS  31762, 0, 0
+  {
+   NET 25896
+   VTX 31741, 31761
+  }
+  VTX  31763, 0, 0
+  {
+   COORD (4460,4500)
+  }
+  BUS  31764, 0, 0
+  {
+   NET 25896
+   VTX 31761, 31763
+  }
+  VTX  31765, 0, 0
+  {
+   COORD (380,4500)
+  }
+  BUS  31766, 0, 0
+  {
+   NET 25896
+   VTX 31763, 31765
+  }
+  VTX  31767, 0, 0
+  {
+   COORD (380,2700)
+  }
+  BUS  31768, 0, 0
+  {
+   NET 25896
+   VTX 31765, 31767
+  }
+  VTX  31769, 0, 0
+  {
+   COORD (640,2700)
+  }
+  BUS  31770, 0, 0
+  {
+   NET 25896
+   VTX 31767, 31769
+  }
+  BUS  31771, 0, 0
+  {
+   NET 25896
+   VTX 31769, 31742
+  }
+  VTX  31772, 0, 0
+  {
+   COORD (4520,3860)
+  }
+  BUS  31773, 0, 0
+  {
+   NET 25877
+   VTX 31743, 31772
+  }
+  VTX  31774, 0, 0
+  {
+   COORD (4520,4480)
+  }
+  BUS  31775, 0, 0
+  {
+   NET 25877
+   VTX 31772, 31774
+  }
+  VTX  31776, 0, 0
+  {
+   COORD (420,4480)
+  }
+  BUS  31777, 0, 0
+  {
+   NET 25877
+   VTX 31774, 31776
+  }
+  VTX  31778, 0, 0
+  {
+   COORD (420,2720)
+  }
+  BUS  31779, 0, 0
+  {
+   NET 25877
+   VTX 31776, 31778
+  }
+  VTX  31780, 0, 0
+  {
+   COORD (560,2720)
+  }
+  BUS  31781, 0, 0
+  {
+   NET 25877
+   VTX 31778, 31780
+  }
+  BUS  31782, 0, 0
+  {
+   NET 25877
+   VTX 31780, 31744
+  }
+  VTX  31783, 0, 0
+  {
+   COORD (440,2180)
+  }
+  BUS  31784, 0, 0
+  {
+   NET 25807
+   VTX 31745, 31783
+  }
+  VTX  31785, 0, 0
+  {
+   COORD (440,2840)
+  }
+  BUS  31786, 0, 0
+  {
+   NET 25807
+   VTX 31783, 31785
+  }
+  VTX  31787, 0, 0
+  {
+   COORD (460,2840)
+  }
+  BUS  31788, 0, 0
+  {
+   NET 25807
+   VTX 31785, 31787
+  }
+  VTX  31789, 0, 0
+  {
+   COORD (460,2880)
+  }
+  BUS  31790, 0, 0
+  {
+   NET 25807
+   VTX 31787, 31789
+  }
+  BUS  31791, 0, 0
+  {
+   NET 25807
+   VTX 31789, 31746
+  }
+  NET BUS  31820, 0, 0
+  NET BUS  31821, 0, 0
+  VTX  31823, 0, 0
+  {
+   COORD (760,3220)
+  }
+  VTX  31824, 0, 0
+  {
+   COORD (780,3220)
+  }
+  VTX  31825, 0, 0
+  {
+   COORD (860,3140)
+  }
+  VTX  31826, 0, 0
+  {
+   COORD (700,3000)
+  }
+  VTX  31827, 0, 0
+  {
+   COORD (660,3120)
+  }
+  VTX  31828, 0, 0
+  {
+   COORD (700,3240)
+  }
+  VTX  31829, 0, 0
+  {
+   COORD (720,3220)
+  }
+  VTX  31830, 0, 0
+  {
+   COORD (800,3040)
+  }
+  VTX  31831, 0, 0
+  {
+   COORD (760,3240)
+  }
+  WIRE  31832, 0, 0
+  {
+   NET 7540
+   VTX 31823, 31831
+   OUTLINE 0,1, (223,138,87)
+  }
+  VTX  31833, 0, 0
+  {
+   COORD (780,3240)
+  }
+  WIRE  31834, 0, 0
+  {
+   NET 7540
+   VTX 31831, 31833
+   OUTLINE 0,1, (223,138,87)
+  }
+  WIRE  31835, 0, 0
+  {
+   NET 7540
+   VTX 31833, 31824
+   OUTLINE 0,1, (223,138,87)
+  }
+  VTX  31836, 0, 0
+  {
+   COORD (880,3100)
+  }
+  BUS  31837, 0, 0
+  {
+   NET 31820
+   VTX 26230, 31836
+  }
+  VTX  31838, 0, 0
+  {
+   COORD (880,3140)
+  }
+  BUS  31839, 0, 0
+  {
+   NET 31820
+   VTX 31836, 31838
+  }
+  BUS  31840, 0, 0
+  {
+   NET 31820
+   VTX 31838, 31825
+  }
+  VTX  31841, 0, 0
+  {
+   COORD (700,3020)
+  }
+  BUS  31842, 0, 0
+  {
+   NET 25771
+   VTX 31826, 31841
+  }
+  VTX  31843, 0, 0
+  {
+   COORD (640,3020)
+  }
+  BUS  31844, 0, 0
+  {
+   NET 25771
+   VTX 31841, 31843
+  }
+  VTX  31845, 0, 0
+  {
+   COORD (640,3120)
+  }
+  BUS  31846, 0, 0
+  {
+   NET 25771
+   VTX 31843, 31845
+  }
+  BUS  31847, 0, 0
+  {
+   NET 25771
+   VTX 31845, 31827
+  }
+  VTX  31848, 0, 0
+  {
+   COORD (700,3230)
+  }
+  WIRE  31849, 0, 0
+  {
+   NET 7806
+   VTX 31828, 31848
+  }
+  VTX  31850, 0, 0
+  {
+   COORD (720,3230)
+  }
+  WIRE  31851, 0, 0
+  {
+   NET 7806
+   VTX 31848, 31850
+  }
+  WIRE  31852, 0, 0
+  {
+   NET 7806
+   VTX 31850, 31829
+  }
+  VTX  31853, 0, 0
+  {
+   COORD (860,2300)
+  }
+  WIRE  31854, 0, 0
+  {
+   NET 31733
+   VTX 31148, 31853
+  }
+  VTX  31855, 0, 0
+  {
+   COORD (860,3020)
+  }
+  WIRE  31856, 0, 0
+  {
+   NET 31733
+   VTX 31853, 31855
+  }
+  VTX  31857, 0, 0
+  {
+   COORD (800,3020)
+  }
+  WIRE  31858, 0, 0
+  {
+   NET 31733
+   VTX 31855, 31857
+  }
+  WIRE  31859, 0, 0
+  {
+   NET 31733
+   VTX 31857, 31830
+  }
  }
  
 }
@@ -9248,7 +9303,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  31549, 0, 0
+  TEXT  31888, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -9259,7 +9314,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  31550, 0, 0
+  TEXT  31889, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -9270,7 +9325,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    UPDATE 0
   }
-  TEXT  31551, 0, 0
+  TEXT  31890, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -9280,7 +9335,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  31552, 0, 0
+  TEXT  31891, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -9292,34 +9347,34 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    UPDATE 0
   }
-  LINE  31553, 0, 0
+  LINE  31892, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (8930,6480), (9800,6480) )
    FILL (1,(0,0,0),0)
   }
-  LINE  31554, 0, 0
+  LINE  31893, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (8930,6540), (9800,6540) )
    FILL (1,(0,0,0),0)
   }
-  LINE  31555, 0, 0
+  LINE  31894, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9100,6480), (9100,6600) )
   }
-  LINE  31556, 0, 0
+  LINE  31895, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9800,6600), (9800,6340), (8930,6340), (8930,6600), (9800,6600) )
    FILL (1,(0,0,0),0)
   }
-  TEXT  31557, 0, 0
+  TEXT  31896, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -9332,34 +9387,34 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  LINE  31558, 0, 0
+  LINE  31897, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9240,6340), (9240,6480) )
   }
-  LINE  31559, 0, 0
+  LINE  31898, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9416,6404), (9482,6404) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31560, 0, 0
+  LINE  31899, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9385,6400), (9385,6400) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31561, 0, 0
+  LINE  31900, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
    POINTS ( (9434,6404), (9450,6364) )
    FILL (0,(0,4,255),0)
   }
-  TEXT  31562, -4, 0
+  TEXT  31901, -4, 0
   {
    PAGEALIGN 10
    OUTLINE 5,0, (49,101,255)
@@ -9369,14 +9424,14 @@ PAGE ""
    COLOR (0,4,255)
    FONT (36,0,0,700,0,0,0,"Arial")
   }
-  LINE  31563, 0, 0
+  LINE  31902, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
    POINTS ( (9376,6364), (9351,6427) )
    FILL (0,(0,4,255),0)
   }
-  BEZIER  31564, 0, 0
+  BEZIER  31903, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
@@ -9384,70 +9439,70 @@ PAGE ""
    ORIGINS ( (9383,6390), (9416,6404), (9383,6415), (9383,6390) )
    CONTROLS (( (9407,6390), (9415,6389)),( (9413,6415), (9410,6415)),( (9383,6407), (9383,6402)) )
   }
-  LINE  31565, 0, 0
+  LINE  31904, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9295,6411), (9383,6411) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31566, 0, 0
+  LINE  31905, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9302,6394), (9383,6394) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31567, 0, 0
+  LINE  31906, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9488,6371), (9311,6371) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31568, 0, 0
+  LINE  31907, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9486,6378), (9308,6378) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31569, 0, 0
+  LINE  31908, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9500,6386), (9306,6386) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31570, 0, 0
+  LINE  31909, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9502,6394), (9310,6394) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31571, 0, 0
+  LINE  31910, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9415,6402), (9299,6402) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31572, 0, 0
+  LINE  31911, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9480,6411), (9295,6411) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31573, 0, 0
+  LINE  31912, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9473,6419), (9292,6419) )
    FILL (0,(0,4,255),0)
   }
-  TEXT  31574, 0, 0
+  TEXT  31913, 0, 0
   {
    PAGEALIGN 10
    TEXT "The Design Verification Company"
@@ -9456,14 +9511,14 @@ PAGE ""
    COLOR (0,4,255)
    FONT (12,0,0,700,1,0,0,"Arial")
   }
-  LINE  31575, 0, 0
+  LINE  31914, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9467,6427), (9289,6427) )
    FILL (0,(0,4,255),0)
   }
-  LINE  31576, 0, 0
+  LINE  31915, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)

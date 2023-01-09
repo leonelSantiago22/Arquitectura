@@ -8,7 +8,6 @@ entity pc is
 		 clk     :  STD_LOGIC;
 		 reset   :  STD_LOGIC;
 		 entrada : in STD_LOGIC_VECTOR(63 downto 0); 
-		 static  : in STD_LOGIC_VECTOR(63 downto 0);
 		 salida  : out STD_LOGIC_VECTOR(63 downto 0);
 		 we      : in STD_LOGIC
 	     );
@@ -22,13 +21,9 @@ begin
 	begin 
 		if reset = '1' then
 			salida <= x"0000000000000000";
-		elsif rising_edge(clk) then	   
-			if (we = '1') then
-				salida <= static; 
-			else
+		elsif rising_edge(clk) and we  = '0' then	   
 				salida <= entrada; 
-			end if;
-		end if; 
+		end if;  
 	end process;
 	 -- enter your statements here --
 

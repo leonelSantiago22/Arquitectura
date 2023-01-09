@@ -1,4 +1,4 @@
-5843
+7010
 ~E 1 "c:/Users/Roberto/Downloads/datapah/datapath/src/memoriadeinstrucciones.vhd" 7 memoriadeinstrucciones
 ~A 1 "./src/memoriadeinstrucciones.vhd" 16 memoriadeinstrucciones
 ~E 1 "./src/extension.vhd" 8 extension
@@ -12,7 +12,7 @@
 ~E 1 "./src/aluSumador.vhd" 4 alusumador
 ~A 1 "./src/aluSumador.vhd" 11 alusumador
 ~E 1 "./src/control.vhd" 7 control
-~A 1 "./src/control.vhd" 26 control
+~A 1 "./src/control.vhd" 28 control
 ~E 1 "./src/burbuja_instruccion.vhd" 8 burbuja_instruccion
 ~A 1 "./src/burbuja_instruccion.vhd" 16 burbuja_instruccion
 ~E 1 "c:/Users/Roberto/Downloads/datapah/datapath/src/entension12.vhd" 30 entension12
@@ -32,7 +32,7 @@
 ~E 1 "c:/Users/Roberto/Downloads/datapah/datapath/src/memoriaDatos.vhd" 31 memoriadatos
 ~A 1 "./src/memoriaDatos.vhd" 44 memoriadatos
 ~E 1 "./src/PC.vhd" 6 pc
-~A 1 "./src/PC.vhd" 19 pc
+~A 1 "./src/PC.vhd" 18 pc
 ~E 1 "c:/Users/Roberto/Downloads/datapah/datapath/src/muxEntradaAlu.vhd" 7 muxentradaalu
 ~A 1 "./src/muxEntradaAlu.vhd" 18 muxentradaalu
 ~E 1 "./src/mux32.vhd" 30 mux32
@@ -42,7 +42,7 @@
 ~E 1 "./src/registro4.vhd" 30 registro4
 ~A 1 "./src/registro4.vhd" 45 registro4
 ~E 1 "./src/registro2.vhd" 30 registro2
-~A 1 "./src/registro2.vhd" 62 registro2
+~A 1 "./src/registro2.vhd" 61 registro2
 ~E 1 "c:/Users/Roberto/Downloads/datapah/datapath/src/regfile.vhd" 7 regfile
 ~A 1 "./src/regfile.vhd" 22 regfile
 ~E 1 "./src/registro3.vhd" 7 registro3

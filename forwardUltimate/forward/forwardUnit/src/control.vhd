@@ -10,7 +10,9 @@ entity control is
 		 func3 : in STD_LOGIC_VECTOR(2 downto 0);
 		 func7 : in STD_LOGIC_VECTOR(6 downto 0);
 		 wb :  out STD_LOGIC;
-		 jal: out STD_LOGIC;
+		 jal: out STD_LOGIC; 
+		 we:   in STD_LOGIC;
+		 jalr: out STD_LOGIC;
 		 read :  out STD_LOGIC;	 
 		 bne :  out STD_LOGIC;
 		 beq :  out STD_LOGIC;
@@ -36,7 +38,8 @@ begin
 		aluSRC<='0';  	  
 		beq <='0';
 		bne<='0';
-		memtoreg<='0';
+		memtoreg<='0';	 
+		jalr<='0';
 		--add
 		if(opcode ="0110011" ) then 
 			wb<='1';   
@@ -56,17 +59,17 @@ begin
 		elsif (opcode = "0000011") then
 			aluOP <='0';	--suma
 			wb<='1';
-			read<= '1';
-			write<='0';
+			read<= '0';
+			write<='1';
 			aluSRC<='0';
 			memtoreg<='0';
 		--sd
 		elsif (opcode = "0100011") then	
 			aluOP <='0';	--suma
 			wb<='1';
-			read<= '0';
+			read<= '1';
 			aluSRC<='0';
-			write<='1';	
+			write<='0';	
 			memtoreg<='0';
 		--jal
 		elsif(opcode = "1101111") then 
@@ -96,8 +99,24 @@ begin
 			write<='0';
 			jal<='0';  
 			beq <='0';
-			bne <='1';
+			bne <='1'; 
+		--jalr
+		elsif(opcode = "1100111") then 
+			aluOP<='0';
+			wb <= '1';
+			read<='0';
+			aluSRC<='1';
+			write<='0';
+			memtoreg<='0';
+			jalr<='1';
 		end if;	   
-		
+		if we = '1' then 
+			aluOP<='0';
+			memtoreg<='0';
+			write <= '0';
+			read <= '0';
+			jalr<='0';
+			wb<='0';
+		end if;
 	end process;				   
 end control;
