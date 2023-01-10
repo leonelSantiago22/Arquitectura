@@ -63,18 +63,8 @@ begin
 			opcode <= "0000000";
 			func3<= "000";		  
 			extension <= x"00000000";
-		elsif rising_edge(clk) then	
-			if(we='1') then 
-				 rs1 <= "00000";
-				rs2 <= "00000";
-				rd <= "00000";	   
-				func7 <= "0000000";
-				salidapcmas4 <= x"0000000000000000";
-				salidapc <=  x"0000000000000000";
-				opcode <= "0000000";
-				func3<= "000"; 
-				extension <= x"00000000";
-			else 
+		elsif rising_edge(clk) and we ='0' then	
+			
 				salidapcmas4 <= pcmas4;	
 				salidapc <= pc;
 				rs1 <=  instruccion(19 downto 15);
@@ -84,7 +74,6 @@ begin
 				func3 <=   instruccion(14 downto 12);
 				extension  <= instruccion(31 downto 0); 
 				func7 <= instruccion(31 downto 25);
-			end if;
 		end if;
 	end process;
 	 -- enter your statements here --

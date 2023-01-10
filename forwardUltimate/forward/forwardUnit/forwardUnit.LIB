@@ -1,251 +1,251 @@
 [add4]
-A/add4=21|./src/add4.vhd|16|1*6559979
-B/add4=3*1341844
-H/add4=0*4640456
+A/add4=21|./src/add4.vhd|16|1*6969958
+B/add4=3*1431991
+H/add4=0*4887632
 R=./src/add4.vhd|7
 S/add4=40|0|2*1213095
 V=0*3310364
 
 [alu]
-A/alu=21|./src/alu.vhd|19|1*6555296
-B/alu=3*1333482
-H/alu=0*4638414
+A/alu=21|./src/alu.vhd|19|1*6965275
+B/alu=3*1424097
+H/alu=0*4885677
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/alu.vhd|8
 S/alu=40|0|2*759182
 V=0*322616
 
 [alusumador]
-A/alusumador=A/aluSumador 21|./src/aluSumador.vhd|11|1*6706416
-B/alusumador=3*1369557
-H/alusumador=0*4745582
+A/alusumador=A/aluSumador 21|./src/aluSumador.vhd|11|1*7115939
+B/alusumador=3*1458780
+H/alusumador=0*4992490
 R=./src/aluSumador.vhd|4
 S/alusumador=40|0|2*1251184
 V=0*3315526
 
 [branch_control]
-A/branch_control=21|./src/branch_control.vhd|19|1*6703583
-B/branch_control=3*1367461
-H/branch_control=0*4744430
+A/branch_control=21|./src/branch_control.vhd|19|1*7113106
+B/branch_control=3*1456684
+H/branch_control=0*4991338
 R=./src/branch_control.vhd|8
 S/branch_control=40|0|2*1155109
 V=0*3329213
 
 [burbuja_instruccion]
-A/burbuja_instruccion=21|./src/burbuja_instruccion.vhd|16|1*6705216
-B/burbuja_instruccion=3*1369203
-H/burbuja_instruccion=0*4745138
+A/burbuja_instruccion=21|./src/burbuja_instruccion.vhd|16|1*7114739
+B/burbuja_instruccion=3*1458426
+H/burbuja_instruccion=0*4992046
 R=./src/burbuja_instruccion.vhd|8
 S/burbuja_instruccion=40|0|2*1252863
 V=0*4231684
 
 [control]
-A/control=21|./src/control.vhd|28|1*6557192
-B/control=3*1334757
-H/control=0*4638906
+A/control=21|./src/control.vhd|28|1*6967171
+B/control=3*1425372
+H/control=0*4886169
 R=./src/control.vhd|7
 S/control=40|0|2*1261149
 V=0*4510764
 
 [entension12]
-A/entension12=21|./src/entension12.vhd|39|1*6561435
-B/entension12=3*1342387
-H/entension12=0*4640758
+A/entension12=21|./src/entension12.vhd|39|1*6971414
+B/entension12=3*1432534
+H/entension12=0*4887934
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/entension12.vhd|30
 V=0*19377
 
 [extension]
-A/extension=21|./src/extension.vhd|17|1*6563518
-B/extension=3*1343153
-H/extension=0*4641346
+A/extension=21|./src/extension.vhd|17|1*6973497
+B/extension=3*1433300
+H/extension=0*4888522
 R=./src/extension.vhd|8
 S/extension=40|0|2*1163875
 V=0*3440900
 
 [extension2]
-A/extension2=21|./src/extension2.vhd|15|1*6568181
-B/extension2=3*1345370
-H/extension2=0*4642375
+A/extension2=21|./src/extension2.vhd|15|1*6978160
+B/extension2=3*1435517
+H/extension2=0*4889551
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/extension2.vhd|6
 S/extension2=40|0|2*1202229
 V=0*24866
 
 [extensionjal]
-A/extensionjal=21|./src/extensionjal.vhd|17|1*6570036
-B/extensionjal=3*1345907
-H/extensionjal=0*4642798
+A/extensionjal=21|./src/extensionjal.vhd|17|1*6980015
+B/extensionjal=3*1436054
+H/extensionjal=0*4889974
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/extensionjal.vhd|8
 V=0*27670
 
 [forward]
-A/forward=24|.\src\forward.bde|10000|1*6631667
-B/forward=3*1351328
-H/forward=0*4656836
+A/forward=24|.\src\forward.bde|10000|1*7041646
+B/forward=3*1441475
+H/forward=0*4904012
 R=./compile/forward.vhd|25
 S/forward=40|0|2*248105
 V=0*84046
 
 [forwardunit]
-A/forwardunit=21|./src/forwardunit.vhd|21|1*6699648
-B/forwardunit=3*1364747
-H/forwardunit=0*4743238
+A/forwardunit=21|./src/forwardunit.vhd|21|1*7109171
+B/forwardunit=3*1453970
+H/forwardunit=0*4990146
 R=./src/forwardunit.vhd|8
 S/forwardunit=40|0|2*1003683
 V=0*2255438
 
 [hazard]
-A/hazard=21|./src/hazard.vhd|43|1*6707951
-B/hazard=3*1370130
-H/hazard=0*4745916
+A/hazard=21|./src/hazard.vhd|43|1*7117474
+B/hazard=3*1459353
+H/hazard=0*4992824
 R=./src/hazard.vhd|30
 S/hazard=40|0|2*1246797
 V=0*3410873
 
 [if_id]
-A/if_id=A/IF_ID 21|./src/IF_ID.vhd|52|1*6679144
-B/if_id=3*1352847
-H/if_id=0*4738524
+A/if_id=A/IF_ID 21|./src/IF_ID.vhd|52|1*7089123
+B/if_id=3*1442994
+H/if_id=0*4985700
 R=./src/IF_ID.vhd|30
 S/if_id=S/IF_ID 40|0|2*1220714
 V=0*3446144
 
 [memoriadatos]
-A/memoriadatos=A/memoriaDatos 21|./src/memoriaDatos.vhd|44|1*6572092
-B/memoriadatos=3*1346674
-H/memoriadatos=0*4643381
+A/memoriadatos=A/memoriaDatos 21|./src/memoriaDatos.vhd|44|1*6982071
+B/memoriadatos=3*1436821
+H/memoriadatos=0*4890557
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/memoriaDatos.vhd|31
 S/memoriadatos=S/memoriaDatos 40|0|2*912611
 V=0*36407
 
 [memoriadeinstrucciones]
-A/memoriadeinstrucciones=21|./src/memoriadeinstrucciones.vhd|16|1*6720650
-B/memoriadeinstrucciones=3*1372348
-H/memoriadeinstrucciones=0*4750112
+A/memoriadeinstrucciones=21|./src/memoriadeinstrucciones.vhd|16|1*7013642
+B/memoriadeinstrucciones=3*1438273
+H/memoriadeinstrucciones=0*4896522
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/memoriadeinstrucciones.vhd|7
 S/memoriadeinstrucciones=40|0|2*1186681
 V=0*42933
 
 [mux32]
-A/mux32=21|./src/mux32.vhd|41|1*6709882
-B/mux32=3*1371588
-H/mux32=0*4746404
+A/mux32=21|./src/mux32.vhd|41|1*7119356
+B/mux32=3*1460511
+H/mux32=0*4993260
 R=./src/mux32.vhd|30
 S/mux32=40|0|2*1184519
 V=0*3648276
 
 [muxentradaalu]
-A/muxentradaalu=A/muxEntradaAlu 21|./src/muxEntradaAlu.vhd|18|1*6687024
-B/muxentradaalu=3*1357484
-H/muxentradaalu=0*4740255
+A/muxentradaalu=A/muxEntradaAlu 21|./src/muxEntradaAlu.vhd|18|1*7096547
+B/muxentradaalu=3*1446707
+H/muxentradaalu=0*4987163
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/muxEntradaAlu.vhd|7
 S/muxentradaalu=S/muxEntradaAlu 40|0|2*827764
 V=0*312472
 
 [muxescogedor]
-A/muxescogedor=A/muxEscogedor 21|./src/muxEscogedor.vhd|19|1*6684939
-B/muxescogedor=3*1356344
-H/muxescogedor=0*4739747
+A/muxescogedor=A/muxEscogedor 21|./src/muxEscogedor.vhd|19|1*7094462
+B/muxescogedor=3*1445567
+H/muxescogedor=0*4986655
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/muxEscogedor.vhd|7
 S/muxescogedor=S/muxEscogedor 40|0|2*825095
 V=0*208177
 
 [pc]
-A/pc=21|./src/PC.vhd|18|1*6553569
-B/pc=3*1332617
-H/pc=0*4638026
+A/pc=21|./src/PC.vhd|18|1*6963548
+B/pc=3*1423232
+H/pc=0*4885289
 R=./src/PC.vhd|6
 S/pc=40|0|2*1277406
 V=0*4397246
 
 [regfile]
-A/regfile=21|./src/regfile.vhd|22|1*6612848
-B/regfile=3*1348687
-H/regfile=0*4652687
+A/regfile=21|./src/regfile.vhd|22|1*7022827
+B/regfile=3*1438834
+H/regfile=0*4899863
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/regfile.vhd|7
 S/regfile=40|0|2*1017202
 V=0*160345
 
 [registro2]
-A/registro2=21|./src/registro2.vhd|61|1*6688713
-B/registro2=3*1358252
-H/registro2=0*4740710
+A/registro2=21|./src/registro2.vhd|61|1*7098236
+B/registro2=3*1447475
+H/registro2=0*4987618
 R=./src/registro2.vhd|30
 S/registro2=40|0|2*1266628
 V=0*4518259
 
 [registro3]
-A/registro3=21|./src/registro3.vhd|31|1*6693801
-B/registro3=3*1361333
-H/registro3=0*4741812
+A/registro3=21|./src/registro3.vhd|31|1*7103324
+B/registro3=3*1450556
+H/registro3=0*4988720
 R=./src/registro3.vhd|7
 S/registro3=40|0|2*1076573
 V=0*3285475
 
 [registro4]
-A/registro4=21|./src/registro4.vhd|45|1*6697310
-B/registro4=3*1363490
-H/registro4=0*4742646
+A/registro4=21|./src/registro4.vhd|45|1*7106833
+B/registro4=3*1452713
+H/registro4=0*4989554
 R=./src/registro4.vhd|30
 S/registro4=40|0|2*1010091
 V=0*910526
 
 [sumador]
-A/sumador=21|./src/sumador.vhd|18|1*6630052
-B/sumador=3*1350758
-H/sumador=0*4656532
+A/sumador=21|./src/sumador.vhd|18|1*7040031
+B/sumador=3*1440905
+H/sumador=0*4903708
 R=c:/Users/Roberto/Downloads/datapah/datapath/src/sumador.vhd|8
 V=0*54237
 
 [zero]
-A/zero=21|./src/zero.vhd|17|1*6701685
-B/zero=3*1366462
-H/zero=0*4743994
+A/zero=21|./src/zero.vhd|17|1*7111208
+B/zero=3*1455685
+H/zero=0*4990902
 R=./src/zero.vhd|7
 S/zero=40|0|2*1162192
 V=0*3267126
 
 [~A]
 ./compile/forward.vhd~forward=60|0*77680*77882
-./compile/forward.vhd~forwardforward=60|0*4724609*4738448
+./compile/forward.vhd~forwardforward=60|0*4971785*4985624
 ./src/IF_ID.vhd~IF_ID=60|0*3442993*3443757
-./src/IF_ID.vhd~IF_IDIF_ID=60|0*4738610*4739681
+./src/IF_ID.vhd~IF_IDIF_ID=60|0*4985786*4986589
 ./src/PC.vhd~pc=60|0*4395830*4396121
-./src/PC.vhd~pcpc=60|0*4638105*4638357
+./src/PC.vhd~pcpc=60|0*4885368*4885620
 ./src/add4.vhd~add4=60|0*3309135*3309405
-./src/add4.vhd~add4add4=60|0*4640539*4640695
-./src/alu.vhd~alualu=60|0*4638495*4638846
+./src/add4.vhd~add4add4=60|0*4887715*4887871
+./src/alu.vhd~alualu=60|0*4885758*4886109
 ./src/aluSumador.vhd~aluSumador=60|0*3314052*3314374
-./src/aluSumador.vhd~aluSumadoraluSumador=60|0*4745677*4745835
+./src/aluSumador.vhd~aluSumadoraluSumador=60|0*4992585*4992743
 ./src/branch_control.vhd~branch_control=60|0*3327581*3327909
-./src/branch_control.vhd~branch_controlbranch_control=60|0*4744533*4745045
+./src/branch_control.vhd~branch_controlbranch_control=60|0*4991441*4991953
 ./src/burbuja_instruccion.vhd~burbuja_instruccion=60|0*4230869*4231113
-./src/burbuja_instruccion.vhd~burbuja_instruccionburbuja_instruccion=60|0*4745251*4745474
+./src/burbuja_instruccion.vhd~burbuja_instruccionburbuja_instruccion=60|0*4992159*4992382
 ./src/control.vhd~control=60|0*4507253*4507871
-./src/control.vhd~controlcontrol=60|0*4638996*4640384
-./src/entension12.vhd~entension12entension12=60|0*4640855*4641262
+./src/control.vhd~controlcontrol=60|0*4886259*4887560
+./src/entension12.vhd~entension12entension12=60|0*4888031*4888438
 ./src/extension.vhd~extension=60|0*3439874*3440192
-./src/extension.vhd~extensionextension=60|0*4641439*4642297
-./src/extension2.vhd~extension2extension2=60|0*4642470*4642717
-./src/extensionjal.vhd~extensionjalextensionjal=60|0*4642897*4643294
+./src/extension.vhd~extensionextension=60|0*4888615*4889473
+./src/extension2.vhd~extension2extension2=60|0*4889646*4889893
+./src/extensionjal.vhd~extensionjalextensionjal=60|0*4890073*4890470
 ./src/forwardunit.vhd~forwardunit=60|0*2253840*2254280
-./src/forwardunit.vhd~forwardunitforwardunit=60|0*4743335*4743910
+./src/forwardunit.vhd~forwardunitforwardunit=60|0*4990243*4990818
 ./src/hazard.vhd~hazard=60|0*3408995*3409364
-./src/hazard.vhd~hazardhazard=60|0*4746003*4746335
-./src/memoriaDatos.vhd~memoriaDatosmemoriaDatos=60|0*4647023*4649259
-./src/memoriadeinstrucciones.vhd~memoriadeinstruccionesmemoriadeinstrucciones=60|0*4752289*4753336
+./src/hazard.vhd~hazardhazard=60|0*4992911*4993191
+./src/memoriaDatos.vhd~memoriaDatosmemoriaDatos=60|0*4894199*4896435
+./src/memoriadeinstrucciones.vhd~memoriadeinstruccionesmemoriadeinstrucciones=60|0*4898699*4899746
 ./src/mux32.vhd~mux32=60|0*3646789*3647086
-./src/mux32.vhd~mux32mux32=60|0*4746489*4746705
-./src/muxEntradaAlu.vhd~muxEntradaAlumuxEntradaAlu=60|0*4740356*4740620
-./src/muxEscogedor.vhd~muxEscogedormuxEscogedor=60|0*4739846*4740168
-./src/regfile.vhd~regfileregfile=60|0*4655075*4656460
+./src/mux32.vhd~mux32mux32=60|0*4993345*4993561
+./src/muxEntradaAlu.vhd~muxEntradaAlumuxEntradaAlu=60|0*4987264*4987528
+./src/muxEscogedor.vhd~muxEscogedormuxEscogedor=60|0*4986754*4987076
+./src/regfile.vhd~regfileregfile=60|0*4902251*4903636
 ./src/registro2.vhd~registro2=60|0*4513315*4514363
-./src/registro2.vhd~registro2registro2=60|0*4740804*4741734
+./src/registro2.vhd~registro2registro2=60|0*4987712*4988642
 ./src/registro3.vhd~registro3=60|0*3282027*3282762
-./src/registro3.vhd~registro3registro3=60|0*4741906*4742568
+./src/registro3.vhd~registro3registro3=60|0*4988814*4989476
 ./src/registro4.vhd~registro4=60|0*908269*908730
-./src/registro4.vhd~registro4registro4=60|0*4742739*4743160
-./src/sumador.vhd~sumadorsumador=60|0*4656621*4656764
+./src/registro4.vhd~registro4registro4=60|0*4989647*4990068
+./src/sumador.vhd~sumadorsumador=60|0*4903797*4903940
 ./src/zero.vhd~zero=60|0*3265740*3266019
-./src/zero.vhd~zerozero=60|0*4744077*4744367
+./src/zero.vhd~zerozero=60|0*4990985*4991275
 C:/Users/Roberto/Downloads/datapah/datapath/src/add4.vhd~add4add4=60|0*2795581*2795779
 C:/Users/Roberto/Downloads/datapah/datapath/src/alu.vhd~alualu=60|0*2795965*2796358
 C:/Users/Roberto/Downloads/datapah/datapath/src/control.vhd~control=60|0*1285062*1285650
@@ -261,7 +261,7 @@ C:/Users/Roberto/Downloads/datapah/datapath/src/muxEscogedor.vhd~muxEscogedormux
 C:/Users/Roberto/Downloads/datapah/datapath/src/pc.vhd~pcpc=60|0*2795120*2795399
 C:/Users/Roberto/Downloads/datapah/datapath/src/regfile.vhd~regfileregfile=60|0*2811924*2813203
 C:/Users/Roberto/Downloads/datapah/datapath/src/sumador.vhd~sumadorsumador=60|0*2813406*2813591
-ModifyID=7010
+ModifyID=7370
 Version=73
 c:/Users/Roberto/Downloads/datapah/datapath/src/add4.vhd~add4=60|0*2779*3091
 c:/Users/Roberto/Downloads/datapah/datapath/src/add4.vhd~add4add4=60|0*2893894*2894092
@@ -293,10 +293,10 @@ c:/Users/Roberto/Downloads/datapah/datapath/src/sumador.vhd~sumador=60|0*52584*5
 c:/Users/Roberto/Downloads/datapah/datapath/src/sumador.vhd~sumadorsumador=60|0*2911719*2911904
 
 [~MFT]
-0=6575|0forwardUnit.mgf|4753336|4529707
-1=1976|1forwardUnit.mgf|6720650|4752868
+0=6935|0forwardUnit.mgf|4993561|4770288
+1=2094|1forwardUnit.mgf|7119356|5049523
 2=520|2forwardUnit.mgf|1277406|1203691
-3=1973|3forwardUnit.mgf|1372348|1333178
+3=2093|3forwardUnit.mgf|1460511|1423232
 
 [~U]
 add4=11|0*3309766|0*3309929|3

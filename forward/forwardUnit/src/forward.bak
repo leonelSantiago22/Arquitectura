@@ -2,7 +2,7 @@ SCHM0102
 
 HEADER
 {
- FREEID 42310
+ FREEID 42527
  VARIABLES
  {
   #ARCHITECTURE="forward"
@@ -9381,6 +9381,12 @@ PAGE ""
    RECT (480,3240,652,3273)
    PARENT 1
   }
+  TEXT  42495, 0, 0
+  {
+   TEXT "@INSTANCE_ARRAY"
+   RECT (480,3274,507,3307)
+   PARENT 1
+  }
  }
  
 }
@@ -9403,7 +9409,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  42282, 0, 0
+  TEXT  42499, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -9414,7 +9420,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  42283, 0, 0
+  TEXT  42500, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -9425,7 +9431,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    UPDATE 0
   }
-  TEXT  42284, 0, 0
+  TEXT  42501, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -9435,7 +9441,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  42285, 0, 0
+  TEXT  42502, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -9447,34 +9453,34 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    UPDATE 0
   }
-  LINE  42286, 0, 0
+  LINE  42503, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (8930,6480), (9800,6480) )
    FILL (1,(0,0,0),0)
   }
-  LINE  42287, 0, 0
+  LINE  42504, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (8930,6540), (9800,6540) )
    FILL (1,(0,0,0),0)
   }
-  LINE  42288, 0, 0
+  LINE  42505, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9100,6480), (9100,6600) )
   }
-  LINE  42289, 0, 0
+  LINE  42506, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9800,6600), (9800,6340), (8930,6340), (8930,6600), (9800,6600) )
    FILL (1,(0,0,0),0)
   }
-  TEXT  42290, 0, 0
+  TEXT  42507, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -9487,34 +9493,34 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  LINE  42291, 0, 0
+  LINE  42508, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9240,6340), (9240,6480) )
   }
-  LINE  42292, 0, 0
+  LINE  42509, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9416,6404), (9482,6404) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42293, 0, 0
+  LINE  42510, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9385,6400), (9385,6400) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42294, 0, 0
+  LINE  42511, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
    POINTS ( (9434,6404), (9450,6364) )
    FILL (0,(0,4,255),0)
   }
-  TEXT  42295, -4, 0
+  TEXT  42512, -4, 0
   {
    PAGEALIGN 10
    OUTLINE 5,0, (49,101,255)
@@ -9524,14 +9530,14 @@ PAGE ""
    COLOR (0,4,255)
    FONT (36,0,0,700,0,0,0,"Arial")
   }
-  LINE  42296, 0, 0
+  LINE  42513, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
    POINTS ( (9376,6364), (9351,6427) )
    FILL (0,(0,4,255),0)
   }
-  BEZIER  42297, 0, 0
+  BEZIER  42514, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
@@ -9539,70 +9545,70 @@ PAGE ""
    ORIGINS ( (9383,6390), (9416,6404), (9383,6415), (9383,6390) )
    CONTROLS (( (9407,6390), (9415,6389)),( (9413,6415), (9410,6415)),( (9383,6407), (9383,6402)) )
   }
-  LINE  42298, 0, 0
+  LINE  42515, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9295,6411), (9383,6411) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42299, 0, 0
+  LINE  42516, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9302,6394), (9383,6394) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42300, 0, 0
+  LINE  42517, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9488,6371), (9311,6371) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42301, 0, 0
+  LINE  42518, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9486,6378), (9308,6378) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42302, 0, 0
+  LINE  42519, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9500,6386), (9306,6386) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42303, 0, 0
+  LINE  42520, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9502,6394), (9310,6394) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42304, 0, 0
+  LINE  42521, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9415,6402), (9299,6402) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42305, 0, 0
+  LINE  42522, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9480,6411), (9295,6411) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42306, 0, 0
+  LINE  42523, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9473,6419), (9292,6419) )
    FILL (0,(0,4,255),0)
   }
-  TEXT  42307, 0, 0
+  TEXT  42524, 0, 0
   {
    PAGEALIGN 10
    TEXT "The Design Verification Company"
@@ -9611,14 +9617,14 @@ PAGE ""
    COLOR (0,4,255)
    FONT (12,0,0,700,1,0,0,"Arial")
   }
-  LINE  42308, 0, 0
+  LINE  42525, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9467,6427), (9289,6427) )
    FILL (0,(0,4,255),0)
   }
-  LINE  42309, 0, 0
+  LINE  42526, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)

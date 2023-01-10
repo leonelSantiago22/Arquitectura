@@ -46,7 +46,6 @@ begin
 	process(rs1,rs2,rd,memR)
 	begin 
 		if(memR = '1') then 
-			if(opcode = "0000011") then
 				if(rs1 = rd) then 
 					hazrd <='1';
 				elsif(rs2 = rd) then 
@@ -54,9 +53,7 @@ begin
 				else 
 					hazrd <='0';
 				end if;
-			else 
-				hazrd <='0';
-			end if;
+			
 		else
 			hazrd <='0';
 		end if;

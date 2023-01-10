@@ -48,7 +48,7 @@ begin
 		if w = '1' and rs2 = rd then 
 				r2 <= date;
 			else 
-				r2 <= registros(conv_integer(rs1));
+				r2 <= registros(conv_integer(rs2));
 		end if;
 	end process;
 	 -- enter your statements here --

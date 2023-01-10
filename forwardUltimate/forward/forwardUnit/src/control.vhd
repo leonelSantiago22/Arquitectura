@@ -30,18 +30,20 @@ architecture control of control is
 begin	 
 	process(opcode, func3)
 	begin 
-		wb <='0';
-		read <='0';
-		write<='0';	
-		jal <= '0';
-		aluOP<='0';
-		aluSRC<='0';  	  
-		beq <='0';
-		bne<='0';
-		memtoreg<='0';	 
-		jalr<='0';
-		--add
-		if(opcode ="0110011" ) then 
+	
+		--add 
+		if we = '1' then 
+				wb <='0';
+				read <='0';
+				write<='0';	
+				jal <= '0';
+				aluOP<='0';
+				aluSRC<='0';  	  
+				beq <='0';
+				bne<='0';
+				memtoreg<='0';	 
+				jalr<='0';
+		elsif(opcode ="0110011" ) then 
 			wb<='1';   
 			memtoreg<='1';
 			aluSRC<='0';
@@ -108,15 +110,9 @@ begin
 			aluSRC<='1';
 			write<='0';
 			memtoreg<='0';
-			jalr<='1';
+			jalr<='1'; 
+					
+
 		end if;	   
-		if we = '1' then 
-			aluOP<='0';
-			memtoreg<='0';
-			write <= '0';
-			read <= '0';
-			jalr<='0';
-			wb<='0';
-		end if;
 	end process;				   
 end control;

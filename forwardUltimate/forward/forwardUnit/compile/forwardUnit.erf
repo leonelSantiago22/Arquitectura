@@ -1,5 +1,170 @@
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\PC.vhd" 
+MESSAGE "Compile Entity "pc"" 
+MESSAGE "Entity `pc' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "pc" of Entity "pc"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\alu.vhd" 
+MESSAGE "Compile Entity "alu"" 
+MESSAGE "Entity `alu' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "alu" of Entity "alu"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\control.vhd" 
+MESSAGE "Compile Entity "control"" 
+MESSAGE "Entity `control' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "control" of Entity "control"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\add4.vhd" 
+MESSAGE "Compile Entity "add4"" 
+MESSAGE "Entity `add4' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "add4" of Entity "add4"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\entension12.vhd" 
+MESSAGE "Compile Entity "entension12"" 
+MESSAGE "Entity `entension12' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "entension12" of Entity "entension12"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\extension.vhd" 
+MESSAGE "Compile Entity "extension"" 
+MESSAGE "Entity `extension' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "extension" of Entity "extension"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\extension2.vhd" 
+MESSAGE "Compile Entity "extension2"" 
+MESSAGE "Entity `extension2' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "extension2" of Entity "extension2"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\extensionjal.vhd" 
+MESSAGE "Compile Entity "extensionjal"" 
+MESSAGE "Entity `extensionjal' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "extensionjal" of Entity "extensionjal"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\memoriaDatos.vhd" 
+MESSAGE "Compile Entity "memoriaDatos"" 
+MESSAGE "Entity `memoriaDatos' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "memoriaDatos" of Entity "memoriaDatos"" 
 MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\memoriadeinstrucciones.vhd" 
 MESSAGE "Compile Entity "memoriadeinstrucciones"" 
 MESSAGE "Entity `memoriadeinstrucciones' has been skipped - no difference detected." 
 MESSAGE "Compile Architecture "memoriadeinstrucciones" of Entity "memoriadeinstrucciones"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\regfile.vhd" 
+MESSAGE "Compile Entity "regfile"" 
+MESSAGE "Entity `regfile' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "regfile" of Entity "regfile"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\sumador.vhd" 
+MESSAGE "Compile Entity "sumador"" 
+MESSAGE "Entity `sumador' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "sumador" of Entity "sumador"" 
+MESSAGE "File: .\forward.vhd" 
+BEGINPROGRESS C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\compile\forward.vhd
+MESSAGE "Compile Entity "forward"" 
+UPDATEPROGRESS 1
+MESSAGE "Entity `forward' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "forward" of Entity "forward"" 
+UPDATEPROGRESS 3
+UPDATEPROGRESS 4
+UPDATEPROGRESS 5
+UPDATEPROGRESS 7
+UPDATEPROGRESS 10
+UPDATEPROGRESS 11
+UPDATEPROGRESS 12
+UPDATEPROGRESS 14
+UPDATEPROGRESS 16
+UPDATEPROGRESS 19
+UPDATEPROGRESS 20
+UPDATEPROGRESS 21
+UPDATEPROGRESS 23
+UPDATEPROGRESS 24
+UPDATEPROGRESS 25
+UPDATEPROGRESS 27
+UPDATEPROGRESS 29
+UPDATEPROGRESS 33
+UPDATEPROGRESS 36
+UPDATEPROGRESS 38
+UPDATEPROGRESS 40
+UPDATEPROGRESS 41
+UPDATEPROGRESS 42
+UPDATEPROGRESS 43
+UPDATEPROGRESS 44
+UPDATEPROGRESS 45
+UPDATEPROGRESS 46
+UPDATEPROGRESS 47
+UPDATEPROGRESS 48
+UPDATEPROGRESS 49
+UPDATEPROGRESS 50
+UPDATEPROGRESS 51
+UPDATEPROGRESS 53
+UPDATEPROGRESS 58
+UPDATEPROGRESS 59
+UPDATEPROGRESS 62
+UPDATEPROGRESS 65
+UPDATEPROGRESS 67
+UPDATEPROGRESS 68
+UPDATEPROGRESS 70
+UPDATEPROGRESS 72
+UPDATEPROGRESS 73
+UPDATEPROGRESS 75
+UPDATEPROGRESS 76
+UPDATEPROGRESS 77
+UPDATEPROGRESS 78
+UPDATEPROGRESS 80
+UPDATEPROGRESS 81
+UPDATEPROGRESS 82
+UPDATEPROGRESS 83
+UPDATEPROGRESS 84
+UPDATEPROGRESS 85
+UPDATEPROGRESS 86
+UPDATEPROGRESS 87
+UPDATEPROGRESS 89
+UPDATEPROGRESS 92
+UPDATEPROGRESS 94
+UPDATEPROGRESS 95
+UPDATEPROGRESS 97
+UPDATEPROGRESS 98
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\compile\forward.vhd
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\IF_ID.vhd" 
+MESSAGE "Compile Entity "IF_ID"" 
+MESSAGE "Entity `IF_ID' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "IF_ID" of Entity "IF_ID"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\muxEscogedor.vhd" 
+MESSAGE "Compile Entity "muxEscogedor"" 
+MESSAGE "Entity `muxEscogedor' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "muxEscogedor" of Entity "muxEscogedor"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\muxEntradaAlu.vhd" 
+MESSAGE "Compile Entity "muxEntradaAlu"" 
+MESSAGE "Entity `muxEntradaAlu' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "muxEntradaAlu" of Entity "muxEntradaAlu"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\registro2.vhd" 
+MESSAGE "Compile Entity "registro2"" 
+MESSAGE "Entity `registro2' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "registro2" of Entity "registro2"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\registro3.vhd" 
+MESSAGE "Compile Entity "registro3"" 
+MESSAGE "Entity `registro3' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "registro3" of Entity "registro3"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\registro4.vhd" 
+MESSAGE "Compile Entity "registro4"" 
+MESSAGE "Entity `registro4' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "registro4" of Entity "registro4"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\forwardunit.vhd" 
+MESSAGE "Compile Entity "forwardunit"" 
+MESSAGE "Entity `forwardunit' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "forwardunit" of Entity "forwardunit"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\zero.vhd" 
+MESSAGE "Compile Entity "zero"" 
+MESSAGE "Entity `zero' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "zero" of Entity "zero"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\branch_control.vhd" 
+MESSAGE "Compile Entity "branch_control"" 
+MESSAGE "Entity `branch_control' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "branch_control" of Entity "branch_control"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\burbuja_instruccion.vhd" 
+MESSAGE "Compile Entity "burbuja_instruccion"" 
+MESSAGE "Entity `burbuja_instruccion' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "burbuja_instruccion" of Entity "burbuja_instruccion"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\aluSumador.vhd" 
+MESSAGE "Compile Entity "aluSumador"" 
+MESSAGE "Entity `aluSumador' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "aluSumador" of Entity "aluSumador"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\hazard.vhd" 
+MESSAGE "Compile Entity "hazard"" 
+MESSAGE "Entity `hazard' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "hazard" of Entity "hazard"" 
+MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\mux32.vhd" 
+MESSAGE "Compile Entity "mux32"" 
+MESSAGE "Entity `mux32' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "mux32" of Entity "mux32"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]" 
