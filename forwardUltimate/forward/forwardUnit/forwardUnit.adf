@@ -88,7 +88,7 @@ Selected=
 .\src\aluSumador.vhd=VHDL Source Code
 .\src\hazard.vhd=VHDL Source Code
 .\src\mux32.vhd=VHDL Source Code
-.\compile\forward.vhd=VHDL Source Code
 
 [file_out:/forward.bde]
 /\compile\forward.vhd=-1
+

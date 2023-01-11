@@ -2,7 +2,7 @@ SCHM0102
 
 HEADER
 {
- FREEID 34187
+ FREEID 34226
  VARIABLES
  {
   #ARCHITECTURE="forward"
@@ -5232,11 +5232,9 @@ PAGE ""
    VERTEXES ( (6,30491), (8,30492), (12,30496), (2,30497), (10,30494), (4,30539) )
    PINPROP 4,"#PIN_STATE","0"
   }
-  NET BUS  1472, 0, 0
   NET WIRE  1476, 0, 0
   NET WIRE  1482, 0, 0
   NET BUS  1497, 0, 0
-  NET BUS  1513, 0, 0
   INSTANCE  1891, 0, 0
   {
    VARIABLES
@@ -6574,10 +6572,6 @@ PAGE ""
   {
    COORD (6700,3300)
   }
-  VTX  30473, 0, 0
-  {
-   COORD (6900,3300)
-  }
   VTX  30474, 0, 0
   {
    COORD (8800,3300)
@@ -7449,11 +7443,6 @@ PAGE ""
     #NAMED="1"
    }
   }
-  BUS  30696, 0, 0
-  {
-   NET 1513
-   VTX 30472, 30473
-  }
   VTX  30697, 0, 0
   {
    COORD (9000,3300)
@@ -7613,7 +7602,7 @@ PAGE ""
   }
   BUS  30735, 0, 0
   {
-   NET 1472
+   NET 34196
    VTX 30490, 30734
   }
   VTX  30736, 0, 0
@@ -7622,18 +7611,8 @@ PAGE ""
   }
   BUS  30737, 0, 0
   {
-   NET 1472
+   NET 34196
    VTX 30734, 30736
-  }
-  BUS  30738, 0, 0
-  {
-   NET 1472
-   VTX 30736, 30491
-  }
-  BUS  30739, 0, 0
-  {
-   NET 1513
-   VTX 30473, 30492
   }
   VTX  30740, 0, 0
   {
@@ -9235,23 +9214,9 @@ PAGE ""
   {
    COORD (7980,3240)
   }
-  VTX  34148, 0, 0
-  {
-   COORD (6900,2900)
-  }
-  BUS  34149, 0, 0
-  {
-   NET 1513
-   VTX 30473, 34148
-  }
   VTX  34150, 0, 0
   {
    COORD (6920,2900)
-  }
-  BUS  34151, 0, 0
-  {
-   NET 1513
-   VTX 34148, 34150
   }
   VTX  34152, 0, 0
   {
@@ -9259,7 +9224,7 @@ PAGE ""
   }
   BUS  34153, 0, 0
   {
-   NET 1513
+   NET 34196
    VTX 34150, 34152
   }
   VTX  34154, 0, 0
@@ -9268,7 +9233,7 @@ PAGE ""
   }
   BUS  34155, 0, 0
   {
-   NET 1513
+   NET 34196
    VTX 34152, 34154
   }
   VTX  34156, 0, 0
@@ -9277,13 +9242,48 @@ PAGE ""
   }
   BUS  34157, 0, 0
   {
-   NET 1513
+   NET 34196
    VTX 34154, 34156
   }
   BUS  34158, 0, 0
   {
-   NET 1513
+   NET 34196
    VTX 34156, 34147
+  }
+  NET BUS  34187, 0, 0
+  BUS  34189, 0, 0
+  {
+   NET 34187
+   VTX 30472, 30492
+  }
+  VTX  34190, 0, 0
+  {
+   COORD (6840,3120)
+  }
+  BUS  34191, 0, 0
+  {
+   NET 34196
+   VTX 30736, 34190
+  }
+  BUS  34192, 0, 0
+  {
+   NET 34196
+   VTX 34190, 30491
+  }
+  VTX  34193, 0, 0
+  {
+   COORD (6840,2900)
+  }
+  BUS  34195, 0, 0
+  {
+   NET 34196
+   VTX 34193, 34190
+  }
+  NET BUS  34196, 0, 0
+  BUS  34197, 0, 0
+  {
+   NET 34196
+   VTX 34150, 34193
   }
  }
  
@@ -9307,7 +9307,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  34159, 0, 0
+  TEXT  34198, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -9318,7 +9318,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  34160, 0, 0
+  TEXT  34199, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -9329,7 +9329,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    UPDATE 0
   }
-  TEXT  34161, 0, 0
+  TEXT  34200, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -9339,7 +9339,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  34162, 0, 0
+  TEXT  34201, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -9351,34 +9351,34 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    UPDATE 0
   }
-  LINE  34163, 0, 0
+  LINE  34202, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (8930,6480), (9800,6480) )
    FILL (1,(0,0,0),0)
   }
-  LINE  34164, 0, 0
+  LINE  34203, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (8930,6540), (9800,6540) )
    FILL (1,(0,0,0),0)
   }
-  LINE  34165, 0, 0
+  LINE  34204, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9100,6480), (9100,6600) )
   }
-  LINE  34166, 0, 0
+  LINE  34205, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9800,6600), (9800,6340), (8930,6340), (8930,6600), (9800,6600) )
    FILL (1,(0,0,0),0)
   }
-  TEXT  34167, 0, 0
+  TEXT  34206, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -9391,34 +9391,34 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  LINE  34168, 0, 0
+  LINE  34207, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (128,128,128)
    POINTS ( (9240,6340), (9240,6480) )
   }
-  LINE  34169, 0, 0
+  LINE  34208, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9416,6404), (9482,6404) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34170, 0, 0
+  LINE  34209, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9385,6400), (9385,6400) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34171, 0, 0
+  LINE  34210, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
    POINTS ( (9434,6404), (9450,6364) )
    FILL (0,(0,4,255),0)
   }
-  TEXT  34172, -4, 0
+  TEXT  34211, -4, 0
   {
    PAGEALIGN 10
    OUTLINE 5,0, (49,101,255)
@@ -9428,14 +9428,14 @@ PAGE ""
    COLOR (0,4,255)
    FONT (36,0,0,700,0,0,0,"Arial")
   }
-  LINE  34173, 0, 0
+  LINE  34212, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
    POINTS ( (9376,6364), (9351,6427) )
    FILL (0,(0,4,255),0)
   }
-  BEZIER  34174, 0, 0
+  BEZIER  34213, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,3, (0,4,255)
@@ -9443,70 +9443,70 @@ PAGE ""
    ORIGINS ( (9383,6390), (9416,6404), (9383,6415), (9383,6390) )
    CONTROLS (( (9407,6390), (9415,6389)),( (9413,6415), (9410,6415)),( (9383,6407), (9383,6402)) )
   }
-  LINE  34175, 0, 0
+  LINE  34214, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9295,6411), (9383,6411) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34176, 0, 0
+  LINE  34215, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,4, (0,4,255)
    POINTS ( (9302,6394), (9383,6394) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34177, 0, 0
+  LINE  34216, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9488,6371), (9311,6371) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34178, 0, 0
+  LINE  34217, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9486,6378), (9308,6378) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34179, 0, 0
+  LINE  34218, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9500,6386), (9306,6386) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34180, 0, 0
+  LINE  34219, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9502,6394), (9310,6394) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34181, 0, 0
+  LINE  34220, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9415,6402), (9299,6402) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34182, 0, 0
+  LINE  34221, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9480,6411), (9295,6411) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34183, 0, 0
+  LINE  34222, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9473,6419), (9292,6419) )
    FILL (0,(0,4,255),0)
   }
-  TEXT  34184, 0, 0
+  TEXT  34223, 0, 0
   {
    PAGEALIGN 10
    TEXT "The Design Verification Company"
@@ -9515,14 +9515,14 @@ PAGE ""
    COLOR (0,4,255)
    FONT (12,0,0,700,1,0,0,"Arial")
   }
-  LINE  34185, 0, 0
+  LINE  34224, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)
    POINTS ( (9467,6427), (9289,6427) )
    FILL (0,(0,4,255),0)
   }
-  LINE  34186, 0, 0
+  LINE  34225, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 0,1, (0,4,255)

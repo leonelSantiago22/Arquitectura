@@ -12,8 +12,6 @@ TemplateId=0
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\forwardunit.vhd|]
 TemplateId=0
-[OPENDOC|Aldec.WaveForm.7|.\forwardUnit\src\Waveform Editor 1.awf|]
-TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\memoriadeinstrucciones.vhd|]
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\branch_control.vhd|]
@@ -23,4 +21,16 @@ TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\memoriaDatos.vhd|]
 TemplateId=0
 [OPENDOC|Aldec.HtmlDoc.PlugIn.7|.\forwardUnit\log\forward.htm|]
+TemplateId=0
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\burbuja_instruccion.vhd|]
+TemplateId=0
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\compile\forward.vhd|]
+TemplateId=0
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\control.vhd|]
+TemplateId=0
+[OPENDOC|Aldec.SE.7|lib:\VHDL\forwardUnit\control\control|]
+TemplateId=0
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\registro2.vhd|]
+TemplateId=0
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\hazard.vhd|]
 TemplateId=0
