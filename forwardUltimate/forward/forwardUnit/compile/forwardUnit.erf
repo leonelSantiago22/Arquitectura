@@ -167,4 +167,4 @@ MESSAGE "File: C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forwar
 MESSAGE "Compile Entity "mux32"" 
 MESSAGE "Entity `mux32' has been skipped - no difference detected." 
 MESSAGE "Compile Architecture "mux32" of Entity "mux32"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]" 

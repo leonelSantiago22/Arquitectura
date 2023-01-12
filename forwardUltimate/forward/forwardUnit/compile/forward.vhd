@@ -8,7 +8,7 @@
 ---------------------------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\compile\forward.vhd
--- Generated   : Mon Jan  9 18:30:26 2023
+-- Generated   : Thu Jan 12 12:02:23 2023
 -- From        : C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\forward.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -301,9 +301,7 @@ signal BUS1007 : STD_LOGIC_VECTOR (2 downto 0);
 signal BUS1146 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS1150 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS1320 : STD_LOGIC_VECTOR (63 downto 0);
-signal BUS1472 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS1497 : STD_LOGIC_VECTOR (63 downto 0);
-signal BUS1513 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS23959 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS2458 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS2476 : STD_LOGIC_VECTOR (63 downto 0);
@@ -323,6 +321,8 @@ signal BUS2840 : STD_LOGIC_VECTOR (4 downto 0);
 signal BUS30080 : STD_LOGIC_VECTOR (31 downto 0);
 signal BUS30094 : STD_LOGIC_VECTOR (31 downto 0);
 signal BUS31820 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS34187 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS34196 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS3496 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS3504 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS679 : STD_LOGIC_VECTOR (31 downto 0);
@@ -415,9 +415,9 @@ U13 : registro3
        read => NET1292,
        readsalida => NET1476,
        reset => reset,
-       salidaalu => BUS1472,
+       salidaalu => BUS34196,
        salidamemtoreg => NET25465,
-       salidar2 => BUS1513,
+       salidar2 => BUS34187,
        salidard => MemRd,
        wbentrada => AluWb,
        wbsalida => MemWb,
@@ -428,8 +428,8 @@ U13 : registro3
 U14 : memoriaDatos
   port map(
        clk => clk,
-       entradaAlu => BUS1472,
-       entradaRegfile => BUS1513,
+       entradaAlu => BUS34196,
+       entradaRegfile => BUS34187,
        escritura => NET1482,
        lectura => NET1476,
        salida => BUS1497
@@ -437,7 +437,7 @@ U14 : memoriaDatos
 
 U15 : muxEntradaAlu
   port map(
-       a => BUS1513,
+       a => BUS34196,
        b => BUS1497,
        control => NET25465,
        salida => salidaB

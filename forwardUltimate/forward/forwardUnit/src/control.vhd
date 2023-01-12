@@ -32,7 +32,7 @@ begin
 	begin 
 	
 		--add 
-		if we = '1' then 
+	if we = '1' then 
 				wb <='0';
 				read <='0';
 				write<='0';	
