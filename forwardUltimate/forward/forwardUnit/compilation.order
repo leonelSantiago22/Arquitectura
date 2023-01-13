@@ -24,3 +24,4 @@
 .\src\aluSumador.vhd
 .\src\hazard.vhd
 .\src\mux32.vhd
+.\src\BTB.vhd

@@ -7,9 +7,9 @@
 --
 ---------------------------------------------------------------------------------------------------
 --
--- File        : C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\compile\forward.vhd
--- Generated   : Thu Jan 12 12:02:23 2023
--- From        : C:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\forward.bde
+-- File        : c:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\compile\forward.vhd
+-- Generated   : Thu Jan 12 20:40:26 2023
+-- From        : c:\Users\Roberto\Downloads\forwardUltimate\forwardUltimate\forward\forwardUnit\src\forward.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 ---------------------------------------------------------------------------------------------------
@@ -56,10 +56,32 @@ component alusumador
 end component;
 component branch_control
   port (
+       id_cont : in STD_LOGIC_VECTOR(1 downto 0);
+       id_target : in STD_LOGIC_VECTOR(63 downto 0);
        opcode : in STD_LOGIC_VECTOR(6 downto 0);
+       operacionJalr : in STD_LOGIC_VECTOR(63 downto 0);
+       operacionSaltos : in STD_LOGIC_VECTOR(63 downto 0);
+       pcmas4 : in STD_LOGIC_VECTOR(63 downto 0);
        zero : in STD_LOGIC;
+       WE : out STD_LOGIC;
+       cont : out STD_LOGIC_VECTOR(1 downto 0);
        control : out STD_LOGIC;
-       controlSalida : out STD_LOGIC_VECTOR(1 downto 0)
+       controlSalida : out STD_LOGIC;
+       correccion : out STD_LOGIC_VECTOR(63 downto 0);
+       target : out STD_LOGIC_VECTOR(63 downto 0)
+  );
+end component;
+component BTB
+  port (
+       ID_PC : in STD_LOGIC_VECTOR(63 downto 0);
+       PC : in STD_LOGIC_VECTOR(63 downto 0);
+       WE : in STD_LOGIC;
+       cont : in STD_LOGIC_VECTOR(1 downto 0);
+       target : in STD_LOGIC_VECTOR(63 downto 0);
+       contadorSalida : out STD_LOGIC_VECTOR(1 downto 0);
+       predict : out STD_LOGIC;
+       prediction : out STD_LOGIC_VECTOR(63 downto 0);
+       salidaTarget : out STD_LOGIC_VECTOR(63 downto 0)
   );
 end component;
 component burbuja_instruccion
@@ -120,11 +142,14 @@ end component;
 component IF_ID
   port (
        clk : in STD_LOGIC;
+       cont : in STD_LOGIC_VECTOR(1 downto 0);
        instruccion : in STD_LOGIC_VECTOR(31 downto 0);
        pc : in STD_LOGIC_VECTOR(63 downto 0);
        pcmas4 : in STD_LOGIC_VECTOR(63 downto 0);
        reset : in STD_LOGIC;
+       target : in STD_LOGIC_VECTOR(63 downto 0);
        we : in STD_LOGIC;
+       contsalida : out STD_LOGIC_VECTOR(1 downto 0);
        extension : out STD_LOGIC_VECTOR(31 downto 0);
        func3 : out STD_LOGIC_VECTOR(2 downto 0);
        func7 : out STD_LOGIC_VECTOR(6 downto 0);
@@ -133,7 +158,8 @@ component IF_ID
        rs1 : out STD_LOGIC_VECTOR(4 downto 0);
        rs2 : out STD_LOGIC_VECTOR(4 downto 0);
        salidapc : out STD_LOGIC_VECTOR(63 downto 0);
-       salidapcmas4 : out STD_LOGIC_VECTOR(63 downto 0)
+       salidapcmas4 : out STD_LOGIC_VECTOR(63 downto 0);
+       targetsalida : out STD_LOGIC_VECTOR(63 downto 0)
   );
 end component;
 component memoriaDatos
@@ -296,6 +322,9 @@ signal NET25465 : STD_LOGIC;
 signal NET26112 : STD_LOGIC;
 signal NET31717 : STD_LOGIC;
 signal NET31733 : STD_LOGIC;
+signal NET35110 : STD_LOGIC;
+signal NET35327 : STD_LOGIC;
+signal NET35821 : STD_LOGIC;
 signal AluRd : STD_LOGIC_VECTOR (4 downto 0);
 signal BUS1007 : STD_LOGIC_VECTOR (2 downto 0);
 signal BUS1146 : STD_LOGIC_VECTOR (63 downto 0);
@@ -310,25 +339,34 @@ signal BUS25288 : STD_LOGIC_VECTOR (6 downto 0);
 signal BUS25416 : STD_LOGIC_VECTOR (31 downto 0);
 signal BUS25486 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS25580 : STD_LOGIC_VECTOR (63 downto 0);
-signal BUS25651 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS25721 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS25770 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS25771 : STD_LOGIC_VECTOR (63 downto 0);
-signal BUS25807 : STD_LOGIC_VECTOR (1 downto 0);
-signal BUS25877 : STD_LOGIC_VECTOR (63 downto 0);
-signal BUS25896 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS2840 : STD_LOGIC_VECTOR (4 downto 0);
 signal BUS30080 : STD_LOGIC_VECTOR (31 downto 0);
 signal BUS30094 : STD_LOGIC_VECTOR (31 downto 0);
-signal BUS31820 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS34187 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS34196 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS34255 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS34395 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS34622 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS34947 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS3496 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS34970 : STD_LOGIC_VECTOR (1 downto 0);
+signal BUS34978 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS3504 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS35107 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS35118 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS35269 : STD_LOGIC_VECTOR (1 downto 0);
+signal BUS35296 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS35351 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS35589 : STD_LOGIC_VECTOR (63 downto 0);
+signal BUS35590 : STD_LOGIC_VECTOR (7 downto 0);
+signal BUS35959 : STD_LOGIC_VECTOR (1 downto 0);
+signal BUS35971 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS679 : STD_LOGIC_VECTOR (31 downto 0);
 signal BUS906 : STD_LOGIC_VECTOR (4 downto 0);
 signal BUS918 : STD_LOGIC_VECTOR (63 downto 0);
-signal BUS935 : STD_LOGIC_VECTOR (63 downto 0);
 signal BUS999 : STD_LOGIC_VECTOR (6 downto 0);
 signal CtrlF1 : STD_LOGIC_VECTOR (1 downto 0);
 signal CtrlF2 : STD_LOGIC_VECTOR (1 downto 0);
@@ -345,9 +383,9 @@ begin
 U1 : pc
   port map(
        clk => clk,
-       entrada => BUS25771,
+       entrada => BUS34395,
        reset => reset,
-       salida => BUS31820,
+       salida => BUS34947,
        we => NET31733
   );
 
@@ -355,7 +393,7 @@ U10 : registro2
   port map(
        clk => clk,
        entradaaluOP => NET1082,
-       entradamas4 => BUS935,
+       entradamas4 => BUS35351,
        entradamemtoreg => NET25451,
        entradamux => BUS918,
        entradar1 => BUS25721,
@@ -485,7 +523,7 @@ U19 : forwardunit
 
 U2 : add4
   port map(
-       entrada => BUS31820,
+       entrada => BUS34947,
        salidamas4 => BUS25770
   );
 
@@ -506,9 +544,18 @@ NET25224 <= not(NET25300);
 
 U25 : branch_control
   port map(
+       WE => NET35327,
+       cont => BUS35269,
        control => NET25389,
-       controlSalida => BUS25807,
+       controlSalida => NET35110,
+       correccion => BUS35118,
+       id_cont => BUS35959,
+       id_target => BUS35971,
        opcode => BUS25288,
+       operacionJalr => BUS34255,
+       operacionSaltos => BUS35589,
+       pcmas4 => BUS35351,
+       target => BUS35296,
        zero => NET25345
   );
 
@@ -535,29 +582,28 @@ U29 : alusumador
   port map(
        a => BUS25721,
        b => BUS25486,
-       res => BUS25896
+       res => BUS34255
   );
 
 U3 : memoriadeinstrucciones
   port map(
-       direccion => BUS31820,
+       direccion => BUS34947,
        salinstruccion => BUS30094
   );
 
 U30 : alusumador
   port map(
-       a => BUS25651,
+       a => BUS35107,
        b => BUS25580,
-       res => BUS25877
+       res => BUS35589
   );
 
-U31 : muxEscogedor
+U31 : muxEntradaAlu
   port map(
-       A => BUS25770,
-       B => BUS25896,
-       C => BUS25877,
-       cntrl => BUS25807,
-       salidaDato => BUS25771
+       a => BUS25771,
+       b => BUS35118,
+       control => NET35110,
+       salida => BUS34395
   );
 
 U32 : hazard
@@ -570,22 +616,47 @@ U32 : hazard
        rs2 => Frs2
   );
 
+U33 : muxEntradaAlu
+  port map(
+       a => BUS25770,
+       b => BUS34622,
+       control => NET35821,
+       salida => BUS25771
+  );
+
+U35 : BTB
+  port map(
+       ID_PC => BUS35107,
+       PC => BUS34947,
+       WE => NET35327,
+       cont => BUS35269,
+       contadorSalida => BUS34970,
+       predict => NET35821,
+       prediction => BUS34622,
+       salidaTarget => BUS34978,
+       target => BUS35296
+  );
+
 U4 : IF_ID
   port map(
        clk => clk,
+       cont => BUS34970,
+       contsalida => BUS35959,
        extension => BUS679,
        func3 => BUS1007,
        func7 => BUS999,
        instruccion => BUS25416,
        opcode => BUS25288,
-       pc => BUS31820,
+       pc => BUS34947,
        pcmas4 => BUS25770,
        rd => BUS906,
        reset => reset,
        rs1 => Frs1,
        rs2 => Frs2,
-       salidapc => BUS25651,
-       salidapcmas4 => BUS935,
+       salidapc => BUS35107,
+       salidapcmas4 => BUS35351,
+       target => BUS34978,
+       targetsalida => BUS35971,
        we => NET31733
   );
 

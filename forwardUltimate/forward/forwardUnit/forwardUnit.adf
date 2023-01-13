@@ -27,7 +27,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=forward|forward|0 
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
@@ -59,6 +59,7 @@ Selected=
 /aluSumador.vhd=-1
 /hazard.vhd=-1
 /mux32.vhd=-1
+/BTB.vhd=-1
 
 [Files.Data]
 .\src\pc.vhd=VHDL Source Code
@@ -88,6 +89,7 @@ Selected=
 .\src\aluSumador.vhd=VHDL Source Code
 .\src\hazard.vhd=VHDL Source Code
 .\src\mux32.vhd=VHDL Source Code
+.\src\BTB.vhd=VHDL Source Code
 .\compile\forward.vhd=VHDL Source Code
 
 [file_out:/forward.bde]

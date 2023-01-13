@@ -28,9 +28,15 @@ TemplateId=0
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\control.vhd|]
 TemplateId=0
-[OPENDOC|Aldec.SE.7|lib:\VHDL\forwardUnit\control\control|]
-TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\registro2.vhd|]
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\hazard.vhd|]
+TemplateId=0
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\forwardUnit\src\registro4.vhd|]
+TemplateId=0
+[OPENDOC|Aldec.SE.7|lib:\VHDL\forwardUnit\memoriadeinstrucciones\memoriadeinstrucciones|]
+TemplateId=0
+[OPENDOC|Aldec.SE.7|lib:\VHDL\forwardUnit\regfile\regfile|]
+TemplateId=0
+[OPENDOC|Aldec.SE.7|lib:\VHDL\forwardUnit\if_id\IF_ID|]
 TemplateId=0

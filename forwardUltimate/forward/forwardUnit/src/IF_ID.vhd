@@ -43,7 +43,11 @@ entity IF_ID is
 		 rd : out STD_LOGIC_VECTOR(4 downto 0);
 		 func3:  out STD_LOGIC_VECTOR(2 downto 0);
 		 extension:out STD_LOGIC_VECTOR(31 downto 0);
-		 opcode : out STD_LOGIC_VECTOR(6 downto 0)
+		 opcode : out STD_LOGIC_VECTOR(6 downto 0);
+		 target: in STD_LOGIC_VECTOR(63 downto 0);
+		 cont:  in STD_LOGIC_VECTOR(1 downto 0);
+		 targetsalida: out STD_LOGIC_VECTOR(63 downto 0);
+		 contsalida: out STD_LOGIC_VECTOR(1 downto 0)
 	     );
 end IF_ID;
 
@@ -51,7 +55,7 @@ end IF_ID;
 
 architecture IF_ID of IF_ID is
 begin
-	process(clk,reset,instruccion,pcmas4,pc,we)
+	process(clk,reset,instruccion,pcmas4,pc,we, target,cont)
 	begin 
 		if reset = '1' then
 			rs1 <= "00000";
@@ -62,9 +66,10 @@ begin
 			salidapc <=  x"0000000000000000";
 			opcode <= "0000000";
 			func3<= "000";		  
-			extension <= x"00000000";
+			extension <= x"00000000"; 
+			contsalida<="00";
+			targetsalida<=	 x"0000000000000000";
 		elsif rising_edge(clk) and we ='0' then	
-			
 				salidapcmas4 <= pcmas4;	
 				salidapc <= pc;
 				rs1 <=  instruccion(19 downto 15);
@@ -74,6 +79,8 @@ begin
 				func3 <=   instruccion(14 downto 12);
 				extension  <= instruccion(31 downto 0); 
 				func7 <= instruccion(31 downto 25);
+				contsalida<=cont;
+				targetsalida<= target;
 		end if;
 	end process;
 	 -- enter your statements here --

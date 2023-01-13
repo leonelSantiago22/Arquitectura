@@ -77946,7 +77946,7 @@ PAGE ""
   }
  }
 }
-V 000046 40 1964 1672981482410 branch_control
+I 000046 40 1964 1672981482410 branch_control
 SYMB0100
 HEADER
 {
@@ -82331,7 +82331,7 @@ PAGE ""
   }
  }
 }
-V 000037 40 5945 1673016670371 if_id
+I 000037 40 5945 1673016670371 if_id
 SYMB0100
 HEADER
 {
@@ -86223,6 +86223,6817 @@ PAGE ""
       MARGINS (1,1)
       PARENT 8
       ORIENTATION 8
+    }
+  }
+}
+I 000046 40 4954 1673565973931 branch_control
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673565973"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (-60,-60,240,300)
+    FREEID 32
+  }
+  BODY
+  {
+    RECT 10,-1,0
+    {
+      OUTLINE 0,1,(255,4,0)
+      FILL (0,(0,0,0),0)
+      AREA (-40,-40,220,280)
+    }
+    TEXT 15,0,0
+    {
+      TEXT "branch Control"
+      RECT (0,40,193,75)
+      MARGINS (1,1)
+      COLOR (255,255,255)
+      FONT (12,0,0,400,0,0,0,"Arial")
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="controlSalida(1:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,80)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-280,48,-130,72)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 18,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="func3(2:0)"
+      }
+      COORD (-60,120)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 19,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 18
+      ALIGN 4
+      RECT (-35,106,95,138)
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (60,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionSaltos(63:0)"
+      }
+      COORD (-60,160)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 20
+      ALIGN 4
+      RECT (-35,146,95,178)
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionJalr(63:0)"
+      }
+      COORD (-60,200)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 22
+      ALIGN 4
+      RECT (-35,186,95,218)
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+      }
+      COORD (-60,240)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 24
+      ALIGN 4
+      RECT (-35,226,95,258)
+    }
+    PIN 26,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="activacion_saltos"
+      }
+      COORD (-60,280)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 27,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 26
+      ALIGN 4
+      RECT (-35,266,95,298)
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="correccion(63:0)"
+      }
+      COORD (240,100)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 28
+      ALIGN 6
+      RECT (85,86,215,118)
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-120,-92,-14,-68)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 2
+    }
+    PIN 30,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlCorrecion"
+      }
+      COORD (240,140)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 31,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 30
+      ALIGN 6
+      RECT (85,126,215,158)
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="control"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (240,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (261,68,320,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="zero"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (180,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (200,-72,239,-48)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 6
+    }
+  }
+}
+I 000046 40 4634 1673566227145 branch_control
+SYMB0100
+
+HEADER
+{
+ FREEID 34
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673566227"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (-60,-60,400,300)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (40,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="opcode(6:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (28,-160,52,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 2
+   ORIENTATION 5
+  }
+  PIN  4, 0, 0
+  {
+   COORD (400,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="control"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (421,68,480,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (260,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="zero"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (240,-92,279,-68)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  RECT  10, -1, 0
+  {
+   OUTLINE 0,1, (255,4,0)
+   AREA (-40,-40,400,280)
+   FILL (0,(0,0,0),0)
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "Branch Control"
+   RECT (80,100,276,135)
+   MARGINS (1,1)
+   COLOR (255,255,255)
+   FONT (12,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (-60,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="controlSalida(1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-280,48,-130,72)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 2
+  }
+  PIN  18, 0, 0
+  {
+   COORD (80,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="func3(2:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (68,-160,92,-72)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 18
+   ORIENTATION 5
+  }
+  PIN  20, 0, 0
+  {
+   COORD (160,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionSaltos(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (148,-240,172,-51)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 20
+   ORIENTATION 5
+  }
+  PIN  22, 0, 0
+  {
+   COORD (200,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionJalr(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (188,-220,212,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 22
+   ORIENTATION 5
+  }
+  PIN  24, 0, 0
+  {
+   COORD (0,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-12,-180,12,-60)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 24
+   ORIENTATION 5
+  }
+  PIN  26, 0, 0
+  {
+   COORD (120,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="activacion_saltos"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (108,-200,132,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  28, 0, 0
+  {
+   COORD (400,100)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="correccion(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (234,90,375,114)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 28
+  }
+  PIN  30, 0, 0
+  {
+   COORD (400,140)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="controlCorrecion"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (233,130,375,154)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 30
+  }
+ }
+ 
+}
+
+I 000035 40 268 1673567304058 fub1
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #FUB="1"
+  #LANGUAGE="VHDL"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,260,240)
+  FREEID 2
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,260,240)
+  }
+ }
+}
+I 000035 40 3673 1673567367750 btb
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #FUB="1"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673567367"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,280,280)
+  FREEID 20
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,280,280)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,30,49,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,70,115,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,110,92,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,150,94,174)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,190,125,214)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (205,30,265,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 12
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (137,70,265,94)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 14
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (130,110,265,134)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 16
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (109,150,265,174)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 18
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="WE"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="PC(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,200)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="ID_PC(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (280,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="predict"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  14, 0, 0
+  {
+   COORD (280,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="contadorSalida"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (280,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="prediction(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (280,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="salidaTarget(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+ }
+}
+I 000035 40 3692 1673567385128 btb
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #FUB="1"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673567367"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,280,280)
+  FREEID 20
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,280,280)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,30,49,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,70,115,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,110,92,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,150,94,174)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,190,125,214)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (205,30,265,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 12
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (137,70,265,94)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 14
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (130,110,265,134)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 16
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (109,150,265,174)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 18
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="WE"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="PC(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,200)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="ID_PC(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (280,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="predict"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  14, 0, 0
+  {
+   COORD (280,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="contadorSalida"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (280,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="prediction(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (280,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="0"
+    #MODIFIED="1"
+    #NAME="salidaTarget(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+ }
+}
+I 000035 40 3781 1673567385145 btb
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673567385"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,280,280)
+  FREEID 20
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,260,280)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (35,30,69,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (35,70,135,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (35,110,112,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (35,150,114,174)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (35,190,145,214)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (185,30,245,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 12
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (117,70,245,94)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 14
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (110,110,245,134)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 16
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (89,150,245,174)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 18
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="WE"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="PC(63:0)"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,200)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="ID_PC(63:0)"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (280,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="predict"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  PIN  14, 0, 0
+  {
+   COORD (280,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="contadorSalida"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (280,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="prediction(63:0)"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (280,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="salidaTarget(63:0)"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+ }
+}
+I 000035 40 268 1673567385212 fub1
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #FUB="1"
+  #LANGUAGE="VHDL"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,280,340)
+  FREEID 2
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,280,340)
+  }
+ }
+}
+I 000035 40 4271 1673567646291 btb
+SYMB0100
+
+HEADER
+{
+ FREEID 46
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673567646"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,300,200)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   OUTLINE 0,2, (0,0,0)
+   AREA (20,20,280,180)
+   FILL (0,(255,109,0),0)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (220,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="WE"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,-40,232,-6)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 2
+   ORIENTATION 5
+  }
+  PIN  4, 0, 0
+  {
+   COORD (140,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (128,-100,152,0)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 4
+   ORIENTATION 5
+  }
+  PIN  6, 0, 0
+  {
+   COORD (180,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (168,-80,192,-3)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 6
+   ORIENTATION 5
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="PC(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-80,68,-1,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  10, 0, 0
+  {
+   COORD (140,200)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="ID_PC(63:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (148,210,172,320)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 10
+   ORIENTATION 8
+  }
+  PIN  12, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="predict"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-60,148,0,172)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 12
+   ORIENTATION 2
+  }
+  PIN  14, 0, 0
+  {
+   COORD (300,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="contadorSalida"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (292,108,420,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 14
+  }
+  PIN  16, 0, 0
+  {
+   COORD (0,140)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="prediction(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-140,128,-5,152)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 2
+  }
+  PIN  18, 0, 0
+  {
+   COORD (300,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MODIFIED="1"
+    #NAME="salidaTarget(63:0)"
+    #NUMBER="0"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (304,148,460,172)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 18
+  }
+  TEXT  42, 0, 0
+  {
+   TEXT "BTB"
+   RECT (200,140,258,175)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+ }
+ 
+}
+
+I 000046 40 4694 1673567979606 branch_control
+SYMB0100
+
+HEADER
+{
+ FREEID 34
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673567979"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (-60,-60,400,300)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (140,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="opcode(6:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (128,-160,152,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 2
+   ORIENTATION 5
+  }
+  PIN  4, 0, 0
+  {
+   COORD (400,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="control"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (421,68,480,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (400,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="zero"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (408,21,432,60)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 6
+   ORIENTATION 6
+  }
+  RECT  10, -1, 0
+  {
+   OUTLINE 0,1, (255,4,0)
+   AREA (-40,-40,400,280)
+   FILL (0,(0,0,0),0)
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "Branch Control"
+   RECT (80,100,276,135)
+   MARGINS (1,1)
+   COLOR (255,255,255)
+   FONT (12,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (-60,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="controlSalida(1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-200,68,-50,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 2
+  }
+  PIN  18, 0, 0
+  {
+   COORD (200,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="func3(2:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (188,-160,212,-72)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 18
+   ORIENTATION 5
+  }
+  PIN  20, 0, 0
+  {
+   COORD (380,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionSaltos(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (368,-260,392,-71)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 20
+   ORIENTATION 5
+  }
+  PIN  22, 0, 0
+  {
+   COORD (320,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionJalr(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (308,-220,332,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 22
+   ORIENTATION 5
+  }
+  PIN  24, 0, 0
+  {
+   COORD (80,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (68,-180,92,-60)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 24
+   ORIENTATION 5
+  }
+  PIN  26, 0, 0
+  {
+   COORD (260,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="activacion_saltos"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (248,-200,272,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  28, 0, 0
+  {
+   COORD (-60,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="correccion(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-200,108,-59,132)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 28
+   ORIENTATION 2
+  }
+  PIN  30, 0, 0
+  {
+   COORD (400,140)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="controlCorrecion"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (233,130,375,154)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 30
+  }
+ }
+ 
+}
+
+I 000037 40 8482 1673573566223 if_id
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673573566"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (20,0,220,1640)
+    FREEID 48
+  }
+  BODY
+  {
+    PIN 10,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="rd(4:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,1480)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 11,0,0
+    {
+      TEXT "$#NAME"
+      RECT (242,1448,300,1472)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 10
+    }
+    PIN 12,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="reset"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (160,1640)
+      LINE 2,0,0
+      {
+        POINTS ((0,-20),(0,0))
+      }
+    }
+    TEXT 13,0,0
+    {
+      TEXT "$#NAME"
+      RECT (195,1628,240,1652)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 12
+      ORIENTATION 3
+    }
+    PIN 14,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="rs1(4:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,420)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 15,0,0
+    {
+      TEXT "$#NAME"
+      RECT (252,388,320,412)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 14
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="rs2(4:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,480)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (252,448,320,472)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 16
+    }
+    PIN 18,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="salidapcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,240)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 19,0,0
+    {
+      TEXT "$#NAME"
+      RECT (311,208,480,232)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 18
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="instruccion(31:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (20,1060)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="func3(2:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,100)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (252,68,340,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 20
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="extension(31:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,720)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (287,668,420,692)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 22
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="func7(6:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,140)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (252,108,340,132)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 24
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,1068,-58,1092)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 2
+    }
+    RECT 32,0,0
+    {
+      OUTLINE 0,3,(0,0,0)
+      AREA (40,20,120,1620)
+      FILL (0,(206,150,255),0)
+    }
+    RECT 33,0,0
+    {
+      OUTLINE 0,3,(0,0,0)
+      AREA (120,20,200,1620)
+      FILL (0,(217,174,255),0)
+    }
+    PIN 34,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pc(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (20,440)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 35,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-80,388,-7,412)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 34
+    }
+    PIN 36,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="salidapc(63:0)"
+        #NUMBER="0"
+      }
+      COORD (220,1520)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 37,0,0
+    {
+      TEXT "$#NAME"
+      RECT (278,1528,400,1552)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 36
+    }
+    PIN 38,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="we"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (120,0)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 39,0,0
+    {
+      TEXT "$#NAME"
+      RECT (140,-32,166,-8)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 38
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="clk"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (60,1640)
+      LINE 2,0,0
+      {
+        POINTS ((0,-20),(0,0))
+      }
+    }
+    PIN 40,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="target(63:0)"
+      }
+      COORD (20,60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 41,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 40
+      ALIGN 4
+      RECT (45,46,85,78)
+    }
+    PIN 42,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="cont(1:0)"
+      }
+      COORD (20,100)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 43,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 42
+      ALIGN 4
+      RECT (45,86,85,118)
+    }
+    PIN 44,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="targetsalida(63:0)"
+      }
+      COORD (220,180)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 45,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 44
+      ALIGN 6
+      RECT (155,166,195,198)
+    }
+    PIN 46,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="contsalida(1:0)"
+      }
+      COORD (220,220)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 47,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 46
+      ALIGN 6
+      RECT (155,206,195,238)
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (15,1628,40,1652)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+      ORIENTATION 3
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (20,140)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-160,88,-40,112)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 6
+    }
+    PIN 8,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (220,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 9,0,0
+    {
+      TEXT "$#NAME"
+      RECT (254,28,360,52)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 8
+    }
+  }
+}
+V 000037 40 7471 1673573658930 if_id
+SYMB0100
+
+HEADER
+{
+ FREEID 50
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673573658"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (20,0,220,1640)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (20,1060)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="instruccion(31:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-200,1068,-58,1092)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  PIN  4, 0, 0
+  {
+   COORD (60,1640)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="clk"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-20), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (15,1628,40,1652)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+   ORIENTATION 3
+  }
+  PIN  6, 0, 0
+  {
+   COORD (20,140)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-160,88,-40,112)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  PIN  8, 0, 0
+  {
+   COORD (220,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="opcode(6:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (254,28,360,52)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  10, 0, 0
+  {
+   COORD (220,1480)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="rd(4:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (242,1448,300,1472)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 10
+  }
+  PIN  12, 0, 0
+  {
+   COORD (160,1640)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="reset"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-20), (0,0) )
+   }
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (195,1628,240,1652)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 12
+   ORIENTATION 3
+  }
+  PIN  14, 0, 0
+  {
+   COORD (220,420)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="rs1(4:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (252,388,320,412)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 14
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,480)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="rs2(4:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (252,448,320,472)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 16
+  }
+  PIN  18, 0, 0
+  {
+   COORD (220,240)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="salidapcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (311,208,480,232)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 18
+  }
+  PIN  20, 0, 0
+  {
+   COORD (220,100)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="func3(2:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (252,68,340,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 20
+  }
+  PIN  22, 0, 0
+  {
+   COORD (220,720)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="extension(31:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (287,668,420,692)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 22
+  }
+  PIN  24, 0, 0
+  {
+   COORD (220,140)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="func7(6:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (252,108,340,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 24
+  }
+  RECT  32, 0, 0
+  {
+   OUTLINE 0,3, (0,0,0)
+   AREA (40,20,120,1620)
+   FILL (0,(206,150,255),0)
+  }
+  RECT  33, 0, 0
+  {
+   OUTLINE 0,3, (0,0,0)
+   AREA (120,20,200,1620)
+   FILL (0,(217,174,255),0)
+  }
+  PIN  34, 0, 0
+  {
+   COORD (20,440)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pc(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  35, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-80,388,-7,412)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 34
+  }
+  PIN  36, 0, 0
+  {
+   COORD (220,1520)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="salidapc(63:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  37, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (278,1528,400,1552)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 36
+  }
+  PIN  38, 0, 0
+  {
+   COORD (120,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="we"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  39, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (140,-32,166,-8)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 38
+  }
+  PIN  40, 0, 0
+  {
+   COORD (20,1280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  41, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (45,1270,145,1294)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 40
+  }
+  PIN  42, 0, 0
+  {
+   COORD (20,1360)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  43, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (45,1350,122,1374)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 42
+  }
+  PIN  44, 0, 0
+  {
+   COORD (220,1280)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="targetsalida(63:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  45, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (151,1308,300,1332)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 44
+  }
+  PIN  46, 0, 0
+  {
+   COORD (220,1360)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="contsalida(1:0)"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  47, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (174,1368,300,1392)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 46
+  }
+ }
+ 
+}
+
+V 000035 40 4960 1673573704529 btb
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673573704"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (0,0,300,200)
+    FREEID 43
+  }
+  BODY
+  {
+    RECT 1,-1,0
+    {
+      VARIABLES
+      {
+        #OUTLINE_FILLING="1"
+      }
+      OUTLINE 0,2,(0,0,0)
+      AREA (20,20,280,180)
+      FILL (0,(255,109,0),0)
+    }
+    PIN 10,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="ID_PC(63:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (140,200)
+      LINE 1,0,0
+      {
+        OUTLINE 0,3,(64,92,92)
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 11,0,0
+    {
+      TEXT "$#NAME"
+      RECT (148,210,172,320)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 10
+      ORIENTATION 8
+    }
+    PIN 12,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="predict"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (0,160)
+      LINE 1,0,0
+      {
+        OUTLINE 0,1,(64,92,92)
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 13,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-60,148,0,172)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 12
+      ORIENTATION 2
+    }
+    PIN 14,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="contadorSalida(1:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (300,120)
+      LINE 1,0,0
+      {
+        OUTLINE 0,1,(64,92,92)
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 15,0,0
+    {
+      TEXT "$#NAME"
+      RECT (292,108,420,132)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 14
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="prediction(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (0,140)
+      LINE 1,0,0
+      {
+        OUTLINE 0,3,(64,92,92)
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-140,128,-5,152)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 18,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="salidaTarget(63:0)"
+        #NUMBER="0"
+      }
+      COORD (300,160)
+      LINE 1,0,0
+      {
+        OUTLINE 0,3,(64,92,92)
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 19,0,0
+    {
+      TEXT "$#NAME"
+      RECT (304,148,460,172)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 18
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="WE"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (220,0)
+      LINE 1,0,0
+      {
+        OUTLINE 0,1,(64,92,92)
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (208,-40,232,-6)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 2
+      ORIENTATION 5
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="target(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (140,0)
+      LINE 1,0,0
+      {
+        OUTLINE 0,3,(64,92,92)
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 42,0,0
+    {
+      TEXT "BTB"
+      RECT (200,140,258,175)
+      MARGINS (1,1)
+      COLOR (0,0,0)
+      FONT (12,0,0,700,0,0,0,"Arial")
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (128,-100,152,0)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 4
+      ORIENTATION 5
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="cont(1:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (180,0)
+      LINE 1,0,0
+      {
+        OUTLINE 0,3,(64,92,92)
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (168,-80,192,-3)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 6
+      ORIENTATION 5
+    }
+    PIN 8,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #MODIFIED="1"
+        #NAME="PC(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (0,80)
+      LINE 1,0,0
+      {
+        OUTLINE 0,3,(64,92,92)
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 9,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-80,68,-1,92)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 8
+    }
+  }
+}
+I 000046 40 5710 1673575304233 branch_control
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673575304"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (-60,-60,400,300)
+    FREEID 36
+  }
+  BODY
+  {
+    RECT 10,-1,0
+    {
+      OUTLINE 0,1,(255,4,0)
+      AREA (-40,-40,400,280)
+      FILL (0,(0,0,0),0)
+    }
+    TEXT 15,0,0
+    {
+      TEXT "Branch Control"
+      RECT (80,100,276,135)
+      MARGINS (1,1)
+      COLOR (255,255,255)
+      FONT (12,0,0,400,0,0,0,"Arial")
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlSalida"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,80)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,68,-50,92)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (140,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionSaltos(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (380,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (368,-260,392,-71)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 20
+      ORIENTATION 5
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionJalr(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (320,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (308,-220,332,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 22
+      ORIENTATION 5
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (80,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (68,-180,92,-60)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 24
+      ORIENTATION 5
+    }
+    PIN 26,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="activacion_saltos"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (260,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 27,0,0
+    {
+      TEXT "$#NAME"
+      RECT (248,-200,272,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 26
+      ORIENTATION 5
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="correccion(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,120)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,108,-59,132)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 28
+      ORIENTATION 2
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (128,-160,152,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 2
+      ORIENTATION 5
+    }
+    PIN 30,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlCorrecion"
+        #NUMBER="0"
+      }
+      COORD (400,140)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 31,0,0
+    {
+      TEXT "$#NAME"
+      RECT (233,130,375,154)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 30
+    }
+    PIN 32,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="target(63:0)"
+      }
+      COORD (400,180)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 33,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 32
+      ALIGN 6
+      RECT (155,166,375,198)
+    }
+    PIN 34,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="cont(1:0)"
+      }
+      COORD (400,220)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 35,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 34
+      ALIGN 6
+      RECT (155,206,375,238)
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="control"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (421,68,480,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="zero"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,40)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (408,21,432,60)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 6
+      ORIENTATION 6
+    }
+  }
+}
+I 000046 40 5060 1673575521805 branch_control
+SYMB0100
+
+HEADER
+{
+ FREEID 38
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673575521"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (-60,-60,400,300)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (140,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="opcode(6:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (128,-160,152,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 2
+   ORIENTATION 5
+  }
+  PIN  4, 0, 0
+  {
+   COORD (400,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="control"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (421,68,480,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (400,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="zero"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (408,21,432,60)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 6
+   ORIENTATION 6
+  }
+  RECT  10, -1, 0
+  {
+   OUTLINE 0,1, (255,4,0)
+   AREA (-40,-40,400,280)
+   FILL (0,(0,0,0),0)
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "Branch Control"
+   RECT (80,100,276,135)
+   MARGINS (1,1)
+   COLOR (255,255,255)
+   FONT (12,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (-60,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="controlSalida"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-180,48,-69,72)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 2
+  }
+  PIN  20, 0, 0
+  {
+   COORD (380,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionSaltos(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (368,-260,392,-71)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 20
+   ORIENTATION 5
+  }
+  PIN  22, 0, 0
+  {
+   COORD (320,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionJalr(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (308,-220,332,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 22
+   ORIENTATION 5
+  }
+  PIN  24, 0, 0
+  {
+   COORD (80,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (68,-180,92,-60)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 24
+   ORIENTATION 5
+  }
+  PIN  26, 0, 0
+  {
+   COORD (260,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="activacion_saltos"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (248,-200,272,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  28, 0, 0
+  {
+   COORD (-60,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="correccion(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-200,128,-59,152)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 28
+   ORIENTATION 2
+  }
+  PIN  30, 0, 0
+  {
+   COORD (400,140)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="controlCorrecion"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (233,130,375,154)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 30
+  }
+  PIN  32, 0, 0
+  {
+   COORD (-60,240)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  33, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-160,248,-60,272)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 32
+   ORIENTATION 2
+  }
+  PIN  34, 0, 0
+  {
+   COORD (-60,200)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  35, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-140,168,-63,192)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 34
+   ORIENTATION 2
+  }
+ }
+ 
+}
+
+I 000046 40 5444 1673575528294 branch_control
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673575528"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (-60,-60,400,300)
+    FREEID 36
+  }
+  BODY
+  {
+    RECT 10,-1,0
+    {
+      OUTLINE 0,1,(255,4,0)
+      AREA (-40,-40,400,280)
+      FILL (0,(0,0,0),0)
+    }
+    TEXT 15,0,0
+    {
+      TEXT "Branch Control"
+      RECT (80,100,276,135)
+      MARGINS (1,1)
+      COLOR (255,255,255)
+      FONT (12,0,0,400,0,0,0,"Arial")
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlSalida"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,80)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-180,48,-69,72)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (140,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionSaltos(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (380,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (368,-260,392,-71)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 20
+      ORIENTATION 5
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionJalr(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (320,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (308,-220,332,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 22
+      ORIENTATION 5
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (80,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (68,-180,92,-60)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 24
+      ORIENTATION 5
+    }
+    PIN 26,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="activacion_saltos"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (260,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 27,0,0
+    {
+      TEXT "$#NAME"
+      RECT (248,-200,272,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 26
+      ORIENTATION 5
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="correccion(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,120)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,128,-59,152)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 28
+      ORIENTATION 2
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (128,-160,152,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 2
+      ORIENTATION 5
+    }
+    PIN 32,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="target(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,240)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 33,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-160,248,-60,272)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 32
+      ORIENTATION 2
+    }
+    PIN 34,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="cont(1:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,200)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 35,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-140,168,-63,192)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 34
+      ORIENTATION 2
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="control"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (421,68,480,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="zero"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,40)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (408,21,432,60)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 6
+      ORIENTATION 6
+    }
+  }
+}
+I 000046 40 4724 1673575610829 branch_control
+SYMB0100
+
+HEADER
+{
+ FREEID 38
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673575610"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (-60,-60,400,300)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (140,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="opcode(6:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (128,-160,152,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 2
+   ORIENTATION 5
+  }
+  PIN  4, 0, 0
+  {
+   COORD (400,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="control"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (421,68,480,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (400,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="zero"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (408,21,432,60)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 6
+   ORIENTATION 6
+  }
+  RECT  10, -1, 0
+  {
+   OUTLINE 0,1, (255,4,0)
+   AREA (-40,-40,400,280)
+   FILL (0,(0,0,0),0)
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "Branch Control"
+   RECT (80,100,276,135)
+   MARGINS (1,1)
+   COLOR (255,255,255)
+   FONT (12,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (-60,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="controlSalida"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-180,48,-69,72)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 2
+  }
+  PIN  20, 0, 0
+  {
+   COORD (380,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionSaltos(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (368,-260,392,-71)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 20
+   ORIENTATION 5
+  }
+  PIN  22, 0, 0
+  {
+   COORD (320,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionJalr(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (308,-220,332,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 22
+   ORIENTATION 5
+  }
+  PIN  24, 0, 0
+  {
+   COORD (80,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (68,-180,92,-60)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 24
+   ORIENTATION 5
+  }
+  PIN  26, 0, 0
+  {
+   COORD (260,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="activacion_saltos"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (248,-200,272,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  28, 0, 0
+  {
+   COORD (-60,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="correccion(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-200,128,-59,152)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 28
+   ORIENTATION 2
+  }
+  PIN  32, 0, 0
+  {
+   COORD (80,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  33, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (88,300,112,400)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 32
+   ORIENTATION 7
+  }
+  PIN  34, 0, 0
+  {
+   COORD (180,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  35, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (148,303,172,380)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 34
+   ORIENTATION 7
+  }
+ }
+ 
+}
+
+I 000046 40 5804 1673575681764 branch_control
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673575681"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (-60,-60,400,300)
+    FREEID 38
+  }
+  BODY
+  {
+    RECT 10,-1,0
+    {
+      OUTLINE 0,1,(255,4,0)
+      AREA (-40,-40,400,280)
+      FILL (0,(0,0,0),0)
+    }
+    TEXT 15,0,0
+    {
+      TEXT "Branch Control"
+      RECT (80,100,276,135)
+      MARGINS (1,1)
+      COLOR (255,255,255)
+      FONT (12,0,0,400,0,0,0,"Arial")
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlSalida"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,80)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-180,48,-69,72)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (140,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionSaltos(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (380,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (368,-260,392,-71)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 20
+      ORIENTATION 5
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionJalr(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (320,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (308,-220,332,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 22
+      ORIENTATION 5
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (80,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (68,-180,92,-60)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 24
+      ORIENTATION 5
+    }
+    PIN 26,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="activacion_saltos"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (260,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 27,0,0
+    {
+      TEXT "$#NAME"
+      RECT (248,-200,272,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 26
+      ORIENTATION 5
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="correccion(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,120)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,128,-59,152)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 28
+      ORIENTATION 2
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (128,-160,152,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 2
+      ORIENTATION 5
+    }
+    PIN 32,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="target(63:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (80,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 33,0,0
+    {
+      TEXT "$#NAME"
+      RECT (88,300,112,400)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 32
+      ORIENTATION 7
+    }
+    PIN 34,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="cont(1:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (180,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 35,0,0
+    {
+      TEXT "$#NAME"
+      RECT (148,303,172,380)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 34
+      ORIENTATION 7
+    }
+    PIN 36,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="WE"
+      }
+      COORD (400,100)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 37,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 36
+      ALIGN 6
+      RECT (155,86,375,118)
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="control"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (421,68,480,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="zero"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,40)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (408,21,432,60)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 6
+      ORIENTATION 6
+    }
+  }
+}
+I 000046 40 5086 1673575697066 branch_control
+SYMB0100
+
+HEADER
+{
+ FREEID 40
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673575697"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (-60,-60,400,300)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (140,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="opcode(6:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (128,-160,152,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 2
+   ORIENTATION 5
+  }
+  PIN  4, 0, 0
+  {
+   COORD (400,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="control"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (401,68,460,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (400,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="zero"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (408,21,432,60)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 6
+   ORIENTATION 6
+  }
+  RECT  10, -1, 0
+  {
+   OUTLINE 0,1, (255,4,0)
+   AREA (-40,-40,400,280)
+   FILL (0,(0,0,0),0)
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "Branch Control"
+   RECT (80,100,276,135)
+   MARGINS (1,1)
+   COLOR (255,255,255)
+   FONT (12,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (-60,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="controlSalida"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-180,48,-69,72)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 2
+  }
+  PIN  20, 0, 0
+  {
+   COORD (380,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionSaltos(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (368,-260,392,-71)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 20
+   ORIENTATION 5
+  }
+  PIN  22, 0, 0
+  {
+   COORD (320,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionJalr(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (308,-220,332,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 22
+   ORIENTATION 5
+  }
+  PIN  24, 0, 0
+  {
+   COORD (80,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (68,-180,92,-60)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 24
+   ORIENTATION 5
+  }
+  PIN  26, 0, 0
+  {
+   COORD (260,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="activacion_saltos"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (248,-200,272,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  28, 0, 0
+  {
+   COORD (-60,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="correccion(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-200,128,-59,152)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 28
+   ORIENTATION 2
+  }
+  PIN  32, 0, 0
+  {
+   COORD (80,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  33, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (88,300,112,400)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 32
+   ORIENTATION 7
+  }
+  PIN  34, 0, 0
+  {
+   COORD (180,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  35, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (148,303,172,380)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 34
+   ORIENTATION 7
+  }
+  PIN  36, 0, 0
+  {
+   COORD (340,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="WE"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  37, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (348,286,372,320)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 36
+   ORIENTATION 7
+  }
+ }
+ 
+}
+
+I 000046 40 5435 1673576042218 branch_control
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673576042"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (-60,-60,400,300)
+    FREEID 38
+  }
+  BODY
+  {
+    RECT 10,-1,0
+    {
+      OUTLINE 0,1,(255,4,0)
+      AREA (-40,-40,400,280)
+      FILL (0,(0,0,0),0)
+    }
+    TEXT 15,0,0
+    {
+      TEXT "Branch Control"
+      RECT (80,100,276,135)
+      MARGINS (1,1)
+      COLOR (255,255,255)
+      FONT (12,0,0,400,0,0,0,"Arial")
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlSalida"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,80)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-180,48,-69,72)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (140,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionSaltos(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (380,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (368,-260,392,-71)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 20
+      ORIENTATION 5
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionJalr(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (320,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (308,-220,332,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 22
+      ORIENTATION 5
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (80,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (68,-180,92,-60)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 24
+      ORIENTATION 5
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="correccion(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,120)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,128,-59,152)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 28
+      ORIENTATION 2
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (128,-160,152,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 2
+      ORIENTATION 5
+    }
+    PIN 32,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="target(63:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (80,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 33,0,0
+    {
+      TEXT "$#NAME"
+      RECT (88,300,112,400)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 32
+      ORIENTATION 7
+    }
+    PIN 34,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="cont(1:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (180,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 35,0,0
+    {
+      TEXT "$#NAME"
+      RECT (148,303,172,380)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 34
+      ORIENTATION 7
+    }
+    PIN 36,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="WE"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (340,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 37,0,0
+    {
+      TEXT "$#NAME"
+      RECT (348,286,372,320)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 36
+      ORIENTATION 7
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="control"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (401,68,460,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="zero"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,40)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (408,21,432,60)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 6
+      ORIENTATION 6
+    }
+  }
+}
+I 000046 40 6217 1673577354560 branch_control
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673577354"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (-60,-60,400,300)
+    FREEID 42
+  }
+  BODY
+  {
+    RECT 10,-1,0
+    {
+      OUTLINE 0,1,(255,4,0)
+      AREA (-40,-40,400,280)
+      FILL (0,(0,0,0),0)
+    }
+    TEXT 15,0,0
+    {
+      TEXT "Branch Control"
+      RECT (80,100,276,135)
+      MARGINS (1,1)
+      COLOR (255,255,255)
+      FONT (12,0,0,400,0,0,0,"Arial")
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlSalida"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,80)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-180,48,-69,72)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (140,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionSaltos(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (380,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (368,-260,392,-71)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 20
+      ORIENTATION 5
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionJalr(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (320,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (308,-220,332,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 22
+      ORIENTATION 5
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (80,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (68,-180,92,-60)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 24
+      ORIENTATION 5
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="correccion(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,120)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,128,-59,152)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 28
+      ORIENTATION 2
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (128,-160,152,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 2
+      ORIENTATION 5
+    }
+    PIN 32,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="target(63:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (80,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 33,0,0
+    {
+      TEXT "$#NAME"
+      RECT (88,300,112,400)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 32
+      ORIENTATION 7
+    }
+    PIN 34,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="cont(1:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (180,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 35,0,0
+    {
+      TEXT "$#NAME"
+      RECT (148,303,172,380)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 34
+      ORIENTATION 7
+    }
+    PIN 36,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="WE"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (340,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 37,0,0
+    {
+      TEXT "$#NAME"
+      RECT (348,286,372,320)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 36
+      ORIENTATION 7
+    }
+    PIN 38,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="id_cont(1:0)"
+      }
+      COORD (400,100)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 39,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 38
+      ALIGN 6
+      RECT (155,86,375,118)
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="control"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    PIN 40,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="id_target(63:0)"
+      }
+      COORD (400,140)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 41,0,0
+    {
+      TEXT "$#NAME"
+      MARGINS (1,1)
+      PARENT 40
+      ALIGN 6
+      RECT (155,126,375,158)
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (401,68,460,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="zero"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,40)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (408,21,432,60)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 6
+      ORIENTATION 6
+    }
+  }
+}
+I 000046 40 5486 1673577374120 branch_control
+SYMB0100
+
+HEADER
+{
+ FREEID 44
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1673577374"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (-60,-60,400,300)
+ }
+ 
+ BODY
+ {
+  PIN  2, 0, 0
+  {
+   COORD (140,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="opcode(6:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (128,-160,152,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 2
+   ORIENTATION 5
+  }
+  PIN  4, 0, 0
+  {
+   COORD (400,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="control"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (401,68,460,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (400,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="zero"
+    #NUMBER="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (408,21,432,60)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 6
+   ORIENTATION 6
+  }
+  RECT  10, -1, 0
+  {
+   OUTLINE 0,1, (255,4,0)
+   AREA (-40,-40,400,280)
+   FILL (0,(0,0,0),0)
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "Branch Control"
+   RECT (80,100,276,135)
+   MARGINS (1,1)
+   COLOR (255,255,255)
+   FONT (12,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (-60,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="controlSalida"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-180,48,-69,72)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 2
+  }
+  PIN  20, 0, 0
+  {
+   COORD (380,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionSaltos(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (368,-260,392,-71)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 20
+   ORIENTATION 5
+  }
+  PIN  22, 0, 0
+  {
+   COORD (320,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="operacionJalr(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (308,-220,332,-54)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 22
+   ORIENTATION 5
+  }
+  PIN  24, 0, 0
+  {
+   COORD (80,-60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="pcmas4(63:0)"
+    #NUMBER="0"
+    #SIDE="top"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,20) )
+   }
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (68,-180,92,-60)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 24
+   ORIENTATION 5
+  }
+  PIN  28, 0, 0
+  {
+   COORD (-60,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="correccion(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-200,128,-59,152)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 28
+   ORIENTATION 2
+  }
+  PIN  32, 0, 0
+  {
+   COORD (80,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="target(63:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  33, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (88,300,112,400)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 32
+   ORIENTATION 7
+  }
+  PIN  34, 0, 0
+  {
+   COORD (180,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="cont(1:0)"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  35, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (148,303,172,380)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 34
+   ORIENTATION 7
+  }
+  PIN  36, 0, 0
+  {
+   COORD (340,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="WE"
+    #NUMBER="0"
+    #SIDE="bottom"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (0,-20) )
+   }
+  }
+  TEXT  37, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (348,286,372,320)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 36
+   ORIENTATION 7
+  }
+  PIN  38, 0, 0
+  {
+   COORD (-60,220)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="id_cont(1:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  39, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-35,210,68,234)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 38
+   ORIENTATION 2
+  }
+  PIN  40, 0, 0
+  {
+   COORD (-60,260)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="id_target(63:0)"
+    #NUMBER="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  41, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (-35,250,91,274)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 40
+   ORIENTATION 2
+  }
+ }
+ 
+}
+
+V 000046 40 6340 1673577625356 branch_control
+SYMB0100
+HEADER
+{
+  VARIABLES
+  {
+    #DESCRIPTION=""
+    #HDL_ENTRIES="library IEEE;\nuse ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1673577625"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    RECT (-60,-60,400,300)
+    FREEID 42
+  }
+  BODY
+  {
+    RECT 10,-1,0
+    {
+      OUTLINE 0,1,(255,4,0)
+      AREA (-40,-40,400,280)
+      FILL (0,(0,0,0),0)
+    }
+    TEXT 15,0,0
+    {
+      TEXT "Branch Control"
+      RECT (80,100,276,135)
+      MARGINS (1,1)
+      COLOR (255,255,255)
+      FONT (12,0,0,400,0,0,0,"Arial")
+    }
+    PIN 16,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="controlSalida"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,80)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 17,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-180,48,-69,72)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 16
+      ORIENTATION 2
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="opcode(6:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (140,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    PIN 20,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionSaltos(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (380,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 21,0,0
+    {
+      TEXT "$#NAME"
+      RECT (368,-260,392,-71)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 20
+      ORIENTATION 5
+    }
+    PIN 22,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="operacionJalr(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (320,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 23,0,0
+    {
+      TEXT "$#NAME"
+      RECT (308,-220,332,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 22
+      ORIENTATION 5
+    }
+    PIN 24,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="pcmas4(63:0)"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (80,-60)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 25,0,0
+    {
+      TEXT "$#NAME"
+      RECT (68,-180,92,-60)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 24
+      ORIENTATION 5
+    }
+    PIN 28,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="correccion(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,120)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 29,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-200,128,-59,152)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 28
+      ORIENTATION 2
+    }
+    TEXT 3,0,0
+    {
+      TEXT "$#NAME"
+      RECT (128,-160,152,-54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 2
+      ORIENTATION 5
+    }
+    PIN 32,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="target(63:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (80,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 33,0,0
+    {
+      TEXT "$#NAME"
+      RECT (88,300,112,400)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 32
+      ORIENTATION 7
+    }
+    PIN 34,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="cont(1:0)"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (180,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 35,0,0
+    {
+      TEXT "$#NAME"
+      RECT (148,303,172,380)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 34
+      ORIENTATION 7
+    }
+    PIN 36,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="WE"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (340,300)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 37,0,0
+    {
+      TEXT "$#NAME"
+      RECT (348,286,372,320)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 36
+      ORIENTATION 7
+    }
+    PIN 38,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="id_cont(1:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,220)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 39,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-35,210,68,234)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 38
+      ORIENTATION 2
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #LENGTH="20"
+        #NAME="control"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,60)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    PIN 40,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="id_target(63:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (-60,260)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 41,0,0
+    {
+      TEXT "$#NAME"
+      RECT (-35,250,91,274)
+      ALIGN 4
+      MARGINS (1,1)
+      PARENT 40
+      ORIENTATION 2
+    }
+    TEXT 5,0,0
+    {
+      TEXT "$#NAME"
+      RECT (401,68,460,92)
+      ALIGN 6
+      MARGINS (1,1)
+      PARENT 4
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="zero"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (400,40)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(-20,0))
+      }
+    }
+    TEXT 7,0,0
+    {
+      TEXT "$#NAME"
+      RECT (408,21,432,60)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 6
+      ORIENTATION 6
     }
   }
 }
